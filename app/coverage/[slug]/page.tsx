@@ -213,7 +213,7 @@ export default async function CoveragePage({ params }: Props) {
               {/* Providers */}
               <section className="bg-white rounded-2xl border border-gray-200 p-8 shadow-sm">
                 <h2 className="text-2xl font-extrabold text-gray-900 mb-2">NZ Providers Offering This Cover</h2>
-                <p className="text-gray-500 text-sm mb-6">A licensed adviser can quote you across all of these at no charge. The order below carries no meaning — we do not rank or rate insurers.</p>
+                <p className="text-gray-500 text-sm mb-6">Which of these can actually be quoted for you depends on the agencies your broker holds. Some New Zealand insurers deal direct only. We do not rate or score insurers.</p>
                 <div className="space-y-3">
                   {coverage.providers.map((provider, i) => (
                     <div key={i} className="flex items-start gap-4 rounded-xl p-4 border bg-gray-50 border-gray-200">

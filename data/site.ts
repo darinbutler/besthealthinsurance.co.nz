@@ -45,14 +45,6 @@ export const STATS = [
  */
 export const PROVIDERS = [
   {
-    name: "Southern Cross",
-    slug: "southern-cross",
-    icon: "🏥",
-    color: "#003087",
-    note: "New Zealand's largest health insurer, structured as a not-for-profit friendly society.",
-    url: "https://www.southerncross.co.nz/society",
-  },
-  {
     name: "nib",
     slug: "nib",
     icon: "🩺",
@@ -84,4 +76,12 @@ export const PROVIDERS = [
     note: "Life and health insurer selling through financial advisers rather than direct.",
     url: "https://www.partnerslife.co.nz/",
   },
+  {
+    name: "Southern Cross",
+    slug: "southern-cross",
+    icon: "🏥",
+    color: "#003087",
+    note: "New Zealand's largest health insurer, structured as a not-for-profit friendly society.",
+    url: "https://www.southerncross.co.nz/society",
+  }
 ];

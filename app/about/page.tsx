@@ -135,7 +135,7 @@ export default function AboutPage() {
               {[
                 {
                   t: 'They hold a current licence',
-                  d: 'They must be a licensed Financial Advice Provider, or an authorised body or financial adviser operating under someone else\'s licence. We take their Financial Service Providers Register number and confirm it.',
+                  d: 'Every partner broker is a licensed Financial Advice Provider, or an authorised body or financial adviser operating under someone else\'s licence. We take their Financial Service Providers Register number, confirm it, and keep it on file.',
                 },
                 {
                   t: 'Their licence covers health cover',

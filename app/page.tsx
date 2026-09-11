@@ -177,7 +177,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-black text-white mb-4">Providers We Cover</h2>
-            <p className="text-gray-400 text-lg">The five main New Zealand health insurers, described from what each publishes about itself, in no particular order. We do not rank them, and no insurer pays us to appear here or to be described favourably.</p>
+            <p className="text-gray-400 text-lg">The five main New Zealand health insurers, described from what each publishes about itself. We do not rate or score them, and no insurer pays us to appear here or to be described favourably.</p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-5">
             {PROVIDERS.map((p) => (

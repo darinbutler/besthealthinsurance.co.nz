@@ -64,11 +64,11 @@ export const COVERAGE_TYPES: CoverageType[] = [
       'Employers offering health benefits to key staff',
     ],
     providers: [
-      { name: 'Southern Cross', note: 'Publishes that more than 951,000 New Zealanders were with it as at 30 June 2025' },
       { name: 'nib', note: 'Splits cover into Everyday and Hospital plans; publishes indicative treatment costs on its own site' },
       { name: 'AIA', note: 'Health cover can be held alongside life and income products; runs the AIA Vitality programme' },
       { name: 'UniMed', note: 'A not-for-profit mutual society operating since 1979; plans include Hospital Select, UniCare Advantage and SmartCare+' },
       { name: 'Partners Life', note: 'Private Medical Cover sits within its wider Journey Plan range; sold through advisers' },
+      { name: 'Southern Cross', note: 'Publishes that more than 951,000 New Zealanders were with it as at 30 June 2025' },
     ],
     costFactors: [
       'Your age — premiums increase as you get older',
@@ -122,11 +122,11 @@ export const COVERAGE_TYPES: CoverageType[] = [
       'First-time health insurance buyers wanting affordable entry-level cover',
     ],
     providers: [
-      { name: 'Southern Cross', note: 'Operates an Affiliated Provider network that can settle approved treatment costs directly' },
       { name: 'UniMed', note: 'States that Hospital Select carries its highest level of cover for general surgery' },
       { name: 'nib', note: 'Hospital plans cover surgery, cancer treatment and related outpatient costs' },
       { name: 'AIA', note: 'Surgical cover available within its health insurance range' },
       { name: 'Partners Life', note: 'Private Medical Cover is designed around access to private treatment' },
+      { name: 'Southern Cross', note: 'Operates an Affiliated Provider network that can settle approved treatment costs directly' },
     ],
     costFactors: [
       'Age — the primary driver of surgical cover premiums',
@@ -180,11 +180,11 @@ export const COVERAGE_TYPES: CoverageType[] = [
       'Anyone who wants to make healthcare a habit, not a cost barrier',
     ],
     providers: [
-      { name: 'Southern Cross', note: 'Offers everyday cover alongside its hospital and surgical plans' },
       { name: 'UniMed', note: 'Health Positive reimburses 50% or 80% of eligible everyday costs up to $10,000 a year' },
       { name: 'nib', note: 'Everyday plans cover day-to-day needs such as dentist, GP and physio visits' },
       { name: 'AIA', note: 'Everyday benefits available as part of its health cover range' },
       { name: 'Partners Life', note: 'Cover can be added or removed as circumstances change' },
+      { name: 'Southern Cross', note: 'Offers everyday cover alongside its hospital and surgical plans' },
     ],
     costFactors: [
       'Benefit limits — how much per category per year',
@@ -240,9 +240,9 @@ export const COVERAGE_TYPES: CoverageType[] = [
     providers: [
       { name: 'Partners Life', note: 'Trauma Cover is offered as part of its product range' },
       { name: 'AIA', note: 'Offers critical condition cover alongside health and life products' },
-      { name: 'Southern Cross', note: 'States it has been Reader\'s Digest Most Trusted Health Insurance Brand from 2017 to 2026, its tenth consecutive year' },
       { name: 'UniMed', note: 'Cover options can be held alongside its health plans' },
       { name: 'nib', note: 'Part of nib Group, which states it covers over 1.4 million people in NZ and Australia' },
+      { name: 'Southern Cross', note: 'States it has been Reader\'s Digest Most Trusted Health Insurance Brand from 2017 to 2026, its tenth consecutive year' },
     ],
     costFactors: [
       'Sum insured — the lump sum amount you choose',
@@ -298,9 +298,9 @@ export const COVERAGE_TYPES: CoverageType[] = [
     providers: [
       { name: 'Partners Life', note: 'Life Cover pays on death or terminal illness diagnosis' },
       { name: 'AIA', note: 'Note that AIA Cover for Life and AIA Essentials Life Cover are not eligible for the Vitality discount' },
-      { name: 'Southern Cross', note: 'Life cover is offered through a separate Southern Cross group entity' },
       { name: 'nib', note: 'Life cover available alongside its health insurance range' },
       { name: 'UniMed', note: 'Primarily a health insurer; ask what is available alongside its health plans' },
+      { name: 'Southern Cross', note: 'Life cover is offered through a separate Southern Cross group entity' },
     ],
     costFactors: [
       'Sum insured — the lump sum amount chosen',
@@ -356,9 +356,9 @@ export const COVERAGE_TYPES: CoverageType[] = [
     providers: [
       { name: 'Partners Life', note: 'Income Cover protects your ability to earn if illness or injury stops you working' },
       { name: 'AIA', note: 'Income protection offered within its wider product range' },
-      { name: 'Southern Cross', note: 'Best known for health cover; ask what income products are available' },
       { name: 'nib', note: 'Ask which income protection options are currently offered' },
       { name: 'UniMed', note: 'Primarily a health insurer; ask what is available alongside its health plans' },
+      { name: 'Southern Cross', note: 'Best known for health cover; ask what income products are available' },
     ],
     costFactors: [
       'Occupation class — high-risk occupations pay more',
@@ -412,11 +412,11 @@ export const COVERAGE_TYPES: CoverageType[] = [
       'Business owners who want to provide for their team\'s health',
     ],
     providers: [
-      { name: 'Southern Cross', note: 'Offers group health cover for employers' },
       { name: 'nib', note: 'Offers workplace health cover alongside its retail plans' },
       { name: 'AIA', note: 'Workplace cover can include access to the AIA Vitality programme' },
       { name: 'UniMed', note: 'States that more than 500 New Zealand businesses use it for workplace cover' },
       { name: 'Partners Life', note: 'Workplace arrangements are placed through financial advisers' },
+      { name: 'Southern Cross', note: 'Offers group health cover for employers' },
     ],
     costFactors: [
       'Number of employees — larger groups attract better rates',
@@ -471,10 +471,10 @@ export const COVERAGE_TYPES: CoverageType[] = [
     ],
     providers: [
       { name: 'UniMed', note: 'Psychiatric consultations sit in an add-on module on Hospital Select and are listed under UniCare Advantage; SmartStay carries a stated $1,000 per year mental health benefit' },
-      { name: 'Southern Cross', note: 'Check the benefit maximum and any limitations on the specific plan you are quoted' },
       { name: 'nib', note: 'Publishes cover for psychiatrist or psychologist consultations subject to a stated limit and a six-month waiting period' },
       { name: 'AIA', note: 'Ask which mental health benefits apply to the specific plan you are quoted' },
       { name: 'Partners Life', note: 'Ask which mental health benefits apply under its Private Medical Cover wording' },
+      { name: 'Southern Cross', note: 'Check the benefit maximum and any limitations on the specific plan you are quoted' },
     ],
     costFactors: [
       'Whether the cover sits in an optional module or within major medical cover',

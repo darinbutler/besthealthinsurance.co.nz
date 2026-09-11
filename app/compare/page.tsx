@@ -214,8 +214,8 @@ No New Zealand health insurer publishes a full premium schedule, so no site can 
           <section>
             <h2 className="text-2xl font-extrabold text-gray-900 mb-2">Provider Profiles</h2>
             <p className="text-gray-500 text-sm mb-6">
-              In each insurer&apos;s own published words, in no particular order. No insurer pays
-              us to appear here or to be described favourably.
+              In each insurer&apos;s own published words. We do not rate or score insurers, and no
+              insurer pays us to appear here or to be described favourably.
             </p>
 
             <div className="space-y-5">
