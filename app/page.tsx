@@ -149,13 +149,13 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-black text-white mb-4">How It Works</h2>
-            <p className="text-gray-400 text-lg">Getting the best health insurance is simple with our expert advice service.</p>
+            <p className="text-gray-400 text-lg">We publish the information and vet the advisers. They do the comparing and the advising.</p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {[
               { step: "1", title: "Tell Us What You Need", body: "Fill in a quick form — takes under 2 minutes. Tell us who you want to cover and what matters most to you." },
-              { step: "2", title: "An Adviser Compares For You", body: "A specialist NZ insurance adviser compares Southern Cross, nib, AIA, UniMed, Partners Life and more to find your best options." },
-              { step: "3", title: "You Choose, We Sort It", body: "You pick the plan that fits. Your adviser handles all the paperwork. Cover can start in as little as 24 hours." },
+              { step: "2", title: "An Adviser Compares For You", body: "A licensed New Zealand financial adviser compares the insurers they hold an agency with, against your age, your medical history and the cover you actually want." },
+              { step: "3", title: "You Choose, They Sort It", body: "You pick the plan that fits. Your adviser handles the application and the paperwork." },
             ].map((item) => (
               <div key={item.step} className="text-center">
                 <div className="w-14 h-14 bg-emerald-500 rounded-full flex items-center justify-center text-white font-black text-xl mx-auto mb-5 shadow-lg shadow-emerald-500/30">{item.step}</div>
@@ -176,7 +176,7 @@ export default function HomePage() {
       <section className="bg-gray-900 py-16 lg:py-20">
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-4xl font-black text-white mb-4">Providers We Compare</h2>
+            <h2 className="text-3xl lg:text-4xl font-black text-white mb-4">Providers We Cover</h2>
             <p className="text-gray-400 text-lg">The five main New Zealand health insurers, described from what each publishes about itself, in no particular order. We do not rank them, and no insurer pays us to appear here or to be described favourably.</p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-5">
@@ -222,8 +222,8 @@ export default function HomePage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { icon: "🔒", title: "Regulated Advisers", body: "The advisers we connect you with hold FSP registration with the FMA." },
-              { icon: "⚖️", title: "100% Independent", body: "Our advisers are paid by insurers — no cost to you, ever." },
-              { icon: "🏆", title: "All Major Providers", body: "We compare every major NZ health insurer side-by-side." },
+              { icon: "⚖️", title: "Independent", body: "Not owned by an insurer. The adviser you are referred to is paid by the insurer, never by you." },
+              { icon: "🔍", title: "Advisers We Have Vetted", body: "We check an adviser's licence, their dispute resolution scheme and the insurers they hold agencies with before we send them a single enquiry." },
               { icon: "⚡", title: "Fast Response", body: "Receive personalised quotes within 24 hours of enquiry." },
             ].map((item) => (
               <div key={item.title} className="text-center">
@@ -242,7 +242,7 @@ export default function HomePage() {
           <div className="flex items-end justify-between mb-12">
             <div>
               <h2 className="text-3xl lg:text-4xl font-black text-white mb-2">Health Insurance Guides</h2>
-              <p className="text-gray-400">Expert advice to help you find the best cover.</p>
+              <p className="text-gray-400">Independent guides to help you work out what you need.</p>
             </div>
             <Link href="/blog/" className="hidden lg:inline-flex text-emerald-400 hover:text-emerald-300 font-medium text-sm transition-colors">
               All articles →

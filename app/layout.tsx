@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Analytics from "./components/Analytics";
 
 export const metadata: Metadata = {
-  title: "Best Health Insurance NZ | Compare & Find the Best Cover | BestHealthInsurance.co.nz",
+  title: "Best Health Insurance NZ | Compare Plans and Get a Quote | BestHealthInsurance.co.nz",
   description: "Compare the best health insurance in New Zealand. Southern Cross, nib, AIA, UniMed & Partners Life — find the right policy and connect with a specialist NZ adviser within 24 hours.",
   keywords: "best health insurance NZ, health insurance New Zealand, compare health insurance, Southern Cross, nib, AIA, UniMed, Partners Life",
   authors: [{ name: "BestHealthInsurance.co.nz Editorial Team", url: "https://besthealthinsurance.co.nz/about/" }],

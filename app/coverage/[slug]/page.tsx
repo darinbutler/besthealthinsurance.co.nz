@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import QuoteForm from '../../components/QuoteForm'
 import { COVERAGE_TYPES, COVERAGE_TYPES as coverageTypes } from '../../../data/coverage'
+import AdviceNotice from '@/app/components/AdviceNotice'
 
 interface Props {
   params: Promise<{ slug: string }>
@@ -278,13 +279,18 @@ export default async function CoveragePage({ params }: Props) {
                 </div>
               </section>
 
+              {/* General information notice */}
+              <AdviceNotice />
+
               {/* Bottom CTA */}
               <div className="bg-gray-900 rounded-2xl p-8 text-center">
                 <h2 className="text-2xl font-extrabold text-white mb-3">
                   Ready to Compare {coverage.title}?
                 </h2>
                 <p className="text-gray-400 mb-6 max-w-xl mx-auto">
-                  A licensed NZ adviser will compare all major providers and present you with the best options for your situation. No obligation.
+                  Tell us what you need and we will pass your details to a licensed New Zealand
+                  financial adviser we have vetted. They quote you across the insurers they hold an
+                  agency with. No obligation, and no cost to you.
                 </p>
                 <Link
                   href="/contact/"

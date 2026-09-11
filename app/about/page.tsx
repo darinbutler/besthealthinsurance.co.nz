@@ -108,9 +108,9 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {[
                 { step: '1', title: 'You Contact Us', body: 'Fill out our simple form with your details and what you\'re looking for. Takes under 2 minutes.' },
-                { step: '2', title: 'We Match You', body: 'We connect you with a specialist NZ insurance adviser who knows the health insurance market inside out.' },
-                { step: '3', title: 'They Compare', body: 'Your adviser compares all major providers — Southern Cross, UniMed, AIA, nib, and Partners Life — for your specific situation.' },
-                { step: '4', title: 'You Decide', body: 'Receive personalised quotes and recommendations. Take your time, ask questions, decide in your own time — no pressure.' },
+                { step: '2', title: 'We Refer You', body: 'We pass your details to a licensed New Zealand financial adviser we have already checked. That referral is the whole of our role.' },
+                { step: '3', title: 'They Compare', body: 'Your adviser compares the insurers they hold an agency with, against your situation and your medical history.' },
+                { step: '4', title: 'You Decide', body: 'You receive quotes and the adviser\'s recommendation. Take your time, ask questions, decide in your own time.' },
               ].map((item) => (
                 <div key={item.step} className="text-center">
                   <div className="w-12 h-12 rounded-full bg-emerald-500 flex items-center justify-center text-white font-extrabold text-lg mx-auto mb-4">{item.step}</div>
@@ -119,6 +119,54 @@ export default function AboutPage() {
                 </div>
               ))}
             </div>
+          </section>
+
+          {/* How we vet advisers */}
+          <section className="bg-white rounded-2xl border border-gray-200 shadow-sm p-8 lg:p-12">
+            <h2 className="text-2xl font-extrabold text-gray-900 mb-3">How We Vet the Advisers We Refer You To</h2>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              We do not give advice. That makes the one thing we do control &mdash; who your enquiry
+              goes to &mdash; the thing we take most seriously. Before any adviser receives a single
+              enquiry from this site, we check the following, and we check it again periodically.
+            </p>
+            <div className="grid sm:grid-cols-2 gap-4">
+              {[
+                {
+                  t: 'They hold a current licence',
+                  d: 'They must be a licensed Financial Advice Provider, or an authorised body or financial adviser operating under someone else\'s licence. We take their Financial Service Providers Register number and confirm it.',
+                },
+                {
+                  t: 'They can actually advise on health cover',
+                  d: 'A licence has a scope. Some advisers are licensed for life and income cover but not for standalone medical insurance. We check the scope covers what people ask us about, because an enquiry sent to an adviser who cannot place it helps nobody.',
+                },
+                {
+                  t: 'They hold the right agencies',
+                  d: 'An adviser can only quote insurers they hold an agency with. We ask which health insurers they are accredited with, so we know what your enquiry can realistically be quoted across.',
+                },
+                {
+                  t: 'They belong to a disputes scheme',
+                  d: 'Every licensed provider must belong to an approved dispute resolution scheme. We confirm which one, so you have somewhere independent to go if something goes wrong.',
+                },
+                {
+                  t: 'They publish their disclosure',
+                  d: 'They must be able to give you their disclosure information &mdash; what they advise on, the providers they work with, how they are paid, and how to complain. We ask for it, and we expect you to be given it.',
+                },
+                {
+                  t: 'We watch what happens next',
+                  d: 'We track whether enquiries are contacted promptly and how they are handled. An adviser who does not look after the people we send them stops receiving enquiries.',
+                },
+              ].map((v) => (
+                <div key={v.t} className="bg-gray-50 rounded-xl p-5">
+                  <p className="font-bold text-gray-900 text-sm">{v.t}</p>
+                  <p className="text-gray-600 text-sm mt-1 leading-relaxed">{v.d}</p>
+                </div>
+              ))}
+            </div>
+            <p className="text-gray-500 text-xs mt-6 leading-relaxed">
+              None of this makes us the adviser. The advice is theirs, they are responsible for it,
+              and they are the ones licensed to give it. What we are responsible for is not sending
+              you to someone who should not be receiving your enquiry in the first place.
+            </p>
           </section>
 
           {/* Providers */}

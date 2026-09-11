@@ -190,7 +190,7 @@ export default function ForYouPage({ params }: { params: { slug: string } }) {
             <div className="text-center">
               <div className="text-4xl mb-4">🔍</div>
               <h3 className="text-lg font-semibold text-white mb-2">All Providers</h3>
-              <p className="text-gray-400 text-sm">We compare Southern Cross, nib, AIA, UniMed & Partners Life — all major NZ insurers.</p>
+              <p className="text-gray-400 text-sm">Covering Southern Cross, nib, AIA, UniMed and Partners Life — all major NZ health insurers.</p>
             </div>
             <div className="text-center">
               <div className="text-4xl mb-4">⏱️</div>

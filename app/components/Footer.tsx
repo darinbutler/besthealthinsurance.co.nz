@@ -13,7 +13,7 @@ export default function Footer() {
               <span className="text-gray-500 font-normal text-sm">.co.nz</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
-              NZ&apos;s independent best health insurance comparison. Expert advice from licensed NZ advisers.
+              Independent information on New Zealand health insurance. Quotes are arranged through licensed New Zealand financial advisers we have checked.
             </p>
             <p className="text-gray-500 text-xs">A Cover4You Group service.</p>
           </div>
@@ -62,7 +62,7 @@ export default function Footer() {
         {/* Disclaimer */}
         <div className="border-t border-gray-800 pt-8">
           <p className="text-gray-500 text-xs leading-relaxed mb-3">
-            <strong className="text-gray-400">How This Site Works:</strong> BestHealthInsurance.co.nz is operated by Cover4You Group. We compare health insurance from major NZ providers. When you submit a quote request, a licensed New Zealand financial adviser will contact you to discuss your options. Our advisers are paid by the insurers — there is no cost to you for this service.
+            <strong className="text-gray-400">How This Site Works:</strong> BestHealthInsurance.co.nz is operated by Cover4You Group. We publish information about health insurance from major New Zealand providers. We do not compare policies for you, we do not recommend an insurer, and we do not give financial advice. When you submit a quote request we pass your details to a licensed New Zealand financial adviser, who will contact you, compare policies and give you any advice. We check every adviser we refer enquiries to before we send them any, and we review that check. The adviser is paid a commission by the insurer if you take out a policy — there is no cost to you for this service.
           </p>
           <p className="text-gray-500 text-xs leading-relaxed mb-4">
             This site provides general information only and is not financial advice. Please read any policy disclosure statement before purchasing insurance. Cover4You Group advisers hold current Financial Services Provider (FSP) registration and are members of the Financial Services Complaints Limited (FSCL) dispute resolution scheme.

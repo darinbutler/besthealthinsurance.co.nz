@@ -28,9 +28,9 @@ export default function ThankYouPage() {
             <h2 className="text-2xl font-bold text-white mb-4">What Happens Next?</h2>
             <div className="space-y-6 text-left mt-8">
               {[
-                { step: "1", title: "We review your enquiry", body: "Our team reviews the details you've provided to understand your health insurance needs." },
-                { step: "2", title: "We compare providers", body: "A licensed NZ insurance adviser will compare Southern Cross, UniMed, Partners Life, AIA, and nib to find the best fit for you." },
-                { step: "3", title: "We contact you", body: "Within 24 hours, A licensed NZ insurance adviser will contact you with personalised quotes and recommendations." },
+                { step: "1", title: "We pass on your enquiry", body: "We send your details to a licensed New Zealand financial adviser we have checked. We do not assess your enquiry ourselves." },
+                { step: "2", title: "An adviser compares for you", body: "The adviser compares the insurers they hold an agency with, against your own circumstances and medical history." },
+                { step: "3", title: "They contact you", body: "The adviser contacts you directly, usually within 24 hours, with quotes and their recommendation. Any advice comes from them, not from us." },
                 { step: "4", title: "You decide", body: "No pressure — take your time, ask questions, and decide what's right for you." },
               ].map((item) => (
                 <div key={item.step} className="flex gap-4">

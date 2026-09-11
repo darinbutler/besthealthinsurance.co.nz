@@ -433,7 +433,7 @@ No New Zealand health insurer publishes a full premium schedule, so no site can 
           </section>
 
           <p className="text-xs text-gray-400 leading-relaxed">
-            BestHealthInsurance.co.nz is an independent referral service. We connect you with registered New Zealand insurance advisers. We do not provide financial advice. We do not build premium comparison tables, because no NZ health insurer publishes a full premium schedule. Where an insurer publishes a starting price for one of its own plans, we reproduce it with that insurer's stated basis and nothing added. Any premium you are quoted depends on your age, plan, excess and medical history.{' '}
+            BestHealthInsurance.co.nz is operated by Cover4You Group and is an independent referral service. We are not a Financial Advice Provider. We do not compare policies for you, we do not recommend an insurer, and we do not give financial advice. We pass your details to a licensed New Zealand Financial Advice Provider we have vetted, and they give any advice. We do not build premium comparison tables, because no NZ health insurer publishes a full premium schedule. Where an insurer publishes a starting price for one of its own plans, we reproduce it with that insurer's stated basis and nothing added. Any premium you are quoted depends on your age, plan, excess and medical history.{' '}
             <Link href="/disclaimer/" className="text-emerald-500 underline hover:text-emerald-400">See full disclaimer</Link>.
           </p>
         </div>

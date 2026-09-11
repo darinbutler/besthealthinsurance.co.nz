@@ -1,6 +1,7 @@
 import { PROVIDERS } from "../../../data/site";
 import QuoteForm from "../../components/QuoteForm";
 import Link from "next/link";
+import AdviceNotice from '@/app/components/AdviceNotice'
 
 export function generateStaticParams() {
   return PROVIDERS.map((provider) => ({
@@ -251,6 +252,13 @@ export default function ProviderPage({ params }: { params: { slug: string } }) {
             />
             <p className="text-gray-500 text-xs mt-4 text-center">No obligation • Response within 24 hours</p>
           </div>
+        </div>
+      </section>
+
+      {/* General information notice */}
+      <section className="bg-white border-t border-gray-200 py-10 px-4 lg:px-8">
+        <div className="max-w-4xl mx-auto">
+          <AdviceNotice />
         </div>
       </section>
 

@@ -2,11 +2,11 @@ import QuoteForm from "../components/QuoteForm";
 
 export const metadata = {
   title: "Get a Health Insurance Quote NZ | BestHealthInsurance.co.nz",
-  description: "Connect with a specialist NZ insurance adviser within 24 hours. No obligation. We compare Southern Cross, nib, AIA, UniMed and Partners Life for your situation.",
+  description: "Get connected with a licensed New Zealand financial adviser we have vetted, within 24 hours. No obligation, and no cost to you.",
   alternates: { canonical: "https://besthealthinsurance.co.nz/contact/" },
   openGraph: {
     title: "Get a Health Insurance Quote NZ | BestHealthInsurance.co.nz",
-    description: "Connect with a specialist NZ insurance adviser within 24 hours. We compare all major providers at no cost to you.",
+    description: "Get connected with a licensed New Zealand financial adviser within 24 hours, at no cost to you.",
     url: "https://besthealthinsurance.co.nz/contact/",
     type: "website",
   },
@@ -18,7 +18,7 @@ const contactPageSchema = {
   "@id": "https://besthealthinsurance.co.nz/contact/#webpage",
   url: "https://besthealthinsurance.co.nz/contact/",
   name: "Get a Health Insurance Quote — BestHealthInsurance.co.nz",
-  description: "Connect with a specialist NZ health insurance adviser within 24 hours. We compare all major providers at no cost to you.",
+  description: "Get connected with a licensed New Zealand health insurance adviser within 24 hours, at no cost to you.",
   inLanguage: "en-NZ",
   isPartOf: { "@id": "https://besthealthinsurance.co.nz/#website" },
   breadcrumb: {
@@ -37,7 +37,7 @@ export default function ContactPage() {
       <section className="bg-gray-900 border-b border-gray-800 py-16 lg:py-20">
         <div className="max-w-6xl mx-auto px-4 lg:px-8">
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">Get a Quote</h1>
-          <p className="text-lg text-gray-400">We connect you with specialist NZ insurance advisers who compare all major health insurers to find your best cover. No pressure, no obligation.</p>
+          <p className="text-lg text-gray-400">We pass your details to a licensed New Zealand financial adviser we have vetted. They compare policies and advise you. We do not give advice ourselves. No pressure, no obligation.</p>
         </div>
       </section>
 
@@ -126,7 +126,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { icon: "👤", title: "Specialist Advisers", body: "We connect you with NZ insurance advisers who specialise in health insurance and know the market inside out." },
-              { icon: "⚖️", title: "Truly Independent", body: "We compare all major providers — no bias towards any particular insurer." },
+              { icon: "⚖️", title: "Independent", body: "We are not owned by an insurer, and no insurer pays us to be described favourably." },
               { icon: "🎯", title: "Your Best Interest", body: "We focus on finding you the right cover at the right price for your situation." },
             ].map((item) => (
               <div key={item.title}>
