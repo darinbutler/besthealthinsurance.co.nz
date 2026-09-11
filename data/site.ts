@@ -47,7 +47,6 @@ export const PROVIDERS = [
   {
     name: "nib",
     slug: "nib",
-    icon: "🩺",
     color: "#e4002b",
     note: "Part of nib Group. Sells Everyday cover, Hospital cover, or both, with an excess you choose.",
     url: "https://www.nib.co.nz/health-insurance",
@@ -55,7 +54,6 @@ export const PROVIDERS = [
   {
     name: "AIA",
     slug: "aia",
-    icon: "💪",
     color: "#d4002d",
     note: "Offers Private Health and a separate Cancer Care plan, plus the AIA Vitality wellbeing programme.",
     url: "https://www.aia.co.nz/en/our-products/health-insurance.html",
@@ -63,7 +61,6 @@ export const PROVIDERS = [
   {
     name: "UniMed",
     slug: "unimed",
-    icon: "🛡️",
     color: "#1e6b2e",
     note: "A not-for-profit mutual society, operating since 1979. The Accuro brand has now merged into UniMed. Range spans everyday care through to comprehensive hospital cover.",
     url: "https://unimed.co.nz/health-plans",
@@ -71,7 +68,6 @@ export const PROVIDERS = [
   {
     name: "Partners Life",
     slug: "partners-life",
-    icon: "🤝",
     color: "#1e3a5f",
     note: "Life and health insurer selling through financial advisers rather than direct.",
     url: "https://www.partnerslife.co.nz/",
@@ -79,9 +75,8 @@ export const PROVIDERS = [
   {
     name: "Southern Cross",
     slug: "southern-cross",
-    icon: "🏥",
     color: "#003087",
-    note: "New Zealand's largest health insurer, structured as a not-for-profit friendly society.",
+    note: "Describes itself as a for-purpose Friendly Society founded in 1961, and publishes that more than 951,000 New Zealanders were with it as at 30 June 2025.",
     url: "https://www.southerncross.co.nz/society",
   }
 ];

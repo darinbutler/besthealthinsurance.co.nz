@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import QuoteForm from '../components/QuoteForm'
+import ProviderMark from '@/app/components/ProviderMark'
+import { PROVIDERS } from '../../data/site'
 
 export const metadata: Metadata = {
   title: 'About BestHealthInsurance.co.nz | Independent NZ Health Insurance Comparison',
@@ -177,14 +179,16 @@ export default function AboutPage() {
             <h2 className="text-2xl font-extrabold text-gray-900 mb-6">The Providers We Cover</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
-                { icon: '🏥', name: 'Southern Cross Health Society', desc: 'Describes itself as a for-purpose Friendly Society founded in 1961, and publishes that more than 951,000 New Zealanders were with it as at 30 June 2025. Operates an Affiliated Provider network that can settle approved treatment costs directly.' },
-                { icon: '🛡️', name: 'UniMed', desc: 'A not-for-profit mutual society operating since 1979. Plans include Hospital Select, UniCare Advantage, SmartCare+ and SmartCare, Health Positive, SmartStay, ParentStay and KidSmart. The Accuro brand has merged into UniMed.' },
-                { icon: '💪', name: 'AIA', desc: 'Runs the AIA Vitality programme and publishes its premium discount rules in full: a 10% initial discount that then moves up or down each year with your engagement, to a maximum of 20%. A monthly membership fee applies.' },
-                { icon: '🤝', name: 'Partners Life', desc: 'Offers Private Medical Cover as part of its wider Journey Plan range, alongside life, income and trauma cover. Sold through financial advisers rather than direct.' },
-                { icon: '🩺', name: 'nib', desc: 'Splits cover into Everyday and Hospital plans and publishes indicative treatment costs on its own site. Part of nib Group, which states it covers over 1.4 million people across New Zealand and Australia.' },
+                { name: 'Southern Cross Health Society', desc: 'Describes itself as a for-purpose Friendly Society founded in 1961, and publishes that more than 951,000 New Zealanders were with it as at 30 June 2025. Operates an Affiliated Provider network that can settle approved treatment costs directly.' },
+                { name: 'UniMed', desc: 'A not-for-profit mutual society operating since 1979. Plans include Hospital Select, UniCare Advantage, SmartCare+ and SmartCare, Health Positive, SmartStay, ParentStay and KidSmart. The Accuro brand has merged into UniMed.' },
+                { name: 'AIA', desc: 'Runs the AIA Vitality programme and publishes its premium discount rules in full: a 10% initial discount that then moves up or down each year with your engagement, to a maximum of 20%. A monthly membership fee applies.' },
+                { name: 'Partners Life', desc: 'Offers Private Medical Cover as part of its wider Journey Plan range, alongside life, income and trauma cover. Sold through financial advisers rather than direct.' },
+                { name: 'nib', desc: 'Splits cover into Everyday and Hospital plans and publishes indicative treatment costs on its own site. Part of nib Group, which states it covers over 1.4 million people across New Zealand and Australia.' },
               ].map((p) => (
                 <div key={p.name} className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
-                  <div className="text-3xl mb-3">{p.icon}</div>
+                  <div className="mb-3">
+                    <ProviderMark name={p.name} color={PROVIDERS.find((x) => x.name === p.name)?.color ?? '#334155'} size="sm" />
+                  </div>
                   <h3 className="font-extrabold text-gray-900 mb-2">{p.name}</h3>
                   <p className="text-gray-500 text-sm leading-relaxed">{p.desc}</p>
                 </div>

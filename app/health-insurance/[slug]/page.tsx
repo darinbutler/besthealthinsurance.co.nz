@@ -2,6 +2,7 @@ import { PROVIDERS } from "../../../data/site";
 import QuoteForm from "../../components/QuoteForm";
 import Link from "next/link";
 import AdviceNotice from '@/app/components/AdviceNotice'
+import ProviderMark from '@/app/components/ProviderMark'
 
 export function generateStaticParams() {
   return PROVIDERS.map((provider) => ({
@@ -168,7 +169,7 @@ export default function ProviderPage({ params }: { params: { slug: string } }) {
             <span className="text-gray-400 text-sm">{provider.name}</span>
           </div>
           <div className="flex items-center gap-6 mb-6">
-            <div className="text-6xl">{provider.icon}</div>
+            <ProviderMark name={provider.name} color={provider.color} size="lg" onDark />
             <div>
               <h1 className="text-4xl lg:text-5xl font-bold text-white mb-2">{provider.name}</h1>
               <p className="text-xl text-emerald-400">{details.tagline}</p>

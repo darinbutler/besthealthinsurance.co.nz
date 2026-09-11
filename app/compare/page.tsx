@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { PROVIDERS } from '../../data/site'
 import QuoteForm from '../components/QuoteForm'
 import Link from 'next/link'
+import ProviderMark from '@/app/components/ProviderMark'
 
 export const metadata: Metadata = {
   title: 'Compare NZ Health Insurance Providers | BestHealthInsurance',
@@ -89,7 +90,9 @@ export default function ComparePage() {
                   href={`/health-insurance/${provider.slug}/`}
                   className="bg-white rounded-2xl border border-gray-200 p-5 hover:-translate-y-0.5 hover:border-emerald-300 transition-all shadow-sm"
                 >
-                  <div className="text-3xl mb-3">{provider.icon}</div>
+                  <div className="mb-3">
+                    <ProviderMark name={provider.name} color={provider.color} size="sm" />
+                  </div>
                   <h3 className="text-base font-extrabold text-gray-900 mb-2 leading-tight">{provider.name}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{provider.note}</p>
                 </Link>

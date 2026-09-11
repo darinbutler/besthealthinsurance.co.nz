@@ -3,6 +3,7 @@ import QuoteForm from "./components/QuoteForm";
 import { COVERAGE_TYPES, FOR_YOU_SEGMENTS } from "../data/coverage";
 import { STATS, PROVIDERS } from "../data/site";
 import { BLOG_POSTS } from "../data/blog";
+import ProviderMark from '@/app/components/ProviderMark'
 
 export default function HomePage() {
   const featuredPosts = BLOG_POSTS.slice(0, 3);
@@ -182,7 +183,9 @@ export default function HomePage() {
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-5">
             {PROVIDERS.map((p) => (
               <Link key={p.slug} href={`/health-insurance/${p.slug}/`} className="group bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-emerald-500/40 transition-all text-center hover:-translate-y-0.5">
-                <div className="text-4xl mb-3">{p.icon}</div>
+                <div className="flex justify-center mb-3">
+                  <ProviderMark name={p.name} color={p.color} size="md" onDark />
+                </div>
                 <h3 className="text-white font-bold mb-2 group-hover:text-emerald-400 transition-colors">{p.name}</h3>
                 <p className="text-gray-400 text-xs leading-relaxed">{p.note}</p>
               </Link>
