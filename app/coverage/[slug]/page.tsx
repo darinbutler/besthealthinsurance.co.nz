@@ -288,9 +288,9 @@ export default async function CoveragePage({ params }: Props) {
                   Ready to Compare {coverage.title}?
                 </h2>
                 <p className="text-gray-400 mb-6 max-w-xl mx-auto">
-                  Tell us what you need and we will pass your details to a licensed New Zealand
-                  financial adviser we have vetted. They quote you across the insurers they hold an
-                  agency with. No obligation, and no cost to you.
+                  Tell us what you need and we will pass your details to one of the specialist
+                  brokers or underwriters we work with, each vetted before we refer them anything.
+                  They quote you across the insurers they can place. No obligation, no cost to you.
                 </p>
                 <Link
                   href="/contact/"

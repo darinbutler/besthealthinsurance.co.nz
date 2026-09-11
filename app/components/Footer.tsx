@@ -13,7 +13,7 @@ export default function Footer() {
               <span className="text-gray-500 font-normal text-sm">.co.nz</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-4">
-              Independent information on New Zealand health insurance. Quotes are arranged through licensed New Zealand financial advisers we have checked.
+              Independent information on New Zealand health insurance. Quotes are arranged through a number of specialist trusted brokers and underwriters we have vetted.
             </p>
             <p className="text-gray-500 text-xs">A Cover4You Group service.</p>
           </div>
@@ -62,10 +62,10 @@ export default function Footer() {
         {/* Disclaimer */}
         <div className="border-t border-gray-800 pt-8">
           <p className="text-gray-500 text-xs leading-relaxed mb-3">
-            <strong className="text-gray-400">How This Site Works:</strong> BestHealthInsurance.co.nz is operated by Cover4You Group. We publish information about health insurance from major New Zealand providers. We do not compare policies for you, we do not recommend an insurer, and we do not give financial advice. When you submit a quote request we pass your details to a licensed New Zealand financial adviser, who will contact you, compare policies and give you any advice. We check every adviser we refer enquiries to before we send them any, and we review that check. The adviser is paid a commission by the insurer if you take out a policy — there is no cost to you for this service.
+            <strong className="text-gray-400">How This Site Works:</strong> BestHealthInsurance.co.nz is operated by Cover4You Group. We publish information about health insurance from major New Zealand providers. We do not compare policies for you, we do not recommend an insurer, and we do not give financial advice. When you submit a quote request we pass your details to one of a number of specialist trusted brokers and underwriters we work with. Where that is a broker, they are a licensed New Zealand financial adviser who will contact you, compare policies and give you any advice. Where an insurer takes enquiries directly, you deal with their own team about their own products. We vet every broker and underwriter before we refer them a single enquiry, and we review that vetting. The adviser is paid a commission by the insurer if you take out a policy — there is no cost to you for this service.
           </p>
           <p className="text-gray-500 text-xs leading-relaxed mb-4">
-            This site provides general information only and is not financial advice. Please read any policy disclosure statement before purchasing insurance. Cover4You Group advisers hold current Financial Services Provider (FSP) registration and are members of the Financial Services Complaints Limited (FSCL) dispute resolution scheme.
+            This site provides general information only and is not financial advice. Please read any policy disclosure statement before purchasing insurance. Cover4You Group does not hold a financial advice licence and does not give financial advice. The brokers we work with are licensed Financial Advice Providers, registered on the Financial Service Providers Register and members of an approved dispute resolution scheme. They are independent businesses, not employees or agents of Cover4You Group, and the advice they give is their own. Ask your adviser for their disclosure information, which sets out their licence, the providers they work with, how they are paid and how to complain.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-600">
             <p>© 2026 BestHealthInsurance.co.nz — A Cover4You Group service. All rights reserved.</p>

@@ -149,13 +149,13 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-black text-white mb-4">How It Works</h2>
-            <p className="text-gray-400 text-lg">We publish the information and vet the advisers. They do the comparing and the advising.</p>
+            <p className="text-gray-400 text-lg">We publish the information and vet the brokers. They do the comparing and the advising.</p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {[
               { step: "1", title: "Tell Us What You Need", body: "Fill in a quick form — takes under 2 minutes. Tell us who you want to cover and what matters most to you." },
-              { step: "2", title: "An Adviser Compares For You", body: "A licensed New Zealand financial adviser compares the insurers they hold an agency with, against your age, your medical history and the cover you actually want." },
-              { step: "3", title: "You Choose, They Sort It", body: "You pick the plan that fits. Your adviser handles the application and the paperwork." },
+              { step: "2", title: "A Specialist Broker Compares For You", body: "One of the specialist brokers we work with, a licensed New Zealand financial adviser, compares the insurers they hold an agency with against your age, your medical history and the cover you actually want." },
+              { step: "3", title: "You Choose, They Sort It", body: "You pick the plan that fits. Your broker handles the application and the paperwork." },
             ].map((item) => (
               <div key={item.step} className="text-center">
                 <div className="w-14 h-14 bg-emerald-500 rounded-full flex items-center justify-center text-white font-black text-xl mx-auto mb-5 shadow-lg shadow-emerald-500/30">{item.step}</div>
@@ -222,8 +222,8 @@ export default function HomePage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { icon: "🔒", title: "Regulated Advisers", body: "The advisers we connect you with hold FSP registration with the FMA." },
-              { icon: "⚖️", title: "Independent", body: "Not owned by an insurer. The adviser you are referred to is paid by the insurer, never by you." },
-              { icon: "🔍", title: "Advisers We Have Vetted", body: "We check an adviser's licence, their dispute resolution scheme and the insurers they hold agencies with before we send them a single enquiry." },
+              { icon: "⚖️", title: "Independent", body: "Not owned by an insurer. The broker you are referred to is paid by the insurer, never by you." },
+              { icon: "🔍", title: "Vetted Specialists", body: "We work with a number of specialist trusted brokers and underwriters, and we check each one's licence, disputes scheme and insurer agencies before referring a single enquiry." },
               { icon: "⚡", title: "Fast Response", body: "Receive personalised quotes within 24 hours of enquiry." },
             ].map((item) => (
               <div key={item.title} className="text-center">

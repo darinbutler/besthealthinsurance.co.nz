@@ -11,8 +11,8 @@ export default function NavBar() {
     <>
       {/* Announcement bar */}
       <div className="sticky top-0 z-50 bg-emerald-600 text-white text-xs text-center py-1.5 px-4 font-medium">
-        <span className="sm:hidden">🇳🇿 Compare NZ Health Insurance — Vetted Advisers, No Obligation</span>
-        <span className="hidden sm:inline">🇳🇿 Independent NZ Health Insurance Information — Free Quote From an Adviser We Have Vetted</span>
+        <span className="sm:hidden">🇳🇿 Compare NZ Health Insurance — Vetted Specialist Brokers, No Obligation</span>
+        <span className="hidden sm:inline">🇳🇿 Independent NZ Health Insurance Information — Free Quote From a Vetted Specialist Broker</span>
       </div>
 
       {/* Main nav */}

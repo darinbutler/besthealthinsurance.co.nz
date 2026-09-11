@@ -36,12 +36,14 @@ export default function AdviceNotice({ variant = 'default' }: { variant?: 'defau
         recommend an insurer, and we do not give financial advice.
       </p>
       <p className="text-gray-600 text-sm leading-relaxed mt-3">
-        When you request a quote, we pass your details to a licensed New Zealand Financial
-        Advice Provider. They compare the insurers they hold an agency with, give you any
-        advice, and are responsible for that advice. They must give you their own disclosure
-        information, including what they are licensed to advise on, the providers they work
-        with, how they are paid, and how to complain. Ask for it before you act on anything
-        they tell you.
+        When you request a quote, we pass your details to one of the specialist brokers or
+        underwriters we work with. Where that is a broker, they are an independent, licensed New
+        Zealand Financial Advice Provider: they compare the insurers they hold an agency with,
+        give you any advice, and are responsible for that advice. Where an insurer takes the
+        enquiry directly, you are dealing with that insurer&rsquo;s own team about their own
+        products. Either way, ask them for their disclosure information &mdash; what they can
+        advise on, the providers behind it, how they are paid and how to complain &mdash; before
+        you act on anything they tell you.
       </p>
     </div>
   )

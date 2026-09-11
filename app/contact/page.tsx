@@ -37,7 +37,7 @@ export default function ContactPage() {
       <section className="bg-gray-900 border-b border-gray-800 py-16 lg:py-20">
         <div className="max-w-6xl mx-auto px-4 lg:px-8">
           <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">Get a Quote</h1>
-          <p className="text-lg text-gray-400">We pass your details to a licensed New Zealand financial adviser we have vetted. They compare policies and advise you. We do not give advice ourselves. No pressure, no obligation.</p>
+          <p className="text-lg text-gray-400">We pass your details to one of a number of specialist trusted brokers and underwriters we have vetted. They compare policies and advise you. We do not give advice ourselves. No pressure, no obligation.</p>
         </div>
       </section>
 
