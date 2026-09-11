@@ -1,7 +1,11 @@
+// NOTE (11 Sep 2026): the `from` field previously carried a monthly price for each
+// coverage type. None was sourced, and no NZ health insurer publishes indicative
+// premiums on its own site, so there was nowhere honest for those numbers to have
+// come from. They are now empty and the UI hides the field when it is blank.
+// Do not repopulate from a comparison site.
 export interface Provider {
   name: string
   note?: string
-  featured?: boolean
 }
 
 export interface Scenario {
@@ -33,14 +37,14 @@ export const COVERAGE_TYPES: CoverageType[] = [
     title: 'Major Medical Cover',
     icon: '🏥',
     shortDesc: 'Comprehensive cover for hospital stays, surgery, and specialist consultations.',
-    from: '$80',
+    from: '',
     metaTitle: 'Major Medical Insurance NZ | Compare Providers | BestHealthInsurance',
-    metaDesc: 'Compare major medical cover from Southern Cross, nib, AIA and Accuro. Get a personalised quote from a licensed NZ adviser within 24 hours.',
+    metaDesc: 'Compare major medical cover from Southern Cross, nib, AIA and UniMed. Get a personalised quote from a licensed NZ adviser within 24 hours.',
     description: 'Major medical cover is the most comprehensive type of health insurance available in New Zealand. It covers hospital admissions, surgical procedures, specialist consultations, diagnostic tests, and more — giving you full private healthcare access without the public waiting lists.',
     longDesc: [
       'Major medical cover is the cornerstone of private health insurance in New Zealand. When you\'re facing a serious diagnosis or need surgery, public waiting lists can stretch for months or even years. Major medical cover bypasses those queues entirely, getting you access to private hospitals, your choice of surgeon, and specialist consultations on your schedule.',
       'Unlike surgical-only plans, major medical cover is comprehensive — it pays for pre-admission tests, specialist consultations leading up to a procedure, the procedure itself, post-surgical care, and follow-up appointments. It\'s the closest equivalent to having a private health system membership.',
-      'Premiums vary significantly between providers and depend on your age, health history, chosen excess, and the level of cover selected. A licensed adviser can compare all major insurers side by side and identify the best value policy for your specific situation — often at a lower total premium than you\'d find by going direct.',
+      'Premiums vary between providers and depend on your age, health history, the excess you choose and the level of cover selected. No insurer publishes a full premium schedule for major medical cover, so the only way to know what you would pay is to be quoted on your own details. A licensed adviser can request those quotes across the major insurers and take you through what differs between them.',
     ],
     keyBenefits: [
       'Private hospital admission — skip public waiting lists',
@@ -60,11 +64,11 @@ export const COVERAGE_TYPES: CoverageType[] = [
       'Employers offering health benefits to key staff',
     ],
     providers: [
-      { name: 'Southern Cross', note: 'Most popular, largest NZ health insurer', featured: true },
-      { name: 'nib', note: 'Market-leading digital tools' },
-      { name: 'AIA', note: 'Strong life + health combo policies' },
-      { name: 'Accuro (now UniMed)', note: 'Member-owned, 2nd cheapest premiums, only insurer with mental health as specific add-on', featured: true },
-      { name: 'Partners Life', note: 'Strong trauma add-on options' },
+      { name: 'Southern Cross', note: 'Publishes that more than 951,000 New Zealanders were with it as at 30 June 2025' },
+      { name: 'nib', note: 'Splits cover into Everyday and Hospital plans; publishes indicative treatment costs on its own site' },
+      { name: 'AIA', note: 'Health cover can be held alongside life and income products; runs the AIA Vitality programme' },
+      { name: 'UniMed', note: 'A not-for-profit mutual society operating since 1979; plans include Hospital Select, UniCare Advantage and SmartCare+' },
+      { name: 'Partners Life', note: 'Private Medical Cover sits within its wider Journey Plan range; sold through advisers' },
     ],
     costFactors: [
       'Your age — premiums increase as you get older',
@@ -91,7 +95,7 @@ export const COVERAGE_TYPES: CoverageType[] = [
     title: 'Surgical Cover',
     icon: '🔬',
     shortDesc: 'Covers the cost of planned surgery and private hospital stays.',
-    from: '$60',
+    from: '',
     metaTitle: 'Surgical Cover Insurance NZ | Private Surgery | BestHealthInsurance',
     metaDesc: 'Get surgical cover that pays for private operations, hospital stays, and surgeon fees. Compare NZ providers and get a personalised quote.',
     description: 'Surgical cover pays for private surgery, hospital stays, and operating theatre costs. It is the most cost-effective entry point into private health insurance, giving you access to elective surgery on your schedule rather than waiting on public lists.',
@@ -118,11 +122,11 @@ export const COVERAGE_TYPES: CoverageType[] = [
       'First-time health insurance buyers wanting affordable entry-level cover',
     ],
     providers: [
-      { name: 'Southern Cross', note: 'Most established surgical cover in NZ', featured: true },
-      { name: 'Accuro (now UniMed)', note: 'Member-owned, second-cheapest premiums', featured: true },
-      { name: 'nib', note: 'Clear online claims process' },
-      { name: 'AIA', note: 'Bundled options with life cover' },
-      { name: 'Partners Life', note: 'Strong definitions and broad coverage' },
+      { name: 'Southern Cross', note: 'Operates an Affiliated Provider network that can settle approved treatment costs directly' },
+      { name: 'UniMed', note: 'States that Hospital Select carries its highest level of cover for general surgery' },
+      { name: 'nib', note: 'Hospital plans cover surgery, cancer treatment and related outpatient costs' },
+      { name: 'AIA', note: 'Surgical cover available within its health insurance range' },
+      { name: 'Partners Life', note: 'Private Medical Cover is designed around access to private treatment' },
     ],
     costFactors: [
       'Age — the primary driver of surgical cover premiums',
@@ -135,7 +139,7 @@ export const COVERAGE_TYPES: CoverageType[] = [
       {
         title: 'Knee replacement surgery',
         situation: 'A 61-year-old Christchurch tradesman was told he needed a knee replacement. The public wait was 18 months and he couldn\'t work in the meantime.',
-        outcome: 'His surgical cover policy paid for private surgery at Southern Cross Hospital within 5 weeks. He was back on the tools within 3 months and lost no income.',
+        outcome: 'Surgical cover of this kind is designed to fund private surgery once the claim is approved, rather than waiting for a public list. How quickly that happens depends on specialist and theatre availability, and on the insurer approving the procedure in advance.',
       },
       {
         title: 'Hernia repair',
@@ -149,7 +153,7 @@ export const COVERAGE_TYPES: CoverageType[] = [
     title: 'Everyday Health Cover',
     icon: '💊',
     shortDesc: 'Claim back everyday health costs like GP visits, prescriptions, and optical.',
-    from: '$30',
+    from: '',
     metaTitle: 'Everyday Health Cover NZ | GP, Dental & Optical | BestHealthInsurance',
     metaDesc: 'Claim back everyday healthcare costs including GP visits, prescriptions, dental, and optical. Compare NZ providers and get a personalised quote.',
     description: 'Everyday health cover (also called day-to-day cover) reimburses routine medical expenses — GP visits, prescriptions, dental check-ups, optical, and physiotherapy. It reduces the financial burden of regular healthcare throughout the year.',
@@ -176,11 +180,11 @@ export const COVERAGE_TYPES: CoverageType[] = [
       'Anyone who wants to make healthcare a habit, not a cost barrier',
     ],
     providers: [
-      { name: 'Southern Cross', note: 'Easiest claims process via app', featured: true },
-      { name: 'Accuro (now UniMed)', note: 'Competitive everyday cover rates', featured: true },
-      { name: 'nib', note: 'Strong digital claims experience' },
-      { name: 'AIA', note: 'Good wellness programme integration' },
-      { name: 'Partners Life', note: 'Flexible benefit amounts' },
+      { name: 'Southern Cross', note: 'Offers everyday cover alongside its hospital and surgical plans' },
+      { name: 'UniMed', note: 'Health Positive reimburses 50% or 80% of eligible everyday costs up to $10,000 a year' },
+      { name: 'nib', note: 'Everyday plans cover day-to-day needs such as dentist, GP and physio visits' },
+      { name: 'AIA', note: 'Everyday benefits available as part of its health cover range' },
+      { name: 'Partners Life', note: 'Cover can be added or removed as circumstances change' },
     ],
     costFactors: [
       'Benefit limits — how much per category per year',
@@ -207,7 +211,7 @@ export const COVERAGE_TYPES: CoverageType[] = [
     title: 'Trauma Insurance',
     icon: '❤️',
     shortDesc: 'A lump sum payment if you\'re diagnosed with a serious condition like cancer or heart attack.',
-    from: '$45',
+    from: '',
     metaTitle: 'Trauma Insurance NZ | Cancer, Heart Attack Cover | BestHealthInsurance',
     metaDesc: 'Get a lump sum payout if you\'re diagnosed with cancer, heart attack or stroke. Compare trauma insurance from NZ\'s top providers.',
     description: 'Trauma insurance pays a lump sum if you are diagnosed with a specified serious condition such as cancer, heart attack, or stroke. The payment helps cover lost income, treatment costs, and life adjustments during recovery.',
@@ -234,11 +238,11 @@ export const COVERAGE_TYPES: CoverageType[] = [
       'People in physically demanding occupations',
     ],
     providers: [
-      { name: 'Partners Life', note: 'One of the broadest trauma condition lists', featured: true },
-      { name: 'AIA', note: 'Strong cancer-specific benefits and wellness programme', featured: true },
-      { name: 'Southern Cross', note: 'Trusted brand, reliable claims' },
-      { name: 'Accuro (now UniMed)', note: 'Bundled trauma with health cover options' },
-      { name: 'nib', note: 'Competitive trauma standalone policies' },
+      { name: 'Partners Life', note: 'Trauma Cover is offered as part of its product range' },
+      { name: 'AIA', note: 'Offers critical condition cover alongside health and life products' },
+      { name: 'Southern Cross', note: 'States it has been Reader\'s Digest Most Trusted Health Insurance Brand from 2017 to 2026, its tenth consecutive year' },
+      { name: 'UniMed', note: 'Cover options can be held alongside its health plans' },
+      { name: 'nib', note: 'Part of nib Group, which states it covers over 1.4 million people in NZ and Australia' },
     ],
     costFactors: [
       'Sum insured — the lump sum amount you choose',
@@ -265,7 +269,7 @@ export const COVERAGE_TYPES: CoverageType[] = [
     title: 'Life Insurance',
     icon: '🛡️',
     shortDesc: 'Protect your family\'s financial future if the worst happens.',
-    from: '$25',
+    from: '',
     metaTitle: 'Life Insurance NZ | Protect Your Family | BestHealthInsurance',
     metaDesc: 'Compare life insurance from NZ\'s top providers. Get a lump sum that protects your family\'s financial future. Personalised quote within 24 hours.',
     description: 'Life insurance provides a lump sum payment to your family if you pass away. Combined with health insurance, it gives your loved ones financial security when they need it most.',
@@ -292,11 +296,11 @@ export const COVERAGE_TYPES: CoverageType[] = [
       'Anyone whose death would cause serious financial hardship for others',
     ],
     providers: [
-      { name: 'Partners Life', note: 'Highly competitive life cover with broad definitions', featured: true },
-      { name: 'AIA', note: 'Strong wellness programme reduces premiums over time', featured: true },
-      { name: 'Southern Cross', note: 'Trusted NZ brand' },
-      { name: 'nib', note: 'Competitive standalone life policies' },
-      { name: 'Accuro (now UniMed)', note: 'Life cover bundled with health options' },
+      { name: 'Partners Life', note: 'Life Cover pays on death or terminal illness diagnosis' },
+      { name: 'AIA', note: 'Note that AIA Cover for Life and AIA Essentials Life Cover are not eligible for the Vitality discount' },
+      { name: 'Southern Cross', note: 'Life cover is offered through a separate Southern Cross group entity' },
+      { name: 'nib', note: 'Life cover available alongside its health insurance range' },
+      { name: 'UniMed', note: 'Primarily a health insurer; ask what is available alongside its health plans' },
     ],
     costFactors: [
       'Sum insured — the lump sum amount chosen',
@@ -323,7 +327,7 @@ export const COVERAGE_TYPES: CoverageType[] = [
     title: 'Income Protection',
     icon: '💰',
     shortDesc: 'Replace your income if illness or injury stops you from working.',
-    from: '$35',
+    from: '',
     metaTitle: 'Income Protection Insurance NZ | Replace Lost Income | BestHealthInsurance',
     metaDesc: 'Replace up to 75% of your income if illness or injury stops you working. Compare NZ income protection providers and get a personalised quote.',
     description: 'Income protection insurance pays a monthly benefit — typically 75% of your salary — if you are unable to work due to illness or injury. It is essential for self-employed Kiwis and anyone without adequate sick leave.',
@@ -350,11 +354,11 @@ export const COVERAGE_TYPES: CoverageType[] = [
       'Employees with inadequate sick leave or savings buffer',
     ],
     providers: [
-      { name: 'Partners Life', note: 'Market-leading income protection definitions', featured: true },
-      { name: 'AIA', note: 'Strong rehabilitation benefits and return-to-work support', featured: true },
-      { name: 'Southern Cross', note: 'Reliable claims and established product' },
-      { name: 'nib', note: 'Competitive premiums for professionals' },
-      { name: 'Accuro (now UniMed)', note: 'Bundled income + health options' },
+      { name: 'Partners Life', note: 'Income Cover protects your ability to earn if illness or injury stops you working' },
+      { name: 'AIA', note: 'Income protection offered within its wider product range' },
+      { name: 'Southern Cross', note: 'Best known for health cover; ask what income products are available' },
+      { name: 'nib', note: 'Ask which income protection options are currently offered' },
+      { name: 'UniMed', note: 'Primarily a health insurer; ask what is available alongside its health plans' },
     ],
     costFactors: [
       'Occupation class — high-risk occupations pay more',
@@ -381,7 +385,7 @@ export const COVERAGE_TYPES: CoverageType[] = [
     title: 'Business Health Insurance',
     icon: '🏢',
     shortDesc: 'Group health insurance for your team — a tax-effective employee benefit.',
-    from: '$120',
+    from: '',
     metaTitle: 'Business Health Insurance NZ | Group Cover for Employees | BestHealthInsurance',
     metaDesc: 'Offer group health insurance as an employee benefit. Tax-effective, retention-boosting, and arranged by licensed NZ advisers. Get a group quote today.',
     description: 'Group business health insurance covers your employees and their families. It is a valuable staff benefit that improves retention and productivity — and premiums are often tax-deductible.',
@@ -408,11 +412,11 @@ export const COVERAGE_TYPES: CoverageType[] = [
       'Business owners who want to provide for their team\'s health',
     ],
     providers: [
-      { name: 'Southern Cross', note: 'Market leader in NZ group health insurance', featured: true },
-      { name: 'nib', note: 'Strong digital platform for employee management', featured: true },
-      { name: 'AIA', note: 'Group cover with wellness programme integration' },
-      { name: 'Accuro (now UniMed)', note: 'Competitive group rates, member-owned approach' },
-      { name: 'Partners Life', note: 'Group income protection bundling available' },
+      { name: 'Southern Cross', note: 'Offers group health cover for employers' },
+      { name: 'nib', note: 'Offers workplace health cover alongside its retail plans' },
+      { name: 'AIA', note: 'Workplace cover can include access to the AIA Vitality programme' },
+      { name: 'UniMed', note: 'States that more than 500 New Zealand businesses use it for workplace cover' },
+      { name: 'Partners Life', note: 'Workplace arrangements are placed through financial advisers' },
     ],
     costFactors: [
       'Number of employees — larger groups attract better rates',
@@ -439,14 +443,14 @@ export const COVERAGE_TYPES: CoverageType[] = [
     title: 'Mental Health Cover',
     icon: '🧠',
     shortDesc: 'Access private psychology and psychiatric care without the public waiting lists.',
-    from: '$55',
+    from: '',
     metaTitle: 'Mental Health Insurance NZ | Private Psychology Cover | BestHealthInsurance',
-    metaDesc: 'Get private access to psychology and psychiatric care. Only Accuro offers mental health as a standalone add-on in NZ. Compare and get a quote.',
-    description: 'Mental health cover provides access to private psychology and psychiatric services. Only Accuro offers mental health as a standalone optional add-on. Other providers may bundle it into major medical cover. Given long public waiting lists for mental health services, private cover can mean getting help within days.',
+    metaDesc: 'Private access to psychology and psychiatric care in New Zealand. What each major insurer publishes about mental health cover, and what to ask before you apply.',
+    description: 'Mental health cover provides access to private psychology and psychiatric services. Insurers handle it differently — some include it within major medical cover, some offer it as an optional module, and the benefit maximums and waiting periods vary. Given long public waiting lists, private cover can mean getting help considerably sooner.',
     longDesc: [
       'Mental health support is one of the most underprovided areas in New Zealand\'s public health system. Waiting times for public psychology and psychiatry services regularly exceed 6 months, and in many regions, community mental health teams are only available to people in acute crisis. For the vast majority of people dealing with anxiety, depression, trauma, or other mental health conditions, private access is the only realistic path to timely care.',
       'Private psychology sessions typically cost $150–$250 per session, and effective treatment often requires 8–20 sessions. Without insurance, that\'s $1,200 to $5,000 out of pocket. Mental health cover reimburses those sessions, making consistent treatment financially accessible.',
-      'Importantly, only Accuro — New Zealand\'s only member-owned health insurer — offers mental health cover as a specific optional add-on to their policies. Other providers typically include mental health within their broader major medical cover, with limitations. When comparing providers, it\'s essential to understand exactly what mental health conditions and services are covered, and whether there are session limits or waiting periods.',
+      'Insurers treat mental health differently, and the differences matter. AIA publish a mental health support benefit of $2,500 per policy year on both their health plans. nib list mental health consultations among the everyday costs their Everyday plans can help with. Others fold mental health into broader major medical cover with conditions attached. Rather than take anyone\'s word for which is best, ask each one what is actually payable, whether there are session limits, and what waiting periods apply before you can claim.',
     ],
     keyBenefits: [
       'Private psychology consultations covered',
@@ -456,7 +460,7 @@ export const COVERAGE_TYPES: CoverageType[] = [
       'Counselling and CBT sessions',
       'Eating disorder treatment support',
       'Addiction treatment (policy-dependent)',
-      'Accuro: mental health as specific optional add-on',
+      'Cover levels vary by insurer and plan — check the benefit maximum',
     ],
     whoNeedsIt: [
       'Anyone currently waiting for public mental health services',
@@ -466,14 +470,14 @@ export const COVERAGE_TYPES: CoverageType[] = [
       'Anyone who values early intervention over crisis-point treatment',
     ],
     providers: [
-      { name: 'Accuro (now UniMed)', note: 'ONLY insurer with mental health as specific optional add-on — HIGHLY RECOMMENDED', featured: true },
-      { name: 'Southern Cross', note: 'Mental health included within major medical — limitations apply' },
-      { name: 'nib', note: 'Mental health within hospital cover — check definitions carefully' },
-      { name: 'AIA', note: 'Mental health benefits bundled in comprehensive policies' },
-      { name: 'Partners Life', note: 'Mental health included in major medical policies' },
+      { name: 'UniMed', note: 'Psychiatric consultations sit in an add-on module on Hospital Select and are listed under UniCare Advantage; SmartStay carries a stated $1,000 per year mental health benefit' },
+      { name: 'Southern Cross', note: 'Check the benefit maximum and any limitations on the specific plan you are quoted' },
+      { name: 'nib', note: 'Publishes cover for psychiatrist or psychologist consultations subject to a stated limit and a six-month waiting period' },
+      { name: 'AIA', note: 'Ask which mental health benefits apply to the specific plan you are quoted' },
+      { name: 'Partners Life', note: 'Ask which mental health benefits apply under its Private Medical Cover wording' },
     ],
     costFactors: [
-      'Whether purchased as standalone (Accuro/UniMed) or within major medical',
+      'Whether the cover sits in an optional module or within major medical cover',
       'Session limits — some policies cap annual sessions',
       'Waiting periods — typically 2–3 months for non-acute conditions',
       'Pre-existing conditions — prior mental health history may affect acceptance',
@@ -483,12 +487,12 @@ export const COVERAGE_TYPES: CoverageType[] = [
       {
         title: 'Depression treatment after job loss',
         situation: 'A 32-year-old Dunedin professional developed severe depression after redundancy. The public mental health referral waitlist was 5 months.',
-        outcome: 'His Accuro mental health add-on paid for 14 private psychology sessions over 4 months. He received CBT and medication management support, stabilised, and returned to employment 6 months earlier than his GP had initially projected.',
+        outcome: 'Mental health cover of the kind several insurers offer would fund a course of private psychology sessions in this situation, subject to the benefit maximum and any waiting period on the plan. This is an illustration of how the cover is intended to work, not an account of a particular person or a particular insurer\'s claim.',
       },
       {
         title: 'Teenager with anxiety and school avoidance',
         situation: 'A 15-year-old in Tauranga stopped attending school due to severe anxiety. CAMHS had a 7-month assessment waitlist.',
-        outcome: 'Her family\'s mental health cover funded an immediate private psychology assessment and weekly sessions. School reintegration began within 8 weeks. Without cover, the family could not have afforded private care.',
+        outcome: 'Where a family policy includes mental health cover for dependants, it can fund a private psychology assessment without waiting for the public referral. Whether dependants are covered, and to what limit, differs by insurer and by plan. This is an illustration of how the cover is intended to work, not an account of a particular person.',
       },
     ],
   },

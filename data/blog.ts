@@ -78,146 +78,141 @@ Most Kiwis think "I have ACC, I'm covered." You're covered for accidents. For ev
 This gap is why the 50% of Kiwis without health insurance are taking a significant financial risk.`,
   },
   {
-    slug: "accuro-health-insurance-review",
-    title: "Accuro Health Insurance Review 2026: The Overlooked Insurer",
-    excerpt: "Accuro is smaller but offers competitive value and unique features (mental health add-on, straightforward claims). They're often better value than Southern Cross or nib.",
+    slug: "unimed-health-insurance-review",
+    title: "UniMed Health Insurance: What They Publish About Their Own Cover",
+    excerpt: "A look at what UniMed publishes about its own plans — the not-for-profit structure, the plan range, and the cover it documents — without ranking it against anyone.",
     date: "2026-04-20",
     readTime: "9 min",
     category: "Providers",
-    content: `## Why Accuro Is Overlooked
+    content: `## Why This Guide Exists
 
-Accuro is the fourth-largest health insurer in New Zealand but has minimal marketing spend. Most Kiwis don't compare them because they've never heard of them. That's a mistake. Accuro offers solid coverage, transparent pricing, and some unique features at better value than more famous competitors.
+UniMed is less widely recognised than the largest health insurance brands in New Zealand, which tells you nothing either way about the cover itself. This guide sets out what UniMed publishes about its own plans, with sources, so you can weigh it on the same basis as anyone else you are considering. We do not rank insurers and there is no verdict at the end.
 
-## Accuro's Price Positioning
+## UniMed's Price Positioning
 
-Accuro's premiums sit between Partners Life (cheapest) and AIA (middle), roughly 10-15% cheaper than Southern Cross and nib. For a 45-year-old with major medical cover and $500 excess:
+We are not going to rank these insurers on price. No New Zealand health insurer publishes a full premium schedule, so nobody can build a like-for-like table, and any figure we invented would be a guess. What we can say is what each plan is built to do, and let an adviser price your actual situation:
 
-- Accuro: $90/month ($1,080/year)
-- Partners Life: $85/month ($1,020/year)
-- AIA: $95/month ($1,140/year) before Vitality discount
-- Southern Cross: $115/month ($1,380/year)
+- UniMed: a not-for-profit mutual society. UniMed states that SmartCare+ includes its highest level of cover for non-Pharmac subsidised drugs, and that SmartCare is a lower-cost alternative to SmartCare+
+- Partners Life: Private Medical Cover, arranged through an adviser alongside Mortgage and Income Cover
+- AIA: Private Health or a cancer-only Cancer Care plan, with the optional AIA Vitality programme
+- Southern Cross: publishes that more than 951,000 New Zealanders were with it as at 30 June 2025, with Affiliated Providers and direct claim payment
+- nib: Everyday and Hospital sold separately or together, with an excess you choose
 
-Accuro is competitive on price even without discount programs.
+Two of the five publish a starting price for one particular plan, each on its own stated basis. nib state their Everyday plans start from around $15 a week and Hospital plans from about $20 a week — nib's basis is as at July 2025, including a 2% direct debit discount, for a 25-year-old male non-smoker with a $250 annual excess on Hospital cover. UniMed state their Health Positive plan provides up to $10,000 of benefits a year from $5.75 a week — UniMed's basis is a member aged 39 or under on the Health Positive 50% plan.
 
-## The Unique Feature: Mental Health Add-On
+Those two figures are not comparable with each other: different products, different bases, different people. We reproduce them because each insurer published them, not as a comparison.
 
-Accuro is the only insurer offering mental health as a standalone optional add-on ($15-20/month). This covers:
+## Mental Health Cover
 
-- Psychiatric consultations: $300-400 per visit
-- Psychotherapy/psychology: Covered at negotiated rates
-- Mental health hospital admission: Covered
+UniMed includes mental health cover in several of its plans. On Hospital Select, psychiatric consultations sit in an optional add-on module; UniCare Advantage lists psychiatric consultations among covered treatments; and UniMed's SmartStay plan carries a stated mental health benefit of $1,000 per member per policy year, with a further $1,000 available through the Specialist module. UniMed publishes these at unimed.co.nz (retrieved 11 September 2026).
 
-For people with mental health needs, this is unique and valuable. Other insurers bundle mental health into major medical or don't cover it explicitly.
+UniMed is not alone in this. nib's plans also cover consultations with a psychiatrist or psychologist, subject to a stated limit and waiting period. What UniMed's mental health cover typically involves:
+
+- Psychiatric and psychologist consultations, subject to the limits stated in the plan document
+- Cover levels differ by plan, so check the benefit maximum on the specific plan you are quoted
+
+If mental health cover matters to you, the thing to compare is the benefit maximum, any session limit and the waiting period on the specific plan you are quoted — from every insurer you are considering, not just this one.
 
 ## Claims Processing and Customer Service
 
-Accuro has a reputation for straightforward claims handling. Online portal is modern, claims are processed quickly (typically 5-7 days), and they have a helpful customer service team. This is less tangible than price, but when you actually need to claim, fast processing matters.
+UniMed operates an online member portal and publishes its claims process at unimed.co.nz. We do not publish claims turnaround figures for any insurer, because none of them publish audited ones — ask UniMed directly what their current average is, and ask the same question of anyone you are comparing them with. It is a fair question to put to any insurer before you buy.
 
-## Policy Wording: The Middle Ground
+## Policy Wording
 
-Accuro's policy wordings are less comprehensive than Partners Life but clearer than some competitors. They're explicit about specialist consultations for chronic conditions but have reasonable limitations on annual consultations.
+UniMed publishes its plan documents, terms and conditions, and its lists of approved and unapproved healthcare services at unimed.co.nz. Read the plan document for the specific plan you are quoted rather than relying on any summary, ours included.
 
-For most people, Accuro's wording is adequate. For complex chronic conditions requiring frequent specialist management, Partners Life's wording is clearer.
+For complex chronic conditions requiring frequent specialist management, read each insurer's wording on repeat specialist consultations closely — that is where plans differ most.
 
 ## Add-Ons and Flexibility
 
-Accuro offers standard add-ons (dental, vision, critical illness) but doesn't push them aggressively. Their marketing approach is straightforward: "Here's the base cover, here are optional add-ons, choose what you need."
+UniMed's plans are structured with a base plan and optional modules. On Hospital Select, for example, UniMed lists add-on modules covering specialist and GP care, prescriptions and non-Pharmac funded medicines, psychiatric consultations, dental and vision, and a range of allied health services. Health Positive works differently again, reimbursing 50% or 80% of eligible everyday costs up to $10,000 a year. Which modules you need is the conversation to have with an adviser.
 
-This contrasts with Southern Cross and nib, which have more aggressive add-on bundling.
 
-## The Catch: Limited Brand Recognition
 
-Accuro's main weakness is lack of brand recognition. When someone says "I have health insurance," most people think Southern Cross, nib, or Partners Life. Few think of Accuro.
+## What UniMed Publishes About Itself
 
-This doesn't affect claims processing, but it might affect your sense of security (unfounded, but real).
+UniMed describes itself as a not-for-profit health insurer and a mutual society, established in 1979, which exists for its members rather than shareholders. It states that more than 500 New Zealand businesses use it for workplace cover.
 
-## Our Verdict
+Two of its plans carry claims UniMed makes on its own site: SmartStay is described as the only New Zealand health insurance product designed specifically for people on temporary work and visitor visas who are not eligible for publicly funded healthcare, and KidSmart as the only New Zealand health insurance plan designed specifically for children, where guardians can insure dependants without holding cover themselves. UniMed also offers ParentStay, built for applicants for the Parent Boost Visitor Visa, which is available only through a financial adviser.
 
-Accuro is genuinely one of the best value health insurers in New Zealand. For people who want competitive pricing, clear policy wording, and the unique mental health add-on, Accuro is an excellent choice that most Kiwis never consider.
+The Accuro brand merged into UniMed, so material you find under the Accuro name generally refers to the same insurer.
 
-We recommend comparing Accuro alongside Partners Life and AIA before deciding. The price difference versus Southern Cross is often substantial enough to justify making the switch.`,
+## Where This Leaves You
+
+We do not rank insurers and we do not publish a verdict on UniMed or anyone else. What we would say is that UniMed is smaller than the brands most New Zealanders can name, and being less well known is not evidence either way about the cover.
+
+The useful exercise is to get quoted on identical cover from UniMed and from the others you are considering, read the plan document for each quoted plan, and compare the pre-existing condition definition, the non-Pharmac drug limit and the annual maximums. Those three things will tell you more than any review will.
+
+## Sources
+
+All UniMed facts above are from unimed.co.nz, retrieved 11 September 2026: the health plans pages, the Health Positive, UniCare Advantage, Hospital Select, SmartStay and ParentStay plan pages, and the published plan documents and 2026 terms and conditions linked from them.`,
   },
   {
     slug: "aia-vitality-maximum-discounts",
-    title: "AIA Vitality: A Practical Guide to Earning Maximum Discounts",
-    excerpt: "How to actually earn the maximum AIA Vitality discount — the exercise tracking requirement, health assessments, and whether the maths work for you.",
+    title: "AIA Vitality Premium Flex: How the Discount Actually Moves",
+    excerpt: "AIA publishes the exact rules for its Vitality premium discount — a 10% start, then up or down each year by status. Here is what the published table says.",
     date: "2026-04-18",
     readTime: "7 min",
     category: "Providers",
-    content: `## How Vitality Actually Works
+    content: `## Why This One Is Worth Reading Properly
 
-AIA Vitality is a health and lifestyle rewards programme bundled with AIA health insurance. You earn points for:
+AIA Vitality is unusual among New Zealand insurance features in that AIA publishes the discount mechanics in full, as a set of Premium Adjustment Rules, rather than describing them loosely in marketing copy. That means you can work out in advance what your discount will do — and, more to the point, what it will do if you stop engaging.
 
-- Health assessments and screenings
-- Exercise activity (tracked via Apple Watch, Fitbit, etc.)
-- Health purchases (gym memberships, etc.)
-- Preventive care (doctor visits, health checks)
+Everything below comes from AIA's own Premium Adjustment Rules, dated September 2023, published at aia.co.nz. We checked the page on 11 September 2026. AIA can change these rules on 30 days' notice, so check the current version before you rely on it.
 
-Points convert to premium discounts, typically 10-25% off your monthly premium depending on engagement.
+## You Start at 10%
 
-## Capturing 25% Discount: The Realistic Path
+When you join AIA Vitality, eligible benefits automatically receive an Initial Discount of 10% off the premium. You do not have to earn it, and it applies from the start.
 
-Most AIA members achieve 15% discount because they complete basic activities. Capturing the full 25% requires consistent effort:
+Two things to note. AIA Cover for Life and AIA Essentials Life Cover are not eligible for the discount at all. And the discount is applied to the regular premium including loadings, but not to the policy fee and not to any part of the premium that comes from a per mille loading — the sort of extra charge applied for a health issue or a hazardous occupation. So the discount is 10% of most of your premium, not 10% of the total bill.
 
-1. Complete annual health assessment (immediate 2-3% discount)
-2. Log 150 minutes of moderate exercise weekly (10-12% discount)
-3. Complete recommended health screenings for your age (3-5% discount)
-4. Maintain consistent activity level throughout the year (continuation of above)
+## After Year One, It Moves — In Both Directions
 
-## Exercise Tracking: The Primary Lever
+This is the part most summaries get wrong. The discount is not a ladder you climb. It is a number that adjusts up or down every year depending on the status you reached, and AIA publishes the exact adjustment:
 
-The biggest discount comes from consistent exercise logging. AIA accepts data from:
+| Status reached | Points | What happens to your discount |
+| --- | --- | --- |
+| Platinum | 30,000 | +2.0% per year, up to a maximum of 20% |
+| Gold | 20,000 | Stays where it is |
+| Silver | 10,000 | −1.0% per year, down to a minimum of 0% |
+| Bronze | 0 | −2.0% per year, down to a minimum of 0% |
 
-- Apple Health
-- Fitbit
-- Garmin
-- Strava
-- Manual logging in the AIA app
+AIA's own worked example starts everyone at the 10% initial discount and shows year two as 12% for Platinum, 10% for Gold, 9% for Silver and 8% for Bronze.
 
-The requirement is 150 minutes of moderate exercise per week. That's roughly 30 minutes 5 days per week. Realistic for most people, but requires consistency.
+The consequence is the thing to understand: if you join, take the 10%, and never engage with the programme, your discount does not sit at 10%. It falls by two percentage points a year until it reaches zero — while you continue paying the membership fee.
 
-If you already exercise 3-4 times per week, Vitality is easy money. If you're sedentary, capturing the exercise discount requires lifestyle change.
+## Your Status Resets Every Year
 
-## The Math on Discount Value
+At each AIA Vitality Anniversary your earned status resets to Bronze and your points reset to zero. You start again from nothing and work towards that year's target. Engagement is not banked.
 
-AIA health insurance costs roughly:
-- $80/month at age 40 with standard discount
-- $60/month with 25% Vitality discount
+There is a grace provision for new members. If you are in your first 10 months of an AIA Vitality Year when your Policy Anniversary falls, your premium will not flex against you — reach Platinum and the discount rises, but at anything less you keep the 10%. Between 11 and 12 months, your earned status is used and the table applies normally.
 
-Annual saving: ($80-60) × 12 = $240/year. That's the effective discount: not 25% off the lowest price, but 25% off your actual cost once other discounts apply.
+Worth knowing: your AIA Vitality Anniversary and your Policy Anniversary are different dates, and it is the Policy Anniversary that triggers the change, using your status as at two weeks after it.
 
-This is worth pursuing if you're already exercising. It's less compelling if you'd need to start exercising just for the discount.
+## The Membership Fee Is a Real Cost
 
-## The Health Assessment Requirement
+AIA Vitality carries a monthly membership fee. AIA has published that from 2 July 2026 the fee for all retail AIA Vitality memberships rises from $11.50 to $13.50 per month.
 
-Annual health assessment is quick (online questionnaire, 10 minutes). This unlocks the first tier of discount (2-3%) and qualifies you for the exercise tracking tier.
+That is the number to put against the discount when you do the arithmetic. If the discount on your particular premium is worth less than about $13.50 a month, the programme costs you money — and if your engagement drops and the discount erodes toward zero, the fee does not erode with it.
 
-Without the annual assessment, you can't access other discounts. This is the first step.
+## The Honest Way to Decide
 
-## Age and Vitality Discount
+AIA does not publish what any given policy costs, so nobody can tell you in dollars what your Vitality discount will be worth. What you can do before you commit is ask your adviser or AIA three specific questions:
 
-AIA adjusts the discount thresholds by age. At 45, 150 minutes of exercise weekly is expected. At 65, the threshold might be lower (e.g., 100 minutes weekly). Check age-specific requirements. Older members find Vitality easier to navigate because the requirements are more reasonable for their age group.
+- What is the premium on the benefits I am buying, and how much of it is policy fee or per mille loading? That is the part the discount does not touch.
+- What does 10% of the discountable portion come to per month, against the $13.50 fee?
+- What does realistically reaching Gold look like for someone with my routine? Gold holds the discount steady. Anything less erodes it.
 
-## Additional Vitality Perks (Beyond Premium Discount)
+If you already exercise regularly and will engage with the app, the structure rewards you and can build to a maximum of 20%. If you know you will sign up and forget about it, you are buying a discount that shrinks by two points a year plus a fee that does not.
 
-Vitality occasionally offers non-premium benefits:
-- Gym membership discounts (20-30% off selected chains)
-- Health app discounts
-- Wellness product discounts
-- Movie vouchers for achieving milestones
+## Source
 
-These perks vary and aren't guaranteed, but they add value for engaged members.
-
-## Is Vitality Worth It for You?
-
-Vitality is worth it if you're already exercising 3-4 times per week and don't mind tracking it digitally. The 15-25% premium discount is meaningful.
-
-Vitality is less compelling if you're inactive, don't have fitness tracking devices, or simply want a low-maintenance insurance relationship. In those cases, Partners Life or Accuro offer simpler value without the engagement requirement.`,
+AIA Vitality Premium Flex Rules (Premium Adjustment Rules, September 2023) and AIA Vitality membership fee information, both published at aia.co.nz. Retrieved 11 September 2026. AIA states the discount is not guaranteed and that the rules may be varied on 30 days' notice.`,
   },
   {
     slug: "best-health-insurance-plan-2026",
     title: "How to Choose the Best Health Insurance Plan for Your Budget",
-    excerpt: "The smart way to choose health insurance in 2026 — understanding tiers, excess strategy, and which providers offer the best value.",
+    excerpt: "The smart way to choose health insurance in 2026 — matching cover to what you actually use, and using excess as the lever it really is.",
     date: "2026-03-01",
     readTime: "8 min",
     category: "Guides",
@@ -245,17 +240,17 @@ Calculate: if you save $50 per month with a higher excess, you hit that excess a
 
 Don't just look at premium price. Get quotes for the exact same cover from each insurer — same excess, same major/surgical split, same add-ons.
 
-Southern Cross and nib are significantly more expensive than Partners Life and Accuro for identical cover. AIA often sits in the middle but offers Vitality discounts that lower your real costs.
+We do not publish premium comparisons between insurers, and we would be sceptical of any site that does. No New Zealand health insurer publishes a full premium schedule, so no site can build a like-for-like table. Two of the five — nib and UniMed — publish a starting price for one particular plan, each on its own stated basis, and those two figures are not comparable with each other. Any broader per-insurer table has to come from somewhere else, and it is almost never comparing the same plan, the same excess and the same person. AIA does publish the mechanics of its Vitality premium discount in full, which is unusual and worth reading if you are considering them — it starts at 10% and then moves up or down each year with your engagement.
 
 ## Add-Ons: What's Worth Buying
 
-Most insurers push optional add-ons like dental, vision, mental health. Accuro is the only insurer offering mental health as an optional add-on (worth considering).
+Most insurers offer optional add-ons such as dental, vision and mental health. Several insurers cover mental health consultations in some form — UniMed includes it across a number of its plans, and nib's plans cover consultations with a psychiatrist or psychologist subject to a stated limit and waiting period — so check the benefit maximum rather than assuming it is unavailable.
 
 Dental and vision add-ons are rarely good value — you're typically better off budgeting separately for these. Maternity cover is worth considering if you're planning children within 3-5 years (waiting period applies). Critical illness add-ons are useful if you're the sole income earner.
 
 ## Making Your Final Decision
 
-Get three quotes for exactly the same cover, check online reviews for claims handling, then pick. Don't overpay for brand names — Partners Life and Accuro consistently offer equivalent cover to Southern Cross at 20-30% lower cost.
+Get three quotes for exactly the same cover — same plan level, same excess, same people — and compare the pre-existing condition definition, the non-Pharmac drug limit and the annual maximums alongside the price. A cheaper premium on a narrower wording is not a saving.
 
 The best health insurance is the one that fits your actual needs and budget — not the most expensive or the most advertised.`,
   },
@@ -308,7 +303,7 @@ If your oncologist recommends a non-Pharmac drug:
 3. Confirm the total cost including oncologist consultation, drug cost, and monitoring
 4. Consider whether you should use insurance for this or wait/self-fund
 
-Some insurers have specific cancer drug policies. AIA, for example, covers some non-Pharmac cancer drugs up to specified amounts. Southern Cross and Partners Life have different policies.
+Insurers treat non-Pharmac cancer drugs differently, and the differences are significant. Some include the cover, some sell it as an optional add-on, and the limits vary widely. Ask each insurer you are considering for the non-Pharmac drug benefit on the specific plan you are quoted, and whether the limit is annual or lifetime.
 
 ## The Bottom Line
 
@@ -345,20 +340,20 @@ But if you have any ongoing condition (hypertension, diabetes, arthritis), major
 
 Dental and vision coverage are rarely good value. You're paying $20-30/month for cover that reimburses at 50-60% after a fixed benefit amount. It's better to budget $300/year for dental and $200/year for vision out-of-pocket.
 
-Mental health coverage (available only through Accuro as an add-on) is worth keeping if you're prone to therapy. Critical illness cover is worth the extra $15-20/month if you're the sole income earner.
+Mental health cover is worth keeping if you expect to use it. Several insurers offer it in some form, so check the benefit maximum on your plan rather than assuming you have to change insurer for it. Critical illness cover is worth the extra $15-20/month if you're the sole income earner.
 
 ## Switching to a Cheaper Insurer
 
-This is the biggest lever. Switching from Southern Cross to Partners Life can cut your premium by 25-30% for the same cover. AIA is 15-20% cheaper than Southern Cross, though their real cost is lower when you factor in Vitality discounts.
+Shopping the market is a real lever, but we cannot tell you what it is worth in your case and neither can anyone else. No New Zealand health insurer publishes a full premium schedule, so the only way to find out is to be quoted on identical cover by each insurer on your own details. What we would add is that the comparison only means something if the plan level, the excess and the people covered are the same in every quote.
 
-Get quotes from Partners Life, AIA, Accuro, and Southern Cross for your exact requirements. The difference will likely surprise you.
+Get quotes from Partners Life, AIA, UniMed, and Southern Cross for your exact requirements. The difference will likely surprise you.
 
 ## The No-Tricks Strategy to Maximum Savings
 
 1. Set your excess to $750-1,000 (you must have emergency savings)
 2. Choose major medical only if you have any chronic condition; surgical-only if perfectly healthy
 3. Skip optional add-ons except critical illness
-4. Switch to Partners Life or Accuro if you're with Southern Cross
+4. Get quoted on identical cover across several insurers before you renew
 5. Review annually — insurers adjust premiums, and you may find better value
 
 You'll typically save 30-40% without losing meaningful cover.`,
@@ -372,7 +367,7 @@ You'll typically save 30-40% without losing meaningful cover.`,
     category: "Guides",
     content: `## Family vs Individual Plans: The Cost Reality
 
-A family plan covering two adults and two children might cost $200-250/month with Southern Cross ($2,400-3,000/year). Individual plans for each person might total $150-180/month ($1,800-2,160/year).
+Insurers price family cover and individual policies differently, and the gap between the two can be substantial in either direction depending on the ages involved and the plan. Ask for both structures to be quoted so you can see the difference for your own family rather than assuming one is cheaper.
 
 Family plans seem convenient, but they're often more expensive than buying individual policies. The trade-off is convenience (one policy, one deductible applied across the family, potentially family discounts on add-ons). Calculate both approaches before committing to a family plan.
 
@@ -600,17 +595,17 @@ Common conditions and typical outcomes:
 
 **Cancer (past)**: Most insurers will exclude further cancer cover for 3-5 years post-treatment.
 
-**Mental health conditions**: Partners Life and AIA are most accommodating. Southern Cross and nib are stricter. Accuro is moderate.
+**Mental health conditions**: treatment varies considerably between insurers and between plans. nib, for example, publishes that psychological and psychiatric conditions are general exclusions under its Standard Hospital and Premium Hospital plans. Ask each insurer directly how they would treat your specific history, and get the answer in writing.
 
 **Arthritis and joint conditions**: Usually accepted with no exclusion if managed.
 
 ## Strategies to Get Better Terms
 
-1. **Shop multiple insurers**: Partners Life, AIA, Accuro, and Southern Cross assess risk differently. You might get cover from one that another rejects.
+1. **Shop multiple insurers**: Partners Life, AIA, UniMed, and Southern Cross assess risk differently. You might get cover from one that another rejects.
 
 2. **Apply with your GP's letter**: Getting your GP to write a letter confirming your condition is stable and well-managed improves your application chances.
 
-3. **Target insurers known for acceptance**: AIA and Partners Life are most willing to accept applicants with pre-existing conditions.
+3. **Apply to more than one**: underwriting decisions are made insurer by insurer on your specific history, and an exclusion from one is not a prediction of what another will do. An adviser who deals with all of them will know which questions to ask before a formal application goes in.
 
 4. **Consider moratorium underwriting**: Some insurers offer moratorium underwriting where you don't disclose history, but conditions from the last 5 years are automatically excluded for 2-3 years. After that exclusion period, if symptom-free, coverage may begin.
 
@@ -784,46 +779,48 @@ Add children to your existing policy if the cost is minimal (under $15/month per
   },
   {
     slug: "is-southern-cross-still-best-2026",
-    title: "Is Southern Cross Still the Best Health Insurer in 2026?",
-    excerpt: "Southern Cross premiums are now 20-30% above competitors for equivalent cover. Here's an honest assessment of whether the brand premium is justified.",
+    title: "Is Southern Cross the Right Health Insurer For You?",
+    excerpt: "What Southern Cross publishes about itself, what its Affiliated Provider network actually does, and the questions worth asking before you assume bigger means better.",
     date: "2026-03-05",
     readTime: "9 min",
     category: "Comparisons",
     content: `## The Southern Cross Brand Effect
 
-Southern Cross has been in health insurance since 1972. That heritage creates a perception of quality and reliability that translates into higher premiums. But 2026 has seen serious competitive pressure, and it's worth asking: are you paying too much for the name?
+Southern Cross describes itself as a for-purpose Friendly Society founded in 1961, and publishes that more than 951,000 New Zealanders were with it as at 30 June 2025. Southern Cross states it has held the Reader's Digest Most Trusted Health Insurance Brand title from 2017 to 2026, which it describes as its tenth consecutive year. Scale and public recognition are worth knowing about, but neither tells you what a particular plan will pay for.
 
-Southern Cross premiums are now 20-30% higher than Partners Life for equivalent cover. They've maintained market share through inertia and strong brand recognition, not through innovation or superior claims handling.
+The question worth asking is not whether the brand is good, but whether the specific plan you are quoted is the right shape for you. Size brings a wide network of Affiliated Providers and direct claim payment, which genuinely matters if you claim often. It does not tell you what your non-Pharmac drug limit is, or how your own medical history will be treated.
 
-## How Southern Cross Compares on Price
+## What About Price?
 
-A 45-year-old with major medical cover and a $500 excess will pay roughly $2,400-$2,800 annually with Southern Cross. The same cover from Partners Life costs $1,800-$2,000. That's a $500-$800 annual difference — significant over a career.
+We do not publish premium comparisons, and we would be sceptical of any site that does. No New Zealand health insurer publishes a full premium schedule, so no site can build a like-for-like table. Two of the five — nib and UniMed — publish a starting price for one particular plan, each on its own stated basis, and those two figures are not comparable with each other. A broader table of per-insurer prices has to come from somewhere else, and it is almost never comparing the same plan, the same excess and the same person. The only figure worth having is a quote for your own situation.
 
-AIA sits between the two, with slightly lower prices than Southern Cross but significantly better value through their Vitality programme, which can reduce your real costs by 15-25% through activity rewards.
+## The Affiliated Provider Network
 
-## Claims Handling: Where Southern Cross Actually Wins
+The clearest practical consequence of Southern Cross's scale is its Affiliated Provider network. Southern Cross contracts directly with specialists and facilities for agreed procedures at agreed prices, and for approved treatment with an Affiliated Provider it can settle the bill directly rather than reimbursing you afterwards.
 
-Southern Cross does have an advantage in customer service. Their claims processing is reliable, and they have the most extensive network of partner healthcare providers. If you need a quick specialist referral, Southern Cross's relationships can smooth the path.
+Whether that matters to you depends on how you expect to use the policy. If you claim rarely, it is a convenience. If you expect frequent or significant treatment, not having to fund a large bill and wait for reimbursement is a real benefit, and it is worth asking which providers near you are affiliated for the procedures you are most likely to need.
 
-But is faster claims processing worth $6,000+ extra over a decade? For most people, no. For those with chronic conditions requiring frequent claims, possibly yes.
+## The Questions Worth Asking Instead
 
-## Newer Competitors Offering Better Value
+Rather than asking whether Southern Cross is the best insurer, ask the questions that will actually determine what you get:
 
-Accuro is gaining traction with customers who've done the math. Their online portal is modern, their claims processing is fast, and they're 15-20% cheaper than Southern Cross for standard cover.
+- Which plan am I being quoted, and what is the non-Pharmac drug limit on it?
+- What exclusions will be applied to me given my medical history — in writing, before I accept?
+- Which specialists and facilities near me are Affiliated Providers for the procedures I am most likely to need?
+- What is the excess, and does it apply per claim, per person per year, or per policy per year?
+- How have premiums on this plan moved over the past few years, and what happens at the age bands ahead of me?
 
-Partners Life offers the most comprehensive policy wordings in the market — they're genuinely more generous in what they'll pay for.
+Those answers differ far more between plans and between individuals than they do between brands.
 
-## Should You Switch?
+## If You Are Already a Member
 
-If you've been with Southern Cross for 5+ years, run a quote with Partners Life, AIA, and Accuro for identical cover. The premium difference might justify making the change.
+Being with a large insurer for a long time is not in itself a reason to leave, and it is not in itself a reason to stay. Two things are worth checking periodically with any insurer.
 
-The only reason to stay is if you've claimed multiple times and value their service, or if you're deep in their rewards programme.
+First, whether the plan you are on is still the plan you would choose. Cover bought at 30 is often the wrong shape at 50, and insurers add and revise plans over time.
 
-For new customers, avoid Southern Cross unless you have a specific reason. You're almost certainly overpaying.
+Second, what you would lose by moving. If you have developed any condition since you took out your policy, a new insurer will underwrite you afresh and can exclude it, while your existing policy may continue to cover it. That continuity can be worth considerably more than a premium difference, and it is the single most important thing to establish before you switch anything. Our guide to switching without a gap in cover goes through this in detail.
 
-## The Ongoing Trend
-
-Southern Cross will remain the largest insurer due to inertia. But the smart money has shifted to Partners Life and AIA for value-conscious Kiwis. Don't let brand loyalty cost you thousands.`,
+A licensed adviser can quote you across the major insurers on identical cover and tell you what you would be giving up. That is the comparison worth having.`,
   },
   {
     slug: "major-medical-vs-surgical-cover",
@@ -925,9 +922,10 @@ Most health insurance policies have annual caps (e.g., "$25,000 per year in cove
 
 Partial coverage is better than zero coverage, but it's still exposure.
 
-Partners Life and AIA have slightly different approaches:
-- Some policies have higher caps ($30,000-35,000)
-- Some policies explicitly cover non-Pharmac drugs; others are vague
+Non-Pharmac drug cover differs materially between insurers and between plans from the same insurer:
+- On some plans it is included; on others it is an optional add-on you have to select
+- The limits vary widely, and some are annual while others are per condition or per lifetime
+- The definition of which drugs qualify is set out in the wording, and it is worth reading
 
 Check your specific policy wording for non-Pharmac drug coverage.
 
@@ -939,62 +937,54 @@ If you have comprehensive private health insurance, non-Pharmac drug coverage is
   },
   {
     slug: "partners-life-vs-aia-policy-wordings",
-    title: "Partners Life vs AIA: Which Has Better Policy Wordings?",
-    excerpt: "Policy wording determines what you're actually covered for. Partners Life's specificity vs AIA's discretion — which matters more for your situation?",
+    title: "Partners Life and AIA Policy Wordings: How to Compare Them Yourself",
+    excerpt: "Policy wording decides what actually gets paid. Rather than tell you which is better, here is how to read both documents and the clauses that decide claims.",
     date: "2026-04-19",
     readTime: "8 min",
     category: "Comparisons",
-    content: `## What Policy Wordings Actually Mean
+    content: `## Why We Do Not Rank Wordings
 
-Policy wording is the legal document that defines what your insurer will and won't pay for. Two insurers might both "cover specialist consultations," but one might exclude certain specialists or apply limitations the other doesn't.
+Policy wording is the legal document that decides what your insurer will and will not pay for. Two insurers can both say they cover specialist consultations and mean materially different things.
 
-Comparing policy wordings is critical but tedious. Most people buy based on premium price. Smart buyers also check what they're actually insured for.
+We are often asked which of Partners Life and AIA has the better wording. We do not answer that, for a reason worth stating plainly: a wording is only better or worse relative to a specific person's health, and the documents are revised. Any ranking we published would be out of date, would not fit your circumstances, and would be our opinion dressed up as a finding. What we can do is show you how to read the documents yourself, and tell you which clauses actually decide claims.
 
-## Partners Life Policy Strengths
+Both insurers publish their wordings. Partners Life documents its Private Medical Cover at partnerslife.co.nz; AIA publishes its policy documents at aia.co.nz. Ask your adviser for the current wording for the specific plan you are being quoted — not a summary, and not a brochure.
 
-Partners Life is known for comprehensive policy wordings. Specifically:
+## Read These Six Things First
 
-**Psychiatric and mental health**: Partners Life explicitly covers psychiatric assessment, treatment, and hospital admission for mental health conditions. AIA covers these but with some limitations on frequency.
+Most of the money in a health insurance claim turns on a handful of clauses. In any wording, from any insurer, find these before you read anything else.
 
-**Chronic disease management**: Partners Life's wording is explicit about ongoing specialist consultations for chronic conditions. Some competitors have wording that's ambiguous about repeat consultations.
+**1. The definition of pre-existing condition.** This single definition causes more declined claims than anything else. Look at how far back it reaches, whether it captures symptoms you never had diagnosed, and whether there is any path to having an exclusion reviewed and removed after a period.
 
-**Cancer treatment**: Partners Life explicitly covers specialist oncology consultations, not just admission for surgery. This is important for patients needing ongoing treatment coordination.
+**2. What triggers cover.** Does the policy pay for the specialist consultation that leads to a diagnosis, or only for treatment once a diagnosis exists? This is the difference between being covered for the six months of investigation and paying for it yourself.
 
-**Allied health**: Partners Life covers physiotherapy, occupational therapy, and speech pathology with clear annual benefit amounts.
+**3. The annual limits, and what resets.** Look for the per-benefit maximums, the overall annual maximum, and whether limits reset on the policy anniversary or run per condition.
 
-## AIA Policy Strengths
+**4. Non-Pharmac drug cover.** If it matters to you, this is the most important number in the document. Check whether it is included or an optional add-on, what the limit is, and whether the limit is annual or lifetime.
 
-AIA also has advantages in specific areas:
+**5. Any test of necessity or approval.** Look for words like "medically necessary", "reasonable", "usual and customary", or a requirement for prior approval. These clauses are normal and appear in most wordings, but they are where the insurer's judgement enters, so you want to know they are there and how they are defined.
 
-**Flexibility on annual limits**: AIA's policies sometimes have higher annual limits than Partners Life for specific treatments (e.g., $30,000/year vs $25,000 for major medical).
+**6. The exclusions list.** Read it in full. It is usually short and it is always the clearest statement of what you are not buying.
 
-**Preventive care**: AIA explicitly covers preventive health checks and screenings (colonoscopy, mammography). Some Partners Life policies have age-based limits on preventive checks.
+## Questions to Put to the Insurer or Adviser
 
-**Maternity cover**: AIA's maternity policies are explicit about coverage. Partners Life's maternity language is less comprehensive.
+Take your own situation to the document rather than reading it in the abstract:
 
-## The Real Difference: Discretion vs Specificity
+- If I developed the condition I am most worried about, which clause pays, and which clause could be used to decline?
+- Are the consultations leading up to a diagnosis covered, or only treatment after it?
+- What is my non-Pharmac drug limit, and is it per year or per lifetime?
+- What exclusions would be placed on my policy given my medical history? Ask for these in writing before you accept the policy, not after.
+- If a claim were declined, what is the internal review process and the disputes scheme?
 
-The most important difference: Partners Life's wordings are very specific about what they'll pay for. AIA's wordings give the insurer more discretion.
+That last question matters. Every licensed insurer in New Zealand belongs to an approved dispute resolution scheme, and asking which one, and how it works, is a fair question to put before you buy.
 
-Example: A patient needs a second specialist opinion on cancer treatment.
+## On Premiums
 
-Partners Life wording: "We cover specialist consultations for diagnosis and treatment management of cancer."
+We do not publish premium comparisons between insurers. No New Zealand health insurer publishes a full premium schedule, so no site can build a like-for-like table. Two of the five — nib and UniMed — publish a starting price for one particular plan, each on its own stated basis, and those two figures are not comparable with each other. Any broader per-insurer price table has to come from somewhere else, and it is almost never comparing the same plan, the same excess and the same person. Get quoted on your own details, for the same level of cover, from each insurer you are considering — that is the only comparison that means anything.
 
-AIA wording: "We cover specialist consultations that are medically necessary."
+## The Practical Approach
 
-Partners Life must pay (it's explicitly stated). AIA could refuse if they determine a second opinion isn't medically necessary.
-
-## Our Verdict
-
-For chronic condition management, Partners Life's explicit wording is more valuable. You know exactly what's covered.
-
-For preventive health and higher annual limits, AIA's policies can be superior.
-
-If you have a chronic condition: Partners Life's wording clarity is worth the slightly higher premium.
-
-If you're generally healthy and want the Vitality discount: AIA's more flexible wording is unlikely to affect your claims significantly.
-
-Get quotes from both and compare the specific policy wording for your anticipated healthcare needs.`,
+Get quotes from both, ask for the full wording for each quoted plan, and compare the six clauses above side by side against your own health history. If you would rather not do that alone, that is precisely what a licensed adviser is for — and they are paid by the insurer, not by you.`,
   },
   {
     slug: "public-vs-private-healthcare-real-guide",
@@ -1157,7 +1147,7 @@ If choosing between the two, income protection is probably more critical (it cov
 
 ## What Cover to Get
 
-For self-employed Kiwis, we recommend:
+For self-employed Kiwis, the things worth working through with an adviser:
 1. Major medical cover with $500-750 excess (not surgical-only — specialist access is critical)
 2. Income protection with 4-week waiting period if you have savings, or 2-week if you don't
 3. Review annually as your business income changes`,
@@ -1227,7 +1217,7 @@ For chronic conditions, keep your excess moderate ($250-500).`,
     category: "Guides",
     content: `## When Switching Makes Sense
 
-If you've been with Southern Cross or nib for 3+ years, you're likely overpaying. Switching to Partners Life, AIA, or Accuro could save $500-1,000 annually. That's worth the administrative hassle.
+If you have been with the same insurer for several years without reviewing the plan, it is worth getting quoted on identical cover elsewhere — not because any one insurer is cheaper, but because the plan you bought years ago may no longer be the plan you would choose. Weigh any premium difference against what you would lose in continuity of cover, which is the subject of the rest of this article. That's worth the administrative hassle.
 
 Compare quotes from at least three insurers for the exact same cover (same excess, same tier, same add-ons). If the difference is more than $300/year, switching is economically sensible.
 

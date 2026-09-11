@@ -4,12 +4,12 @@ import QuoteForm from '../components/QuoteForm'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Compare NZ Health Insurance Providers 2026 | Real Prices | BestHealthInsurance',
-  description: 'Compare Southern Cross, nib, AIA, Accuro (UniMed), and Partners Life side-by-side with real 2026 premium data. Find the best NZ health insurer for your situation.',
+  title: 'Compare NZ Health Insurance Providers | BestHealthInsurance',
+  description: 'How health cover works across Southern Cross, nib, AIA, UniMed and Partners Life, using what each insurer publishes about its own plans. Then get matched with an adviser who can quote for you.',
   alternates: { canonical: 'https://besthealthinsurance.co.nz/compare/' },
   openGraph: {
-    title: 'Compare NZ Health Insurance Providers 2026 | Real Prices',
-    description: 'Side-by-side comparison of all 5 major NZ health insurers with real 2026 pricing, features, and expert recommendations.',
+    title: 'Compare NZ Health Insurance Providers',
+    description: 'How cover works across the five main NZ health insurers, from what each one publishes about its own plans.',
     url: 'https://besthealthinsurance.co.nz/compare/',
     type: 'website',
   },
@@ -21,7 +21,7 @@ const comparePageSchema = {
   "@id": "https://besthealthinsurance.co.nz/compare/#webpage",
   url: "https://besthealthinsurance.co.nz/compare/",
   name: "Compare NZ Health Insurance Providers 2026",
-  description: "Side-by-side comparison of Southern Cross, nib, AIA, Accuro and Partners Life — real 2026 premium data, features, and expert NZ adviser recommendations.",
+  description: "How health cover works across Southern Cross, nib, AIA, UniMed and Partners Life, drawn from each insurer's own published plan information.",
   inLanguage: "en-NZ",
   isPartOf: { "@id": "https://besthealthinsurance.co.nz/#website" },
   breadcrumb: {
@@ -35,42 +35,12 @@ const comparePageSchema = {
     { "@type": "Organization", name: "Southern Cross Health Insurance", url: "https://www.southerncross.co.nz" },
     { "@type": "Organization", name: "nib New Zealand", url: "https://www.nib.co.nz" },
     { "@type": "Organization", name: "AIA New Zealand", url: "https://www.aia.co.nz" },
-    { "@type": "Organization", name: "Accuro (UniMed) Health Insurance", url: "https://www.accuro.co.nz" },
+    { "@type": "Organization", name: "UniMed", url: "https://unimed.co.nz" },
     { "@type": "Organization", name: "Partners Life", url: "https://www.partnerslife.co.nz" },
   ],
 };
 
-const features = [
-  { name: 'Hospital & Surgical Cover', southern: true, nib: true, aia: true, accuro: true, partners: true },
-  { name: 'Specialists & Diagnostics', southern: true, nib: true, aia: true, accuro: true, partners: true },
-  { name: 'Cancer Cover incl. Non-Pharmac', southern: true, nib: true, aia: true, accuro: true, partners: true },
-  { name: 'Everyday Health (GP/Dental/Optical)', southern: true, nib: true, aia: true, accuro: 'add-on', partners: false },
-  { name: 'Income Protection', southern: false, nib: true, aia: true, accuro: false, partners: true },
-  { name: 'Mental Health as Specific Add-On', southern: false, nib: false, aia: false, accuro: true, partners: false },
-  { name: 'Mental Health in Major Medical', southern: false, nib: true, aia: true, accuro: true, partners: true },
-  { name: 'Wellness Programme (premium savings)', southern: false, nib: false, aia: true, accuro: false, partners: false },
-  { name: 'Member-Owned / Not-for-Profit', southern: true, nib: false, aia: false, accuro: true, partners: false },
-  { name: 'NZ Financial Strength Rating', southern: 'A+', nib: 'A', aia: 'AA', accuro: 'A', partners: 'A' },
-  { name: 'Digital Claims App', southern: true, nib: true, aia: true, accuro: true, partners: true },
-]
 
-// Real 2026 premium data from Policywise (fortnightly, $500 excess, comprehensive hospital plan)
-// Converted to monthly: fortnightly × 26 / 12
-const pricingRows = [
-  { label: '30-year-old (female)', southern: '$86', accuro: '$115', aia: '$149', nib: '$162', partners: '$163' },
-  { label: '30-year-old (male)', southern: '$86', accuro: '$115', aia: '$119', nib: '$135', partners: '$134' },
-  { label: '40-year-old (female)', southern: '$124', accuro: '$147', aia: '$174', nib: '$174', partners: '$186' },
-  { label: '40-year-old (male)', southern: '$124', accuro: '$147', aia: '$145', nib: '$146', partners: '$159' },
-  { label: '50-year-old (female)', southern: '$216', accuro: '$244', aia: '$251', nib: '$277', partners: '$283' },
-  { label: '50-year-old (male)', southern: '$216', accuro: '$244', aia: '$238', nib: '$248', partners: '$255' },
-]
-
-function FeatureCell({ val }: { val: boolean | string }) {
-  if (val === true) return <span className="text-emerald-500 font-bold text-lg">✓</span>
-  if (val === false) return <span className="text-gray-500 text-lg">—</span>
-  if (val === 'add-on') return <span className="text-amber-500 text-xs font-bold">Add-on</span>
-  return <span className="text-gray-300 text-xs font-bold">{val}</span>
-}
 
 export default function ComparePage() {
   return (
@@ -95,13 +65,13 @@ export default function ComparePage() {
             <span className="text-white">Compare Providers</span>
           </nav>
           <span className="inline-block bg-emerald-500/20 border border-emerald-400/40 text-emerald-400 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4 w-fit">
-            2026 Market Data
+            Provider Guide
           </span>
           <h1 className="text-3xl lg:text-5xl font-extrabold text-white mb-4 leading-tight">
             Compare NZ Health Insurance Providers
           </h1>
           <p className="text-gray-300 text-xl max-w-2xl leading-relaxed">
-            Real 2026 premium data, feature-by-feature comparison, and honest provider profiles — so you can make an informed decision.
+            What each of the five main insurers actually sells, in their own published words, so you know what you are being quoted on.
           </p>
         </div>
       </div>
@@ -111,241 +81,281 @@ export default function ComparePage() {
 
           {/* ── Provider cards ── */}
           <section>
-            <h2 className="text-2xl font-extrabold text-gray-900 mb-6">NZ&apos;s 5 Health Insurance Providers</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            <h2 className="text-2xl font-extrabold text-gray-900 mb-6">The Five NZ Health Insurers</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {PROVIDERS.map((provider) => (
                 <Link
                   key={provider.slug}
                   href={`/health-insurance/${provider.slug}/`}
-                  className={`bg-white rounded-2xl border p-5 hover:-translate-y-0.5 transition-all shadow-sm ${
-                    provider.featured ? 'border-emerald-300 ring-1 ring-emerald-300' : 'border-gray-200'
-                  } ${provider.notRecommended ? 'opacity-70' : ''}`}
+                  className="bg-white rounded-2xl border border-gray-200 p-5 hover:-translate-y-0.5 hover:border-emerald-300 transition-all shadow-sm"
                 >
                   <div className="text-3xl mb-3">{provider.icon}</div>
-                  <h3 className="text-sm font-extrabold text-gray-900 mb-2 leading-tight">{provider.name}</h3>
-                  <div className="space-y-1 mb-3 text-xs">
-                    <div className="flex items-center justify-between">
-                      <span className="text-gray-400">Rating</span>
-                      <span className="text-amber-500 font-bold">{provider.rating}/5</span>
-                    </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-gray-400">From</span>
-                      <span className="text-emerald-600 font-bold">{provider.from}/mo</span>
-                    </div>
-                  </div>
-                  <span className={`inline-block text-white text-xs font-bold px-2 py-0.5 rounded-full ${provider.badgeColor}`}>
-                    {provider.badge}
-                  </span>
-                  {provider.notRecommended && <p className="text-red-500 text-xs mt-2">⚠️ Higher premiums</p>}
+                  <h3 className="text-base font-extrabold text-gray-900 mb-2 leading-tight">{provider.name}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{provider.note}</p>
                 </Link>
               ))}
             </div>
-            <p className="text-gray-400 text-xs mt-3">Monthly premiums shown are for comprehensive hospital cover with $500 excess, 30-year-old non-smoker. Source: Policywise, January 2026.</p>
-          </section>
-
-          {/* ── Real 2026 pricing table ── */}
-          <section className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
-            <div className="p-6 border-b border-gray-100">
-              <h2 className="text-2xl font-extrabold text-gray-900">Real 2026 Monthly Premiums</h2>
-              <p className="text-gray-500 text-sm mt-1">
-                Comprehensive hospital cover · $500 excess · Non-smoker · Converted from fortnightly rates. Source: Policywise, January 2026.
-              </p>
-            </div>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="bg-gray-50 border-b border-gray-200">
-                    <th className="text-left py-4 px-5 font-bold text-gray-700">Profile</th>
-                    <th className="text-center py-4 px-4 font-bold text-emerald-700">Southern Cross</th>
-                    <th className="text-center py-4 px-4 font-bold text-emerald-700">Accuro (UniMed)</th>
-                    <th className="text-center py-4 px-4 font-bold text-gray-700">AIA</th>
-                    <th className="text-center py-4 px-4 font-bold text-gray-700">nib</th>
-                    <th className="text-center py-4 px-4 font-bold text-gray-700">Partners Life</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {pricingRows.map((row, i) => (
-                    <tr key={i} className={`border-b border-gray-100 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50/50'}`}>
-                      <td className="py-3.5 px-5 text-gray-700 font-medium">{row.label}</td>
-                      <td className="text-center py-3.5 px-4">
-                        <span className="text-emerald-700 font-extrabold">{row.southern}</span>
-                        <span className="text-gray-400 text-xs">/mo</span>
-                      </td>
-                      <td className="text-center py-3.5 px-4">
-                        <span className="text-emerald-700 font-bold">{row.accuro}</span>
-                        <span className="text-gray-400 text-xs">/mo</span>
-                      </td>
-                      <td className="text-center py-3.5 px-4">
-                        <span className="text-gray-700 font-medium">{row.aia}</span>
-                        <span className="text-gray-400 text-xs">/mo</span>
-                      </td>
-                      <td className="text-center py-3.5 px-4">
-                        <span className="text-red-500 font-medium">{row.nib}</span>
-                        <span className="text-gray-400 text-xs">/mo</span>
-                      </td>
-                      <td className="text-center py-3.5 px-4">
-                        <span className="text-gray-700 font-medium">{row.partners}</span>
-                        <span className="text-gray-400 text-xs">/mo</span>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <div className="px-5 py-4 bg-emerald-50 border-t border-emerald-100">
-              <p className="text-emerald-800 text-sm font-medium">
-                💡 <strong>Southern Cross</strong> is consistently the most affordable provider across all age groups. <strong>Accuro (UniMed)</strong> is second-cheapest and the only member-owned option. nib and Partners Life are significantly more expensive at most age/gender profiles.
-              </p>
-            </div>
-          </section>
-
-          {/* ── Feature comparison ── */}
-          <section className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
-            <div className="p-6 border-b border-gray-100">
-              <h2 className="text-2xl font-extrabold text-gray-900">Feature Comparison</h2>
-              <p className="text-gray-500 text-sm mt-1">Based on comprehensive plans. Add-ons and limits vary — an adviser will check the details for your situation.</p>
-            </div>
-            <div className="overflow-x-auto">
-              <table className="w-full text-sm">
-                <thead>
-                  <tr className="bg-gray-50 border-b border-gray-200">
-                    <th className="text-left py-4 px-5 font-bold text-gray-700">Feature</th>
-                    <th className="text-center py-4 px-3 font-bold text-gray-700 text-xs">Southern Cross</th>
-                    <th className="text-center py-4 px-3 font-bold text-emerald-700 text-xs">Accuro (UniMed) ⭐</th>
-                    <th className="text-center py-4 px-3 font-bold text-gray-700 text-xs">AIA</th>
-                    <th className="text-center py-4 px-3 font-bold text-gray-700 text-xs">nib</th>
-                    <th className="text-center py-4 px-3 font-bold text-gray-700 text-xs">Partners Life</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {features.map((feature, idx) => (
-                    <tr key={idx} className={`border-b border-gray-100 hover:bg-gray-50 transition-colors ${idx % 2 === 0 ? 'bg-white' : 'bg-gray-50/30'}`}>
-                      <td className="py-3.5 px-5 text-gray-700">{feature.name}</td>
-                      <td className="text-center py-3.5 px-3"><FeatureCell val={feature.southern} /></td>
-                      <td className="text-center py-3.5 px-3 bg-emerald-50/50"><FeatureCell val={feature.accuro} /></td>
-                      <td className="text-center py-3.5 px-3"><FeatureCell val={feature.aia} /></td>
-                      <td className="text-center py-3.5 px-3"><FeatureCell val={feature.nib} /></td>
-                      <td className="text-center py-3.5 px-3"><FeatureCell val={feature.partners} /></td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-            <p className="px-5 py-4 text-gray-400 text-xs border-t border-gray-100">
-              ⭐ Accuro (now underwritten by UniMed) is our most recommended provider for value-conscious New Zealanders — second-cheapest premiums, member-owned structure, and the only insurer offering mental health as a specific optional add-on.
+            <p className="text-gray-400 text-xs mt-3">
+              Each description is drawn from what that insurer publishes about itself on its own
+              website. We do not rank or rate insurers. No insurer pays us to appear here, to appear
+              higher, or to be described favourably. If you take out a policy through an adviser we
+              introduce you to, that adviser is paid a commission by the insurer &mdash; never by you.
             </p>
           </section>
 
+          {/* ── What drives a premium (replaces the old price table) ── */}
+          <section className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+            <div className="p-6 sm:p-8 border-b border-gray-100">
+              <h2 className="text-2xl font-extrabold text-gray-900">What Actually Drives Your Premium</h2>
+              <p className="text-gray-500 text-sm mt-1">
+                We do not build premium tables. Here is why, what two insurers do publish, and what moves the number.
+              </p>
+            </div>
+            <div className="p-6 sm:p-8">
+              <p className="text-gray-600 leading-relaxed mb-6">
+No New Zealand health insurer publishes a full premium schedule, so no site can build a
+                like-for-like price table. Any per-insurer table you see has been gathered from
+                somewhere else, and it is almost never comparing the same plan, the same excess and
+                the same person. Two insurers do publish a starting price for a particular plan, and
+                we set both out below in their own words. Beyond that we would rather tell you what
+                moves the price and let an adviser quote your actual situation.
+              </p>
+              <div className="grid sm:grid-cols-2 gap-4">
+                {[
+                  { t: 'Your age', d: 'The single largest factor. Premiums rise with age, and they keep rising after you join.' },
+                  { t: 'The excess you choose', d: 'A higher excess lowers the premium. nib publish this directly: a higher excess means a lower premium.' },
+                  { t: 'What the plan covers', d: 'Hospital and surgical only, everyday care only, or both. Adding non-Pharmac drug cover changes it again.' },
+                  { t: 'Who is on the policy', d: 'Yourself, you and a partner, or a whole family. Some plans cover children without the parent being insured.' },
+                  { t: 'Your medical history', d: 'Existing conditions may be excluded, loaded, or covered after a stand-down. This is why a real quote differs from any table.' },
+                  { t: 'Smoking and wellbeing programmes', d: 'Smoker status affects pricing, and some insurers discount for engagement with a wellbeing programme.' },
+                ].map((f) => (
+                  <div key={f.t} className="bg-gray-50 rounded-xl p-4">
+                    <p className="font-bold text-gray-900 text-sm">{f.t}</p>
+                    <p className="text-gray-600 text-sm mt-1 leading-relaxed">{f.d}</p>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-6 rounded-xl border border-gray-200 bg-gray-50 p-5">
+                <p className="font-bold text-gray-900 text-sm mb-2">The two published starting prices</p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Two of the five publish a starting price on their own website, each for one
+                  particular plan and each on its own stated basis.
+                </p>
+                <p className="text-gray-600 text-sm leading-relaxed mt-3">
+                  <strong>nib</strong> state that their Everyday plans start from around{' '}
+                  <strong>$15 a week</strong> and their Hospital plans from about{' '}
+                  <strong>$20 a week</strong>. nib&rsquo;s own footnote is part of the figure: that is
+                  as at July 2025, includes a 2% direct debit discount, and is based on a 25-year-old
+                  male non-smoker with a $250 annual excess on Hospital cover.
+                </p>
+                <p className="text-gray-600 text-sm leading-relaxed mt-3">
+                  <strong>UniMed</strong> state that their Health Positive plan provides up to $10,000
+                  of benefits a year from <strong>$5.75 a week</strong>. UniMed&rsquo;s own footnote is
+                  again part of the figure: that is the weekly premium for a member aged 39 or under
+                  on the Health Positive 50% plan.
+                </p>
+                <p className="text-gray-500 text-xs mt-3">
+                  Those two figures are not comparable with each other. They are different products
+                  for different purposes &mdash; nib&rsquo;s are Everyday and Hospital plans, UniMed&rsquo;s
+                  Health Positive is an everyday-costs plan that excludes major surgery &mdash; quoted
+                  on different bases for different people. We reproduce them because each insurer
+                  published them, not as a price comparison and not as what you would pay. Southern
+                  Cross, AIA and Partners Life do not publish a starting price, and we are not going
+                  to estimate one on their behalf.
+                </p>
+              </div>
+              <p className="text-gray-400 text-xs mt-5">
+                Because pricing depends on all of the above, the only figure worth having is a quote
+                for you. That is free and there is no obligation.
+              </p>
+            </div>
+          </section>
+
+          {/* ── What to compare (replaces the old tick-box matrix) ── */}
+          <section className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden">
+            <div className="p-6 sm:p-8 border-b border-gray-100">
+              <h2 className="text-2xl font-extrabold text-gray-900">What To Compare, And Why</h2>
+              <p className="text-gray-500 text-sm mt-1">
+                We used to show a tick-box grid here. We removed it, because a tick in a box cannot
+                tell you the limit, the stand-down or the exclusion attached to it, and a dash
+                implies an absence we cannot evidence. These are the questions worth asking instead.
+              </p>
+            </div>
+            <div className="p-6 sm:p-8 space-y-5">
+              {[
+                { q: 'Non-Pharmac drug cover, and how much', d: 'This is where the biggest bills land. Cancer treatment using drugs Pharmac does not fund can run to tens of thousands a month. Ask for the annual limit in dollars, not whether it is "included".' },
+                { q: 'Surgical and hospitalisation limits', d: 'Some plans state an annual dollar limit, some state unlimited for certain benefits. AIA, for example, publishes hospitalisation at $500,000 per policy year on its Private Health plan and unlimited inpatient treatment costs.' },
+                { q: 'Everyday cover, or hospital only', d: 'GP, dental, optical and physio are usually a separate module or a different plan, not part of hospital cover. nib describe these as two distinct types of cover.' },
+                { q: 'Specialists and diagnostics', d: 'Whether you need a referral, and whether imaging is covered before a surgical claim exists, varies a lot between plans.' },
+                { q: 'Mental health', d: 'Ask what is actually payable and under what conditions. AIA publish a mental health support benefit of $2,500 per policy year on both their health plans.' },
+                { q: 'Stand-downs and pre-existing conditions', d: 'The single biggest cause of declined claims. Ask how your own history will be treated before you apply, not after.' },
+                { q: 'Prevention and wellbeing benefits', d: 'Some insurers pay towards screening and prevention. UniMed publish flu vaccine reimbursement up to $45 a person and free hearing checks with Bloom, among other member offers.' },
+                { q: 'How premiums change as you age', d: 'Ask what the premium looks like at 60 and 70, not just today. This is the question most people wish they had asked.' },
+              ].map((f) => (
+                <div key={f.q} className="border-l-2 border-emerald-200 pl-4">
+                  <p className="font-bold text-gray-900">{f.q}</p>
+                  <p className="text-gray-600 text-sm mt-1 leading-relaxed">{f.d}</p>
+                </div>
+              ))}
+            </div>
+            <div className="px-6 sm:px-8 pb-6">
+              <p className="text-gray-400 text-xs">
+                Benefit figures named above are published by that insurer on its own website and were
+                checked on 11 September 2026. Limits change and policy wordings govern, so confirm
+                against the current document before you decide.
+              </p>
+            </div>
+          </section>
+
           {/* ── Provider profiles ── */}
+          {/* Every claim below is something the insurer publishes about itself on its own
+              website, checked 11 September 2026. No rankings, no badges, no price claims,
+              and nothing said about one insurer by comparison with another. */}
           <section>
-            <h2 className="text-2xl font-extrabold text-gray-900 mb-6">Provider Profiles</h2>
+            <h2 className="text-2xl font-extrabold text-gray-900 mb-2">Provider Profiles</h2>
+            <p className="text-gray-500 text-sm mb-6">
+              In each insurer&apos;s own published words, in no particular order. No insurer pays
+              us to appear here or to be described favourably.
+            </p>
+
             <div className="space-y-5">
 
-              {/* Southern Cross */}
+              {/* UniMed */}
               <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-8">
                 <div className="flex flex-wrap items-center gap-3 mb-4">
-                  <h3 className="text-xl font-extrabold text-gray-900">Southern Cross Health Society</h3>
-                  <span className="bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-full">BEST VALUE PREMIUMS</span>
+                  <h3 className="text-xl font-extrabold text-gray-900">UniMed</h3>
+                  <span className="bg-gray-100 text-gray-600 text-xs font-bold px-3 py-1 rounded-full">Accuro is now UniMed</span>
                 </div>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  The Accuro brand has merged into UniMed, and everything has moved to the UniMed
+                  website. If you hold a plan originally issued by Accuro, such as SmartCare,
+                  SmartCare+, StaffCare, StaffCare+ or SmartStay, the terms are in your Health Plan
+                  document and your member portal is still the UniMed one.
+                </p>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  UniMed describes itself as a not-for-profit mutual society, operating since 1979, and publishes a range spanning everyday care through to
+                  comprehensive hospital cover: Health Positive for prevention and everyday costs,
+                  UniCare Advantage as all-in-one cover paying up to 80% of treatment costs within
+                  benefit limits, Hospital Select for comprehensive surgical cover, and SmartCare+
+                  and SmartCare for their highest level of cover for non-Pharmac subsidised drugs.
+                </p>
                 <p className="text-gray-600 leading-relaxed mb-5">
-                  New Zealand&apos;s largest health insurer with over 900,000 members — and the most affordable comprehensive cover in the market. Southern Cross is a not-for-profit society (established 1964), which means profits stay within the business to benefit members. Its 2026 premiums are consistently 20–35% below nib and Partners Life for equivalent cover. The Wellbeing plan range suits most New Zealanders, from entry-level surgical cover through to UltraCare comprehensive.
+                  Three plans are built for situations the rest of the market largely does not serve.
+                  UniMed describe <strong>SmartStay</strong> as the only New Zealand health insurance
+                  for visitors or workers on short-term visas who are not eligible for publicly
+                  funded healthcare, <strong>ParentStay</strong> for people applying for the Parent
+                  Boost Visitor Visa, and <strong>KidSmart</strong> as the only New Zealand plan
+                  designed for children, letting guardians insure dependants without taking out cover
+                  themselves. If any of those describe you, it is worth asking about by name.
                 </p>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-                  <div className="bg-gray-50 rounded-xl p-3"><p className="text-gray-400 text-xs">Market Share</p><p className="font-bold text-gray-900 mt-1">~62%</p></div>
-                  <div className="bg-gray-50 rounded-xl p-3"><p className="text-gray-400 text-xs">Structure</p><p className="font-bold text-gray-900 mt-1">Not-for-profit</p></div>
-                  <div className="bg-gray-50 rounded-xl p-3"><p className="text-gray-400 text-xs">Rating (S&P)</p><p className="font-bold text-gray-900 mt-1">A+ Strong</p></div>
-                  <div className="bg-emerald-50 rounded-xl p-3"><p className="text-gray-400 text-xs">30yo premium (mo)</p><p className="font-bold text-emerald-700 mt-1">from $86/mo</p></div>
+                  <div className="bg-gray-50 rounded-xl p-3"><p className="text-gray-400 text-xs">Structure</p><p className="font-bold text-gray-900 mt-1">Not-for-profit mutual</p></div>
+                  <div className="bg-gray-50 rounded-xl p-3"><p className="text-gray-400 text-xs">Visitor cover</p><p className="font-bold text-gray-900 mt-1">SmartStay</p></div>
+                  <div className="bg-gray-50 rounded-xl p-3"><p className="text-gray-400 text-xs">Parent Boost visa</p><p className="font-bold text-gray-900 mt-1">ParentStay</p></div>
+                  <div className="bg-gray-50 rounded-xl p-3"><p className="text-gray-400 text-xs">Children only</p><p className="font-bold text-gray-900 mt-1">KidSmart</p></div>
                 </div>
+                <p className="text-gray-400 text-xs mt-4">
+                  Source: <a href="https://unimed.co.nz/health-plans" rel="nofollow noopener" target="_blank" className="underline">unimed.co.nz/health-plans</a> and{' '}
+                  <a href="https://unimed.co.nz/members" rel="nofollow noopener" target="_blank" className="underline">unimed.co.nz/members</a>, 11 September 2026.
+                </p>
               </div>
 
-              {/* Accuro / UniMed */}
-              <div className="bg-white rounded-2xl border border-emerald-200 ring-1 ring-emerald-200 shadow-sm p-8">
-                <div className="flex flex-wrap items-center gap-3 mb-4">
-                  <h3 className="text-xl font-extrabold text-gray-900">Accuro — now underwritten by UniMed</h3>
-                  <span className="bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-full">HIGHLY RATED ⭐</span>
-                </div>
-                <p className="text-gray-600 leading-relaxed mb-3">
-                  Accuro merged into UniMed (completed May 2024), forming New Zealand&apos;s third-largest health insurer with 140,000 members. Both brands continue operating — Accuro policyholders deal with the Accuro team; UniMed policyholders with UniMed. Both are now underwritten by the same not-for-profit mutual society.
+              {/* nib */}
+              <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-8">
+                <h3 className="text-xl font-extrabold text-gray-900 mb-4">nib New Zealand</h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  Part of nib Group. nib publish that they specialise in health insurance and protect
+                  the health of over 1.4 million people across New Zealand and Australia.
                 </p>
                 <p className="text-gray-600 leading-relaxed mb-5">
-                  Accuro&apos;s SmartCare plans offer the second-lowest premiums in the market, and crucially, it remains the <strong>only NZ insurer offering mental health cover as a specific optional add-on</strong> — making it the best choice for anyone prioritising mental health access. All other providers bundle limited mental health benefits within their major medical plans.
+                  They split cover into two types: Everyday, for day-to-day costs like dentist, GP
+                  and physio, and Hospital, for surgery, cancer treatment, specialist consultations
+                  and diagnostic investigations. You can pick an excess level on plans with Hospital
+                  cover, and nib state plainly that a higher excess means a lower premium. Non-Pharmac
+                  drug cover can be added. They also offer Wellness Coaches as one-on-one support.
                 </p>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-                  <div className="bg-gray-50 rounded-xl p-3"><p className="text-gray-400 text-xs">Structure</p><p className="font-bold text-gray-900 mt-1">Member-owned</p></div>
-                  <div className="bg-gray-50 rounded-xl p-3"><p className="text-gray-400 text-xs">Members</p><p className="font-bold text-gray-900 mt-1">140,000+</p></div>
-                  <div className="bg-gray-50 rounded-xl p-3"><p className="text-gray-400 text-xs">Unique feature</p><p className="font-bold text-gray-900 mt-1">Mental health add-on</p></div>
-                  <div className="bg-emerald-50 rounded-xl p-3"><p className="text-gray-400 text-xs">30yo premium (mo)</p><p className="font-bold text-emerald-700 mt-1">from $115/mo</p></div>
-                </div>
+                <p className="text-gray-400 text-xs">
+                  Source: <a href="https://www.nib.co.nz/health-insurance" rel="nofollow noopener" target="_blank" className="underline">nib.co.nz/health-insurance</a>, 11 September 2026.
+                </p>
               </div>
 
               {/* AIA */}
               <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-8">
-                <div className="flex flex-wrap items-center gap-3 mb-4">
-                  <h3 className="text-xl font-extrabold text-gray-900">AIA New Zealand</h3>
-                  <span className="bg-violet-500 text-white text-xs font-bold px-3 py-1 rounded-full">VITALITY REWARDS</span>
-                </div>
-                <p className="text-gray-600 leading-relaxed mb-5">
-                  Part of Asia&apos;s largest life insurance group, AIA holds the highest financial strength rating in the NZ market (AA, Fitch). Its standout feature is <strong>AIA Vitality</strong> — a wellness programme that rewards healthy behaviour with premium discounts of up to 25% and perks like discounted gym memberships and Apple Watch upgrades. AIA is ideal for health-conscious individuals who will actively engage with the programme. Premiums are mid-market for males, higher for females.
+                <h3 className="text-xl font-extrabold text-gray-900 mb-4">AIA New Zealand</h3>
+                <p className="text-gray-600 leading-relaxed mb-4">
+                  AIA sell two health options: Private Health, covering a wide range of medical
+                  conditions including surgery, specialist consultations and diagnostic imaging, and
+                  Cancer Care, which covers cancer-related treatment only. Private Health can be
+                  upgraded to Private Health Plus for additional diagnostics and specialist
+                  consultations.
                 </p>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-                  <div className="bg-gray-50 rounded-xl p-3"><p className="text-gray-400 text-xs">Rating (Fitch)</p><p className="font-bold text-gray-900 mt-1">AA Very Strong</p></div>
-                  <div className="bg-gray-50 rounded-xl p-3"><p className="text-gray-400 text-xs">Vitality savings</p><p className="font-bold text-gray-900 mt-1">Up to 25%</p></div>
-                  <div className="bg-gray-50 rounded-xl p-3"><p className="text-gray-400 text-xs">Best for</p><p className="font-bold text-gray-900 mt-1">Active lifestyles</p></div>
-                  <div className="bg-gray-50 rounded-xl p-3"><p className="text-gray-400 text-xs">30yo male (mo)</p><p className="font-bold text-gray-900 mt-1">from $119/mo</p></div>
-                </div>
+                <p className="text-gray-600 leading-relaxed mb-5">
+                  Published benefit levels include hospitalisation up to $500,000 per policy year,
+                  major diagnostic imaging and tests up to $200,000 per policy year, radiotherapy up
+                  to $500,000 per policy year, and a mental health support benefit of $2,500 per
+                  policy year. AIA Vitality, their wellbeing programme, can be added for $13.50 a
+                  month for those aged 16 and over and carries a premium discount. AIA state they
+                  paid over $177 million in health insurance claims in 2025.
+                </p>
+                <p className="text-gray-400 text-xs">
+                  Source: <a href="https://www.aia.co.nz/en/our-products/health-insurance.html" rel="nofollow noopener" target="_blank" className="underline">aia.co.nz health insurance</a>, 11 September 2026. Summary only; policy wording governs.
+                </p>
+              </div>
+
+              {/* Southern Cross */}
+              <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-8">
+                <h3 className="text-xl font-extrabold text-gray-900 mb-4">Southern Cross Health Society</h3>
+                <p className="text-gray-600 leading-relaxed mb-5">
+                  New Zealand&apos;s largest health insurer, structured as a not-for-profit friendly
+                  society, with a plan range running from entry-level surgical cover up to
+                  comprehensive. We have not reproduced benefit figures here because we were not able
+                  to retrieve their plan pages directly on 11 September 2026, and we would rather
+                  link you to the source than quote something we have not read.
+                </p>
+                <p className="text-gray-400 text-xs">
+                  See <a href="https://www.southerncross.co.nz/society" rel="nofollow noopener" target="_blank" className="underline">southerncross.co.nz</a> for current plans and wordings.
+                </p>
               </div>
 
               {/* Partners Life */}
               <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-8">
-                <div className="flex flex-wrap items-center gap-3 mb-4">
-                  <h3 className="text-xl font-extrabold text-gray-900">Partners Life</h3>
-                  <span className="bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded-full">BROADEST WORDINGS</span>
-                </div>
+                <h3 className="text-xl font-extrabold text-gray-900 mb-4">Partners Life</h3>
                 <p className="text-gray-600 leading-relaxed mb-5">
-                  Partners Life is known across the NZ insurance industry for having the most comprehensive and clearly defined policy wordings — fewer grey areas means fewer disputes at claim time. Acquired by Dai-ichi Life Insurance (Japan) in 2023. Premiums are among the highest in the market, particularly for female policyholders, but the policy definitions and comprehensive trauma/income protection range make them a strong choice for those prioritising breadth of cover over cost.
+                  A life and health insurer that distributes through financial advisers rather than
+                  selling direct, so a Partners Life quote generally comes via an adviser. As above,
+                  we have not reproduced benefit figures we could not retrieve from their own site on
+                  11 September 2026.
                 </p>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-                  <div className="bg-gray-50 rounded-xl p-3"><p className="text-gray-400 text-xs">Ownership</p><p className="font-bold text-gray-900 mt-1">Dai-ichi Life (Japan)</p></div>
-                  <div className="bg-gray-50 rounded-xl p-3"><p className="text-gray-400 text-xs">Rating (A.M. Best)</p><p className="font-bold text-gray-900 mt-1">A Excellent</p></div>
-                  <div className="bg-gray-50 rounded-xl p-3"><p className="text-gray-400 text-xs">Best for</p><p className="font-bold text-gray-900 mt-1">Comprehensive wordings</p></div>
-                  <div className="bg-amber-50 rounded-xl p-3"><p className="text-gray-400 text-xs">30yo male (mo)</p><p className="font-bold text-amber-700 mt-1">from $134/mo</p></div>
-                </div>
+                <p className="text-gray-400 text-xs">
+                  See <a href="https://www.partnerslife.co.nz/" rel="nofollow noopener" target="_blank" className="underline">partnerslife.co.nz</a> for current products and wordings.
+                </p>
               </div>
 
-              {/* nib */}
-              <div className="bg-white rounded-2xl border border-gray-200 shadow-sm p-8 opacity-80">
-                <div className="flex flex-wrap items-center gap-3 mb-4">
-                  <h3 className="text-xl font-extrabold text-gray-900">nib New Zealand</h3>
-                  <span className="bg-red-100 border border-red-300 text-red-700 text-xs font-bold px-3 py-1 rounded-full">⚠ Higher Premiums</span>
-                </div>
-                <p className="text-gray-600 leading-relaxed mb-5">
-                  nib New Zealand is part of ASX-listed nib Group (Australia). It offers a polished digital experience and strong online claims capability. However, nib&apos;s 2026 premiums are consistently among the highest in the NZ market — 20–35% above Southern Cross for equivalent cover at most age profiles. nib NZ has historically operated at a loss in New Zealand. We typically recommend comparing Southern Cross and Accuro (UniMed) first — an adviser will show you the numbers side by side.
-                </p>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-                  <div className="bg-gray-50 rounded-xl p-3"><p className="text-gray-400 text-xs">Ownership</p><p className="font-bold text-gray-900 mt-1">ASX-listed (Australia)</p></div>
-                  <div className="bg-gray-50 rounded-xl p-3"><p className="text-gray-400 text-xs">Rating (S&P)</p><p className="font-bold text-gray-900 mt-1">A Strong</p></div>
-                  <div className="bg-gray-50 rounded-xl p-3"><p className="text-gray-400 text-xs">Best feature</p><p className="font-bold text-gray-900 mt-1">Digital experience</p></div>
-                  <div className="bg-red-50 rounded-xl p-3"><p className="text-gray-400 text-xs">30yo male (mo)</p><p className="font-bold text-red-600 mt-1">from $135/mo</p></div>
-                </div>
-              </div>
             </div>
           </section>
 
-          {/* ── Private healthcare cost reference ── */}
+          {/* ── Private healthcare cost reference ──
+              Figures below are each insurer's own published claims data, attributed and dated.
+              The previous version cited "nib NZ claims data and public market data" without
+              saying which figure came from where. ── */}
           <section className="bg-gray-900 rounded-2xl p-8">
-            <h2 className="text-2xl font-extrabold text-white mb-2">What Does Private Treatment Actually Cost?</h2>
-            <p className="text-gray-400 text-sm mb-6">Understanding these costs shows why health insurance is worth having — a single event can cost more than a decade of premiums.</p>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <h2 className="text-2xl font-extrabold text-white mb-2">What Private Treatment Costs</h2>
+            <p className="text-gray-400 text-sm mb-6">
+              Two insurers publish their own claims data. These are their figures, not ours.
+            </p>
+
+            <h3 className="text-sm font-bold text-emerald-400 uppercase tracking-widest mb-3">Published by AIA</h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3 mb-6">
               {[
-                { procedure: 'Spinal surgery', cost: 'Up to $250,000' },
-                { procedure: 'Cancer chemotherapy', cost: '$15,000 – $170,000' },
-                { procedure: 'Mastectomy with reconstruction', cost: 'Up to $100,000' },
-                { procedure: 'Hip replacement', cost: 'Up to $40,000' },
-                { procedure: 'Knee replacement', cost: 'Up to $33,300' },
-                { procedure: 'MRI scan', cost: 'Up to $3,000' },
-                { procedure: 'Specialist consultation', cost: 'Up to $280' },
-                { procedure: 'Physiotherapy session', cost: 'Up to $90' },
-                { procedure: 'GP consultation', cost: '$60 – $90' },
+                { procedure: 'Spinal surgery', cost: '$30,000 – $250,000' },
+                { procedure: 'Heart valve replacement', cost: '$100,000 – $120,000' },
+                { procedure: 'Mastectomy with reconstruction', cost: '$50,000 – $100,000' },
+                { procedure: 'Bowel resection', cost: '$50,000 – $80,000' },
+                { procedure: 'Hip replacement', cost: '$35,000 – $50,000' },
+                { procedure: 'Hernia repair', cost: '$8,500 – $20,000' },
+                { procedure: 'Chemotherapy (per policy year)', cost: '$15,000 – $400,000' },
+                { procedure: 'Non-Pharmac drugs (per month)', cost: '$8,000 – $60,000' },
+                { procedure: 'MRI scan', cost: '$1,700 – $4,000' },
               ].map((item) => (
                 <div key={item.procedure} className="flex items-center justify-between bg-gray-800 rounded-xl px-4 py-3 border border-gray-700">
                   <span className="text-gray-300 text-sm">{item.procedure}</span>
@@ -353,23 +363,58 @@ export default function ComparePage() {
                 </div>
               ))}
             </div>
-            <p className="text-gray-500 text-xs mt-4">Source: nib NZ claims data and public market data, 2024–2026.</p>
+            <p className="text-gray-500 text-xs mb-8">
+              Source: AIA Health Claims Data, 30 April 2026, published at aia.co.nz. AIA note these
+              costs are illustrative only and that all claims are assessed on individual
+              circumstances and policy terms.
+            </p>
+
+            <h3 className="text-sm font-bold text-emerald-400 uppercase tracking-widest mb-3">Published by nib</h3>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              {[
+                { procedure: 'Chemotherapy', cost: '$15,000 – $170,000' },
+                { procedure: 'Radiotherapy', cost: '$20,000 – $55,000' },
+                { procedure: 'Varicose veins', cost: '$7,000 – $10,500' },
+                { procedure: 'Wisdom teeth extraction', cost: '$3,500 – $5,200' },
+                { procedure: 'CT scan', cost: '$1,300 – $1,700' },
+                { procedure: 'Specialist consultation', cost: '$160 – $280' },
+                { procedure: 'Mental health consultation', cost: '$170 – $255' },
+                { procedure: 'Dental', cost: '$270 – $400' },
+                { procedure: 'Physiotherapy', cost: '$45 – $70' },
+              ].map((item) => (
+                <div key={item.procedure} className="flex items-center justify-between bg-gray-800 rounded-xl px-4 py-3 border border-gray-700">
+                  <span className="text-gray-300 text-sm">{item.procedure}</span>
+                  <span className="text-emerald-400 font-bold text-sm whitespace-nowrap ml-3">{item.cost}</span>
+                </div>
+              ))}
+            </div>
+            <p className="text-gray-500 text-xs mt-4">
+              Source: nib, published at nib.co.nz. nib state these are average claim statistics for
+              Everyday and GP minor surgery claims during 2020, and for Outpatient and Hospital
+              claims from October 2020 to February 2021, and that they do not represent what would
+              be paid on any particular policy.
+            </p>
+            <p className="text-gray-500 text-xs mt-3">
+              The two sets are not directly comparable. They were gathered in different years using
+              different methods, which is exactly why we have kept them apart rather than merging
+              them into one table.
+            </p>
           </section>
 
           {/* ── CTA ── */}
           <section className="bg-white rounded-2xl border border-gray-200 shadow-sm p-8">
             <div className="grid lg:grid-cols-2 gap-10 items-start">
               <div>
-                <h2 className="text-2xl font-extrabold text-gray-900 mb-3">Let a Licensed Adviser Compare For You</h2>
+                <h2 className="text-2xl font-extrabold text-gray-900 mb-3">Let an Adviser Quote Your Situation</h2>
                 <p className="text-gray-600 leading-relaxed mb-5">
-                  Tables only tell part of the story. The right provider depends on your age, health history, budget, and what you need cover for. A licensed NZ adviser will compare all five providers for your specific profile and present you with the best options — at no charge.
+                  A table cannot tell you how your own medical history will be treated, and that is usually what decides things. A New Zealand adviser can quote your actual situation across the providers they are appointed with, at no charge to you.
                 </p>
                 <ul className="space-y-2 text-sm text-gray-600">
                   {[
                     'Quotes from all 5 providers in one call',
                     'Pre-existing condition guidance',
                     'Premium reduction strategies',
-                    'Licensed FMA advisers — no sales pressure',
+                    'Registered NZ advisers, no sales pressure',
                     'Response within 24 hours',
                   ].map((point) => (
                     <li key={point} className="flex items-center gap-2">
@@ -381,14 +426,14 @@ export default function ComparePage() {
               </div>
               <div className="bg-gray-50 rounded-xl border border-gray-200 p-6">
                 <h3 className="font-extrabold text-gray-900 mb-1">Get Personalised Quotes</h3>
-                <p className="text-gray-500 text-xs mb-4">Takes 2 minutes. A licensed adviser responds within 24 hours.</p>
+                <p className="text-gray-500 text-xs mb-4">Takes 2 minutes. An adviser responds within 24 hours.</p>
                 <QuoteForm compact />
               </div>
             </div>
           </section>
 
           <p className="text-xs text-gray-400 leading-relaxed">
-            BestHealthInsurance.co.nz is an independent referral service. We connect you with licensed insurance advisers regulated under the Financial Markets Conduct Act 2013. We do not provide financial advice. Premium data sourced from Policywise (January 2026) and converted from fortnightly to monthly rates. Actual premiums depend on individual circumstances and are subject to change.{' '}
+            BestHealthInsurance.co.nz is an independent referral service. We connect you with registered New Zealand insurance advisers. We do not provide financial advice. We do not build premium comparison tables, because no NZ health insurer publishes a full premium schedule. Where an insurer publishes a starting price for one of its own plans, we reproduce it with that insurer's stated basis and nothing added. Any premium you are quoted depends on your age, plan, excess and medical history.{' '}
             <Link href="/disclaimer/" className="text-emerald-500 underline hover:text-emerald-400">See full disclaimer</Link>.
           </p>
         </div>

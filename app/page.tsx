@@ -31,7 +31,7 @@ export default function HomePage() {
               </p>
               <ul className="space-y-3 mb-8">
                 {[
-                  "Compare Southern Cross, nib, AIA, Accuro & Partners Life",
+                  "Southern Cross, nib, AIA, UniMed and Partners Life explained",
                   "Independent referral service — no cost to you",
                   "Quotes back within 24 hours, no obligation",
                   "Access to plans not available direct-to-public",
@@ -130,7 +130,7 @@ export default function HomePage() {
                 <h3 className="text-white font-bold mb-2 group-hover:text-emerald-400 transition-colors">{c.title}</h3>
                 <p className="text-gray-400 text-sm leading-relaxed mb-4">{c.shortDesc}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-emerald-400 text-sm font-medium">From {c.from}/mo</span>
+                  
                   <span className="text-gray-500 group-hover:text-emerald-400 transition-colors text-sm">Learn more →</span>
                 </div>
               </Link>
@@ -154,7 +154,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {[
               { step: "1", title: "Tell Us What You Need", body: "Fill in a quick form — takes under 2 minutes. Tell us who you want to cover and what matters most to you." },
-              { step: "2", title: "An Adviser Compares For You", body: "A specialist NZ insurance adviser compares Southern Cross, nib, AIA, Accuro (UniMed), Partners Life and more to find your best options." },
+              { step: "2", title: "An Adviser Compares For You", body: "A specialist NZ insurance adviser compares Southern Cross, nib, AIA, UniMed, Partners Life and more to find your best options." },
               { step: "3", title: "You Choose, We Sort It", body: "You pick the plan that fits. Your adviser handles all the paperwork. Cover can start in as little as 24 hours." },
             ].map((item) => (
               <div key={item.step} className="text-center">
@@ -177,19 +177,14 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-black text-white mb-4">Providers We Compare</h2>
-            <p className="text-gray-400 text-lg">We work with all major New Zealand health insurers to find you the best cover at the right price.</p>
+            <p className="text-gray-400 text-lg">The five main New Zealand health insurers, described from what each publishes about itself, in no particular order. We do not rank them, and no insurer pays us to appear here or to be described favourably.</p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-5">
             {PROVIDERS.map((p) => (
-              <Link key={p.slug} href={`/health-insurance/${p.slug}/`} className={`group bg-gray-800 rounded-xl p-6 border transition-all text-center hover:-translate-y-0.5 ${p.featured ? "border-emerald-500/60 ring-1 ring-emerald-500/30" : "border-gray-700 hover:border-emerald-500/40"} ${p.notRecommended ? "opacity-75" : ""}`}>
-                {p.badge && (
-                  <div className={`inline-block text-white text-xs font-medium px-2.5 py-0.5 rounded-full mb-3 ${p.badgeColor}`}>{p.badge}</div>
-                )}
+              <Link key={p.slug} href={`/health-insurance/${p.slug}/`} className="group bg-gray-800 rounded-xl p-6 border border-gray-700 hover:border-emerald-500/40 transition-all text-center hover:-translate-y-0.5">
                 <div className="text-4xl mb-3">{p.icon}</div>
-                <h3 className={`text-white font-bold mb-1 group-hover:text-emerald-400 transition-colors ${p.notRecommended ? "line-through decoration-red-400" : ""}`}>{p.name}</h3>
-                {p.notRecommended && <p className="text-red-400 text-xs mb-1">Not recommended</p>}
-                <div className="text-yellow-400 text-sm mb-1">{"★".repeat(Math.floor(p.rating))}{"☆".repeat(5 - Math.floor(p.rating))}</div>
-                <div className="text-gray-500 text-xs">From {p.from}/mo</div>
+                <h3 className="text-white font-bold mb-2 group-hover:text-emerald-400 transition-colors">{p.name}</h3>
+                <p className="text-gray-400 text-xs leading-relaxed">{p.note}</p>
               </Link>
             ))}
           </div>

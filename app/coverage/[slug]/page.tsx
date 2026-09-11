@@ -33,9 +33,9 @@ export default async function CoveragePage({ params }: Props) {
   // Build structured data
   const faqs = [
     { q: `What does ${coverage.title} actually cover?`, a: coverage.description },
-    { q: `How much does ${coverage.title} cost per month?`, a: `${coverage.title} starts from ${coverage.from}/month for a healthy adult, but your actual premium depends on your age, health history, chosen excess, and level of cover. A licensed adviser will get you an accurate personalised quote from all major providers.` },
+    { q: `How much does ${coverage.title} cost per month?`, a: `We cannot give you a price for this cover, because no New Zealand health insurer publishes a full premium schedule. What we can tell you is what moves the number: your age, your medical history, the excess you choose, the level of cover, and who else is on the policy. An adviser can quote your actual situation at no charge.` },
     { q: 'Are pre-existing conditions covered?', a: "Pre-existing conditions are typically excluded from cover, or may be subject to a premium loading. The definitions vary by insurer, and some conditions may be covered after a stand-down period. An adviser will help you understand each provider's approach before you commit." },
-    { q: 'How do I claim?', a: 'Most NZ insurers have a smartphone app for submitting claims. For surgical or hospital claims, your specialist or hospital typically handles the claim directly. For everyday cover claims, you submit receipts and are reimbursed within a few business days.' },
+    { q: 'How do I claim?', a: 'Claims processes differ by insurer. Most offer online or app-based claiming, and for surgical or hospital treatment the provider will often bill the insurer directly where the treatment has been approved in advance. For everyday cover you generally submit receipts and are reimbursed. Ask your insurer what their current process and turnaround are.' },
   ]
 
   const faqSchema = {
@@ -126,10 +126,6 @@ export default async function CoveragePage({ params }: Props) {
           <p className="text-gray-300 text-xl leading-relaxed max-w-2xl">
             {coverage.shortDesc}
           </p>
-          <div className="mt-6 flex items-center gap-3">
-            <span className="text-emerald-400 font-extrabold text-2xl">{coverage.from}/month</span>
-            <span className="text-gray-400 text-sm">indicative starting price</span>
-          </div>
         </div>
       </div>
 
@@ -179,10 +175,16 @@ export default async function CoveragePage({ params }: Props) {
                 </div>
               </section>
 
-              {/* Real scenarios */}
+              {/* Illustrative worked examples */}
               {coverage.scenarios && coverage.scenarios.length > 0 && (
                 <section>
-                  <h2 className="text-2xl font-extrabold text-gray-900 mb-6">Real Claim Scenarios</h2>
+                  <h2 className="text-2xl font-extrabold text-gray-900 mb-2">Worked Examples</h2>
+                  <p className="text-gray-500 text-sm mb-6">
+                    These are illustrations of how this type of cover is designed to work. They are
+                    not accounts of real people, and they are not records of any insurer&rsquo;s claim
+                    decision. What is actually payable depends on the plan you hold, its benefit
+                    maximums and any waiting periods or exclusions that apply to you.
+                  </p>
                   <div className="space-y-6">
                     {coverage.scenarios.map((scenario, i) => (
                       <div key={i} className="bg-gray-900 rounded-2xl p-8">
@@ -210,19 +212,16 @@ export default async function CoveragePage({ params }: Props) {
               {/* Providers */}
               <section className="bg-white rounded-2xl border border-gray-200 p-8 shadow-sm">
                 <h2 className="text-2xl font-extrabold text-gray-900 mb-2">NZ Providers Offering This Cover</h2>
-                <p className="text-gray-500 text-sm mb-6">A licensed adviser compares all of these on your behalf at no charge.</p>
+                <p className="text-gray-500 text-sm mb-6">A licensed adviser can quote you across all of these at no charge. The order below carries no meaning — we do not rank or rate insurers.</p>
                 <div className="space-y-3">
                   {coverage.providers.map((provider, i) => (
-                    <div key={i} className={`flex items-start gap-4 rounded-xl p-4 border ${provider.featured ? 'bg-emerald-50 border-emerald-200' : 'bg-gray-50 border-gray-200'}`}>
-                      <div className="flex-shrink-0 w-2.5 h-2.5 rounded-full mt-2 ${provider.featured ? 'bg-emerald-500' : 'bg-gray-400'}">
-                        <div className={`w-2.5 h-2.5 rounded-full ${provider.featured ? 'bg-emerald-500' : 'bg-gray-400'}`} />
+                    <div key={i} className="flex items-start gap-4 rounded-xl p-4 border bg-gray-50 border-gray-200">
+                      <div className="flex-shrink-0 mt-2">
+                        <div className="w-2.5 h-2.5 rounded-full bg-gray-400" />
                       </div>
                       <div>
-                        <p className={`font-bold text-sm ${provider.featured ? 'text-emerald-800' : 'text-gray-800'}`}>
+                        <p className="font-bold text-sm text-gray-800">
                           {provider.name}
-                          {provider.featured && (
-                            <span className="ml-2 bg-emerald-500 text-white text-xs font-bold px-2 py-0.5 rounded-full">RECOMMENDED</span>
-                          )}
                         </p>
                         {provider.note && (
                           <p className="text-gray-500 text-xs mt-0.5">{provider.note}</p>
@@ -260,7 +259,7 @@ export default async function CoveragePage({ params }: Props) {
                     },
                     {
                       q: `How much does ${coverage.title} cost per month?`,
-                      a: `${coverage.title} starts from ${coverage.from}/month for a healthy adult, but your actual premium depends on your age, health history, chosen excess, and level of cover. A licensed adviser will get you an accurate personalised quote from all major providers.`,
+                      a: `We cannot give you a price for this cover, because no New Zealand health insurer publishes a full premium schedule. What we can tell you is what moves the number: your age, your medical history, the excess you choose, the level of cover, and who else is on the policy. An adviser can quote your actual situation at no charge.`,
                     },
                     {
                       q: 'Are pre-existing conditions covered?',
@@ -268,7 +267,7 @@ export default async function CoveragePage({ params }: Props) {
                     },
                     {
                       q: 'How do I claim?',
-                      a: 'Most NZ insurers have a smartphone app for submitting claims. For surgical or hospital claims, your specialist or hospital typically handles the claim directly. For everyday cover claims, you submit receipts and are reimbursed within a few business days.',
+                      a: 'Claims processes differ by insurer. Most offer online or app-based claiming, and for surgical or hospital treatment the provider will often bill the insurer directly where the treatment has been approved in advance. For everyday cover you generally submit receipts and are reimbursed. Ask your insurer what their current process and turnaround are.',
                     },
                   ].map((faq, i) => (
                     <div key={i} className="bg-white rounded-xl border border-gray-200 p-6 shadow-sm">
@@ -335,13 +334,15 @@ export default async function CoveragePage({ params }: Props) {
                 <QuoteForm compact />
               </div>
 
-              {/* Price card */}
+              {/* What a quote depends on */}
               <div className="bg-emerald-500 rounded-2xl p-6 text-white">
-                <p className="text-xs font-bold uppercase tracking-widest text-emerald-100 mb-1">Starting from</p>
-                <p className="text-4xl font-extrabold">{coverage.from}</p>
-                <p className="text-emerald-100 text-sm">/month — indicative price</p>
+                <p className="text-xs font-bold uppercase tracking-widest text-emerald-100 mb-1">What it costs</p>
+                <p className="text-2xl font-extrabold">Quoted on your details</p>
+                <p className="text-emerald-100 text-sm mt-1">There is no list price to show you.</p>
                 <p className="text-emerald-200 text-xs mt-3 leading-relaxed">
-                  Your actual premium depends on age, health history, and cover level. An adviser will find your best rate.
+                  No New Zealand health insurer publishes a full premium schedule. What you pay
+                  depends on your age, your medical history, the excess you choose and the level of
+                  cover. A licensed adviser can quote you across the major insurers at no charge.
                 </p>
               </div>
 

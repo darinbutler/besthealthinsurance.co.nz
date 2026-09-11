@@ -24,11 +24,11 @@ const segmentContent: Record<string, { title: string; intro: string; keyPoints: 
       "Choose your excess to match your budget and risk tolerance",
       "Start with major medical or surgical cover — the most cost-effective foundation",
       "Add cancer cover to protect against catastrophic costs",
-      "Consider mental health cover (Accuro's unique add-on) if relevant",
+      "Ask what each plan actually pays for mental health, and on what conditions",
     ],
     recommendations: [
       "Major Medical Cover: Best starting point for complete protection",
-      "Accuro or Partners Life: Best value for most individuals",
+      "Ask an adviser which plan fits your situation",
       "Cancer Cover: Critical given 1 in 3 Kiwis get cancer",
       "Consider higher excess ($500-$1,000) to reduce premiums",
     ],
@@ -37,7 +37,7 @@ const segmentContent: Record<string, { title: string; intro: string; keyPoints: 
     title: "Best Health Insurance for Families",
     intro: "Protect your whole family with private health insurance. Family policies offer discounts and ensure everyone has access to quality private healthcare when they need it.",
     keyPoints: [
-      "Children's cover is very affordable — often free or under $20/month to add",
+      "Adding children to an existing policy usually costs far less than insuring them separately — ask for both to be quoted",
       "Family discounts typically save 5-15% vs individual policies",
       "Major medical cover is essential for all adult family members",
       "Review cover annually as your family circumstances change",
@@ -60,7 +60,7 @@ const segmentContent: Record<string, { title: string; intro: string; keyPoints: 
     ],
     recommendations: [
       "Major Medical Cover: Critical for orthopaedic and specialist access",
-      "Accuro or Partners Life: Best value for seniors in most situations",
+      "Ask an adviser how each insurer treats your age band",
       "Cancer Cover: Increasingly important with age",
       "Consider $500 excess (not $1,000) on fixed retirement income",
     ],
@@ -77,7 +77,7 @@ const segmentContent: Record<string, { title: string; intro: string; keyPoints: 
     recommendations: [
       "Major Medical Cover: Essential when there's no sick leave safety net",
       "Income Protection: Critical — covers 75% of income during illness",
-      "Accuro or Partners Life: Best value for self-employed",
+      "Ask an adviser about cover that suits self-employed income",
       "Combination of health + income protection is the ideal setup",
     ],
   },
@@ -93,7 +93,7 @@ const segmentContent: Record<string, { title: string; intro: string; keyPoints: 
     recommendations: [
       "Business Health Cover: Group rates save 10-20% vs individual policies",
       "Major Medical as base: Shows employees you value their wellbeing",
-      "Accuro or Southern Cross: Both offer good group policy options",
+      "Ask an adviser about group and workplace options",
       "Review annually to ensure competitiveness as your team grows",
     ],
   },
@@ -108,7 +108,7 @@ const segmentContent: Record<string, { title: string; intro: string; keyPoints: 
     ],
     recommendations: [
       "Major Medical Cover: Start with comprehensive cover from the start",
-      "Accuro or Partners Life: Most welcoming to new applicants",
+      "Ask an adviser how your medical history will be treated",
       "Apply within 3 months of arrival for best underwriting terms",
       "Consider comprehensive cover to understand all NZ health insurance options",
     ],
@@ -190,7 +190,7 @@ export default function ForYouPage({ params }: { params: { slug: string } }) {
             <div className="text-center">
               <div className="text-4xl mb-4">🔍</div>
               <h3 className="text-lg font-semibold text-white mb-2">All Providers</h3>
-              <p className="text-gray-400 text-sm">We compare Southern Cross, nib, AIA, Accuro & Partners Life — all major NZ insurers.</p>
+              <p className="text-gray-400 text-sm">We compare Southern Cross, nib, AIA, UniMed & Partners Life — all major NZ insurers.</p>
             </div>
             <div className="text-center">
               <div className="text-4xl mb-4">⏱️</div>

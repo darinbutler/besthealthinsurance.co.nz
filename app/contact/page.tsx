@@ -2,7 +2,7 @@ import QuoteForm from "../components/QuoteForm";
 
 export const metadata = {
   title: "Get a Health Insurance Quote NZ | BestHealthInsurance.co.nz",
-  description: "Connect with a specialist NZ insurance adviser within 24 hours. No obligation. We compare Southern Cross, nib, AIA, Accuro and Partners Life for your situation.",
+  description: "Connect with a specialist NZ insurance adviser within 24 hours. No obligation. We compare Southern Cross, nib, AIA, UniMed and Partners Life for your situation.",
   alternates: { canonical: "https://besthealthinsurance.co.nz/contact/" },
   openGraph: {
     title: "Get a Health Insurance Quote NZ | BestHealthInsurance.co.nz",
@@ -77,7 +77,7 @@ export default function ContactPage() {
               <ul className="space-y-3 text-gray-300">
                 {[
                   "Independent health insurance comparison service",
-                  "Compare all major NZ providers — including Accuro",
+                  "Compare all major NZ providers — including UniMed",
                   "NZ insurance advisers with years of market experience",
                   "No obligation — explore options guilt-free",
                   "Personalised advice for your situation",
@@ -107,9 +107,9 @@ export default function ContactPage() {
               { q: "Is your service really free?", a: "Yes. We're paid by the insurance providers when you take out a policy. You pay nothing — the insurer covers our commission." },
               { q: "How long does it take to get a quote?", a: "Most quotes are provided within 24 hours. Simple quotes may be faster. We'll confirm timing when we contact you." },
               { q: "Do I have to buy insurance?", a: "Absolutely not. We're here to provide information and quotes. You're free to take your time deciding, or not buy at all." },
-              { q: "Which providers do you compare?", a: "We compare Southern Cross, nib, AIA, Accuro, and Partners Life — all major NZ health insurers. We typically recommend Accuro or Partners Life for the best value." },
-              { q: "Can you help with pre-existing conditions?", a: "Yes. We work with all providers and understand how they handle pre-existing conditions. We'll help you find the best options for your situation." },
-              { q: "Will you pressure me to buy?", a: "No. We provide information and recommendations, but the decision is entirely yours. We're here to help, not to sell." },
+              { q: "Which providers do you compare?", a: "We look at Southern Cross, nib, AIA, UniMed and Partners Life — all major NZ health insurers. We do not rank them. Which one suits you depends on your age, your health history, the excess you choose and the benefits you actually want, so the adviser works that out with you rather than starting from a favourite." },
+              { q: "Can you help with pre-existing conditions?", a: "Yes. Every insurer treats pre-existing conditions differently — some exclude them permanently, some apply a stand-down, some will review after a period. An adviser can walk you through how each one would treat your specific history before you apply." },
+              { q: "Will you pressure me to buy?", a: "No. We provide information and options, and the decision is entirely yours. We're here to help, not to sell." },
             ].map((faq) => (
               <div key={faq.q} className="bg-gray-800 rounded-lg p-6 border border-gray-700">
                 <h3 className="text-lg font-semibold text-white mb-3">{faq.q}</h3>

@@ -85,8 +85,8 @@ export default function AboutPage() {
               <h2 className="text-2xl font-extrabold text-emerald-600 mb-6">Our Values</h2>
               <ul className="space-y-5">
                 {[
-                  { title: 'Independence', desc: 'We compare all major providers with no bias — Southern Cross, Accuro (UniMed), AIA, Partners Life, and nib.' },
-                  { title: 'Transparency', desc: 'Clear information, honest comparisons. We tell you which providers offer the best value and why.' },
+                  { title: 'Independence', desc: 'We cover all the major providers — Southern Cross, UniMed, AIA, Partners Life and nib — and we do not rank or rate them.' },
+                  { title: 'Transparency', desc: 'Where we state a fact about an insurer, it comes from what that insurer publishes, and we say where and when. Where nobody publishes a figure, we say so rather than guessing.' },
                   { title: 'Passion for Kiwis', desc: 'We care about finding the right cover for each individual — not just the cheapest or most popular option.' },
                   { title: 'Your Interest First', desc: 'The advisers we connect you with are paid by the insurers, not by you. Our focus is finding the right fit.' },
                 ].map((v) => (
@@ -109,7 +109,7 @@ export default function AboutPage() {
               {[
                 { step: '1', title: 'You Contact Us', body: 'Fill out our simple form with your details and what you\'re looking for. Takes under 2 minutes.' },
                 { step: '2', title: 'We Match You', body: 'We connect you with a specialist NZ insurance adviser who knows the health insurance market inside out.' },
-                { step: '3', title: 'They Compare', body: 'Your adviser compares all major providers — Southern Cross, Accuro, AIA, nib, and Partners Life — for your specific situation.' },
+                { step: '3', title: 'They Compare', body: 'Your adviser compares all major providers — Southern Cross, UniMed, AIA, nib, and Partners Life — for your specific situation.' },
                 { step: '4', title: 'You Decide', body: 'Receive personalised quotes and recommendations. Take your time, ask questions, decide in your own time — no pressure.' },
               ].map((item) => (
                 <div key={item.step} className="text-center">
@@ -123,14 +123,14 @@ export default function AboutPage() {
 
           {/* Providers */}
           <section>
-            <h2 className="text-2xl font-extrabold text-gray-900 mb-6">We Compare All Major NZ Providers</h2>
+            <h2 className="text-2xl font-extrabold text-gray-900 mb-6">The Providers We Cover</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
-                { icon: '🏥', name: 'Southern Cross Health Society', desc: 'New Zealand\'s largest health insurer and the most affordable option at most age profiles. Not-for-profit structure.' },
-                { icon: '🛡️', name: 'Accuro (now UniMed)', desc: 'Member-owned, second-cheapest premiums, and the only insurer offering mental health as a specific optional add-on.' },
-                { icon: '💪', name: 'AIA', desc: 'Highest financial strength rating in the NZ market. Standout AIA Vitality wellness programme with up to 25% premium savings.' },
-                { icon: '🤝', name: 'Partners Life', desc: 'Known for the most comprehensive policy wordings in the market — fewer grey areas, fewer disputes at claim time. Japanese-owned (Dai-ichi Life).' },
-                { icon: '🩺', name: 'nib', desc: 'Strong digital claims experience. Premiums tend to run higher than competitors at most age profiles — worth comparing first.' },
+                { icon: '🏥', name: 'Southern Cross Health Society', desc: 'Describes itself as a for-purpose Friendly Society founded in 1961, and publishes that more than 951,000 New Zealanders were with it as at 30 June 2025. Operates an Affiliated Provider network that can settle approved treatment costs directly.' },
+                { icon: '🛡️', name: 'UniMed', desc: 'A not-for-profit mutual society operating since 1979. Plans include Hospital Select, UniCare Advantage, SmartCare+ and SmartCare, Health Positive, SmartStay, ParentStay and KidSmart. The Accuro brand has merged into UniMed.' },
+                { icon: '💪', name: 'AIA', desc: 'Runs the AIA Vitality programme and publishes its premium discount rules in full: a 10% initial discount that then moves up or down each year with your engagement, to a maximum of 20%. A monthly membership fee applies.' },
+                { icon: '🤝', name: 'Partners Life', desc: 'Offers Private Medical Cover as part of its wider Journey Plan range, alongside life, income and trauma cover. Sold through financial advisers rather than direct.' },
+                { icon: '🩺', name: 'nib', desc: 'Splits cover into Everyday and Hospital plans and publishes indicative treatment costs on its own site. Part of nib Group, which states it covers over 1.4 million people across New Zealand and Australia.' },
               ].map((p) => (
                 <div key={p.name} className="bg-white rounded-2xl border border-gray-200 shadow-sm p-6">
                   <div className="text-3xl mb-3">{p.icon}</div>
@@ -141,7 +141,7 @@ export default function AboutPage() {
             </div>
             <div className="mt-4 text-center">
               <Link href="/compare/" className="text-emerald-600 hover:text-emerald-700 text-sm font-bold underline transition-colors">
-                See full provider comparison with 2026 pricing →
+                See what each provider publishes about its own cover →
               </Link>
             </div>
           </section>

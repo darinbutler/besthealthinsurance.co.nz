@@ -34,7 +34,7 @@ const categoryInternalLinks: Record<string, { href: string; label: string }[]> =
     { href: "/compare/", label: "Compare All NZ Providers" },
   ],
   Providers: [
-    { href: "/health-insurance/accuro/", label: "Accuro Health Insurance Review" },
+    { href: "/health-insurance/unimed/", label: "UniMed Health Insurance Review" },
     { href: "/health-insurance/southern-cross/", label: "Southern Cross Review" },
     { href: "/health-insurance/partners-life/", label: "Partners Life Review" },
     { href: "/compare/", label: "Full Provider Comparison" },
@@ -234,7 +234,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               {/* Author disclaimer */}
               <div className="bg-gray-800 rounded-xl p-6 border border-gray-700">
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  <strong className="text-white">BestHealthInsurance.co.nz</strong> — We&apos;re passionate about helping Kiwis find the right health insurance policy for their needs and budget. We&apos;re an independent comparison and referral service — when you enquire, we connect you with a licensed NZ insurance adviser who compares all major providers (Southern Cross, nib, AIA, Accuro/UniMed, and Partners Life) on your behalf. The advisers we work with are paid by providers when you take out a policy. There is no cost to you.
+                  <strong className="text-white">BestHealthInsurance.co.nz</strong> — We&apos;re passionate about helping Kiwis find the right health insurance policy for their needs and budget. We&apos;re an independent comparison and referral service — when you enquire, we connect you with a licensed NZ insurance adviser who compares all major providers (Southern Cross, nib, AIA, UniMed, and Partners Life) on your behalf. The advisers we work with are paid by providers when you take out a policy. There is no cost to you.
                 </p>
               </div>
             </div>

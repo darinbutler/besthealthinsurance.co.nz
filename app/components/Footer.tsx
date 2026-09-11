@@ -46,7 +46,7 @@ export default function Footer() {
               <li><Link href="/health-insurance/southern-cross/" className="text-gray-400 hover:text-emerald-400 text-sm transition-colors">Southern Cross</Link></li>
               <li><Link href="/health-insurance/nib/" className="text-gray-400 hover:text-emerald-400 text-sm transition-colors">nib</Link></li>
               <li><Link href="/health-insurance/aia/" className="text-gray-400 hover:text-emerald-400 text-sm transition-colors">AIA</Link></li>
-              <li><Link href="/health-insurance/accuro/" className="text-gray-400 hover:text-emerald-400 text-sm transition-colors">Accuro</Link></li>
+              <li><Link href="/health-insurance/unimed/" className="text-gray-400 hover:text-emerald-400 text-sm transition-colors">UniMed</Link></li>
               <li><Link href="/health-insurance/partners-life/" className="text-gray-400 hover:text-emerald-400 text-sm transition-colors">Partners Life</Link></li>
               <li><Link href="/compare/" className="text-gray-400 hover:text-emerald-400 text-sm transition-colors">Compare All</Link></li>
             </ul>

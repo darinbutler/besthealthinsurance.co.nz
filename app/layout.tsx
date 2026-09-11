@@ -6,8 +6,8 @@ import Analytics from "./components/Analytics";
 
 export const metadata: Metadata = {
   title: "Best Health Insurance NZ | Compare & Find the Best Cover | BestHealthInsurance.co.nz",
-  description: "Compare the best health insurance in New Zealand. Southern Cross, nib, AIA, Accuro & Partners Life — find the right policy and connect with a specialist NZ adviser within 24 hours.",
-  keywords: "best health insurance NZ, health insurance New Zealand, compare health insurance, Southern Cross, nib, AIA, Accuro, Partners Life",
+  description: "Compare the best health insurance in New Zealand. Southern Cross, nib, AIA, UniMed & Partners Life — find the right policy and connect with a specialist NZ adviser within 24 hours.",
+  keywords: "best health insurance NZ, health insurance New Zealand, compare health insurance, Southern Cross, nib, AIA, UniMed, Partners Life",
   authors: [{ name: "BestHealthInsurance.co.nz Editorial Team", url: "https://besthealthinsurance.co.nz/about/" }],
   creator: "BestHealthInsurance.co.nz",
   publisher: "Cover4You Group",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Best Health Insurance NZ | Compare & Find the Best Cover",
-    description: "Compare Southern Cross, nib, AIA, Accuro & Partners Life. Specialist NZ adviser within 24 hours.",
+    description: "Compare Southern Cross, nib, AIA, UniMed & Partners Life. Specialist NZ adviser within 24 hours.",
     images: ["/og-image.jpg"],
   },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true } },
@@ -57,7 +57,7 @@ const organizationSchema = {
     width: 48,
     height: 48,
   },
-  description: "Independent health insurance comparison and adviser referral service for New Zealanders. We connect you with specialist NZ advisers who compare all major providers — Southern Cross, nib, AIA, Accuro and Partners Life.",
+  description: "Independent health insurance comparison and adviser referral service for New Zealanders. We connect you with specialist NZ advisers who compare all major providers — Southern Cross, nib, AIA, UniMed and Partners Life.",
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer service",
@@ -69,7 +69,7 @@ const organizationSchema = {
     "@type": "Country",
     name: "New Zealand",
   },
-  knowsAbout: ["Health Insurance", "Private Health Insurance New Zealand", "Southern Cross Health Insurance", "nib Health Insurance", "AIA Health Insurance", "Accuro Health Insurance", "Partners Life Insurance"],
+  knowsAbout: ["Health Insurance", "Private Health Insurance New Zealand", "Southern Cross Health Insurance", "nib Health Insurance", "AIA Health Insurance", "UniMed Health Insurance", "Partners Life Insurance"],
 };
 
 const websiteSchema = {

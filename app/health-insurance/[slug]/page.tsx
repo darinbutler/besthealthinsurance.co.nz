@@ -12,10 +12,29 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const provider = PROVIDERS.find((p) => p.slug === params.slug);
   return {
     title: `${provider?.name} Health Insurance NZ | BestHealthInsurance.co.nz`,
-    description: `Compare ${provider?.name} health insurance with other major NZ providers. See ratings, pricing, features and what to watch out for.`,
+    description: `What ${provider?.name} publishes about its own health insurance in New Zealand — structure, plans and cover — plus the questions worth asking before you apply.`,
   };
 }
 
+/**
+ * Provider detail.
+ *
+ * Rebuilt 11 September 2026. Every statement is something the insurer publishes
+ * about itself on its own website. Removed in this pass:
+ *   - a `warning` banner on nib asserting their premiums run 20-30% above market
+ *   - comparative price claims about every insurer ("20-30% higher than",
+ *     "10-15% below"), none of which we could source
+ *   - "NZ's only member-owned health insurer", which is not correct
+ *   - "our most recommended insurer"
+ *   - `cons` arrays making unsourced negative claims about named competitors
+ *
+ * `checks` replaces `cons`. It asks questions rather than asserting failings,
+ * because we cannot evidence an absence and a question is more use to a reader
+ * anyway. Do not reintroduce comparative pricing here. No NZ health insurer
+ * publishes a full premium schedule; where one publishes a starting price for
+ * its own plan it goes on the compare page with that insurer's stated basis,
+ * never on these per-provider pages as a point of comparison.
+ */
 const providerDetails: Record<
   string,
   {
@@ -29,101 +48,103 @@ const providerDetails: Record<
   }
 > = {
   "southern-cross": {
-    tagline: "New Zealand's Most Trusted Health Insurer — NZ-Owned Not-for-Profit",
-    description: "Southern Cross Health Society is New Zealand's largest health insurer, with a not-for-profit structure that means member benefits come first. Covering over 900,000 New Zealanders, they offer comprehensive policies and strong brand reputation. As a not-for-profit society, surplus funds return to members.",
+    tagline: "New Zealand's largest health insurer, a not-for-profit friendly society",
+    description: "Southern Cross Health Society describes itself as a for-purpose Friendly Society, founded in 1961, and publishes that more than 951,000 New Zealanders were with it as at 30 June 2025. It states that it puts people before profits and that most of the money received in premiums goes back to members. Cover spans everyday healthcare and diagnostics through to major medical expenses including specialists, surgery and cancer care, with a separate Cancer Cover Plus plan.",
     pros: [
-      "Largest NZ health insurer with 900,000+ members",
-      "Not-for-profit structure — surplus returns to members",
-      "Comprehensive policy options including premium cover",
-      "Strong financial stability and claims history since 1964",
-      "Established brand with deep community trust",
-      "Wide network of private hospitals and specialists",
+      "For-purpose Friendly Society, founded 1961",
+      "More than 951,000 members as at 30 June 2025",
+      "Reader's Digest Most Trusted Health Insurance Brand, 2017 to 2026 — Southern Cross states this is its tenth consecutive year",
+      "Affiliated Providers and Easy-Claim, so claims can be paid directly to the provider",
+      "Healthcare Finder tool for contracted doctors, specialists and facilities",
+      "Member discounts on eye and hearing tests, dental and gym memberships",
     ],
     cons: [
-      "Premiums 20-30% higher than Partners Life for equivalent cover",
-      "Digital experience lags slightly behind newer competitors",
-      "Less flexibility in customising policy structures",
-      "Premium increases can be higher than others",
+      "What is the annual limit for non-Pharmac cancer drugs on the plan you are quoted?",
+      "Is everyday cover (GP, dental, optical) included or a separate module?",
+      "How will your own medical history be treated, and what stand-downs apply?",
+      "What does the premium look like at 60 and 70, not just today?",
     ],
-    bestFor: ["Families seeking comprehensive cover", "Those who value not-for-profit structure", "Kiwis wanting the most established brand", "Comprehensive policy seekers"],
-    coverage: ["Hospital & Surgical", "Specialists & Diagnostics", "Cancer Care", "Everyday Health Cover", "Mental Health Support"],
+    bestFor: ["Those who value a not-for-profit structure", "People who want the largest affiliated provider network", "Comprehensive cover seekers"],
+    coverage: ["Hospital & Surgical", "Specialists & Diagnostics", "Cancer Care", "Everyday Health Cover"],
   },
   nib: {
-    tagline: "Digital-First — But Premiums Run 20–30% Above Market",
-    description: "nib is an ASX-listed health insurer that has grown in New Zealand with a focus on digital innovation. However, their premiums are consistently 20-30% above market for equivalent cover, and their claims satisfaction ratings trail behind competitors. While their app experience is strong, value-conscious Kiwis typically find better options elsewhere.",
-    warning: "nib premiums run 20-30% above market average. We recommend comparing Partners Life, AIA or Accuro before choosing nib.",
+    tagline: "Everyday cover, Hospital cover, or both, with an excess you choose",
+    description: "nib is part of nib Group and publishes that it specialises in health insurance, protecting the health of over 1.4 million people across New Zealand and Australia. They split cover into two types: Everyday, for day-to-day costs like dentist, GP and physio, and Hospital, for surgery, cancer treatment, specialist consultations and diagnostic investigations. On plans with Hospital cover you pick an excess level, and nib state directly that a higher excess means a lower premium. Cover for non-Pharmac funded drugs can be added.",
     pros: [
-      "Excellent digital app and online experience",
-      "Clear, easy-to-understand policy wording",
-      "Growing market presence in NZ",
-      "Fast digital claims process",
+      "Clear split between Everyday and Hospital cover, so you can buy one or both",
+      "Choice of excess level on Hospital plans, which nib say lowers the premium",
+      "On a Hospital plan, nib publish that many pre-existing conditions can be covered after three years",
+      "Buying online involves no health questions and takes under 10 minutes, with cover starting straight away subject to waiting periods",
+      "Optional cover for non-Pharmac funded drugs",
+      "Wellness Coaches offering one-on-one support",
     ],
     cons: [
-      "Premiums 20-30% above market for equivalent cover",
-      "Listed company — shareholder focus rather than member-first",
-      "Customer satisfaction ratings below Southern Cross and AIA",
-      "Less established NZ presence than Southern Cross",
-      "We typically recommend alternatives for better value",
+      "What is the non-Pharmac drug limit on the plan you are quoted?",
+      "Which excess level is the quote based on, and what does a lower one cost?",
+      "Is everyday cover included, or is that a separate plan?",
+      "How will any pre-existing condition be treated?",
     ],
-    bestFor: ["Tech-savvy members who prioritise app experience", "Those who've compared and found nib competitive for their age/situation"],
-    coverage: ["Hospital & Surgical", "Specialists & Diagnostics", "Cancer Care", "Everyday Health Cover", "Income Protection"],
+    bestFor: ["People who want to buy hospital and everyday cover separately", "Those comfortable managing cover online", "Buyers who want to use the excess to control premium"],
+    coverage: ["Hospital & Surgical", "Specialists & Diagnostics", "Cancer Care", "Everyday Health Cover", "Non-Pharmac drug option"],
   },
   aia: {
-    tagline: "AIA Vitality — Earn Up to 25% Premium Discount Through Active Living",
-    description: "AIA is part of Asia Pacific's largest life insurance group. Their distinctive AIA Vitality wellness programme rewards active, healthy lifestyles with discounts of up to 25% on premiums. For health-conscious Kiwis who already exercise regularly, AIA offers genuinely competitive pricing once Vitality discounts are applied.",
+    tagline: "Private Health or Cancer Care, with the AIA Vitality programme as an option",
+    description: "AIA New Zealand sells two health options: Private Health, which covers a wide range of medical conditions including surgery, specialist consultations and diagnostic imaging, and Cancer Care, which covers cancer-related treatment only. Private Health can be upgraded to Private Health Plus for additional diagnostics and specialist consultations. AIA Vitality, their wellbeing programme, can be added for $13.50 a month for those aged 16 and over and carries a premium discount. AIA state they paid over $177 million in health insurance claims in 2025.",
     pros: [
-      "Unique AIA Vitality programme (up to 25% premium discount)",
-      "Competitive real cost for active members",
-      "Strong global backing and financial stability",
-      "Good digital tools and mobile app",
-      "Rewards for healthy lifestyle choices",
+      "Hospitalisation up to $500,000 per policy year on Private Health",
+      "Major diagnostic imaging and tests up to $200,000 per policy year",
+      "Radiotherapy up to $500,000 per policy year",
+      "Mental health support benefit of $2,500 per policy year on both plans",
+      "Cancer Care available as a standalone, cancer-only plan",
+      "AIA Vitality wellbeing programme with a premium discount, $13.50 a month",
     ],
     cons: [
-      "Higher base premiums without Vitality engagement",
-      "Vitality requires ongoing participation to maintain discount",
-      "More complex product structure",
-      "Privacy concerns for some with health data sharing",
+      "Will you actually engage with Vitality? The discount depends on it.",
+      "Cancer Care covers cancer only, so check what it does not cover",
+      "Several benefits carry stand-downs of one to three years, so ask which",
+      "How is your own medical history treated on application?",
     ],
-    bestFor: ["Health-conscious, active individuals who exercise 3+ times weekly", "Tech-savvy members", "Discount-motivated buyers who will engage with the programme"],
-    coverage: ["Hospital & Surgical", "Specialists & Diagnostics", "Cancer Care", "AIA Vitality Wellness Programme", "Income Protection"],
+    bestFor: ["People who want a cancer-only option", "Those who will use a wellbeing programme", "Buyers wanting stated dollar limits on major benefits"],
+    coverage: ["Hospital & Surgical", "Specialists & Diagnostics", "Cancer Care", "Mental Health Support", "AIA Vitality"],
   },
-  accuro: {
-    tagline: "Highly Rated — NZ's Only Member-Owned Health Insurer",
-    description: "Accuro is New Zealand's only member-owned health insurer, making it the most aligned with policyholder interests. They offer competitive premiums (typically 10-15% below Southern Cross and nib), straightforward claims handling, and the unique distinction of offering mental health as a standalone optional add-on — the only NZ insurer to do so. Despite minimal marketing spend, Accuro consistently delivers excellent value.",
+  unimed: {
+    tagline: "A not-for-profit mutual society, with plans built for situations much of the market does not serve",
+    description: "UniMed describes itself as a not-for-profit health insurer and a mutual society, operating since 1979, that exists for its members rather than shareholders. The Accuro brand has now merged into UniMed and everything has moved to the UniMed website. If you hold a plan originally issued by Accuro, such as SmartCare, SmartCare+, StaffCare, StaffCare+ or SmartStay, the terms are set out in your Health Plan document and your member portal is still the UniMed one. UniMed's range spans Health Positive for prevention and everyday costs, UniCare Advantage as all-in-one cover paying up to 80% of treatment costs within benefit limits, Hospital Select for comprehensive surgical cover, and SmartCare+ and SmartCare for their highest level of cover for non-Pharmac subsidised drugs.",
     pros: [
-      "NZ's only member-owned health insurer",
-      "Premiums 10-15% below Southern Cross and nib",
-      "Only insurer offering mental health as standalone add-on",
-      "Fast, straightforward claims handling (5-7 days)",
-      "Modern online portal",
-      "Transparent, no-nonsense product approach",
+      "Not-for-profit mutual society, operating since 1979",
+      "SmartStay, which UniMed describe as the only NZ health insurance for visitors or workers on short-term visas who are not eligible for publicly funded healthcare",
+      "ParentStay, for people applying for the Parent Boost Visitor Visa",
+      "KidSmart, which UniMed describe as the only NZ plan designed for children, letting guardians insure dependants without taking out cover themselves",
+      "SmartCare+ and SmartCare carry their highest level of cover for non-Pharmac subsidised drugs",
+      "Active Benefits for preventative health and screening, including online GP advice",
+      "Member offers including flu vaccine reimbursement up to $45 a person and free hearing checks with Bloom",
     ],
     cons: [
-      "Limited brand recognition (smaller marketing budget)",
-      "Fewer specialist network partnerships than Southern Cross",
-      "Policy wordings less comprehensive than Partners Life for complex scenarios",
+      "Which plan are you being quoted, and what is its non-Pharmac limit?",
+      "If you were an Accuro member, which portal and which document applies to you now?",
+      "Does UniCare Advantage's 80% share of treatment costs suit how you would use it?",
+      "How will your own medical history be treated on application?",
     ],
-    bestFor: ["Value-seeking Kiwis who've done the comparison", "Those wanting mental health coverage as a standalone add-on", "Member-owned preference seekers", "Accuro is our most recommended insurer for most situations"],
-    coverage: ["Hospital & Surgical", "Specialists & Diagnostics", "Cancer Care", "Mental Health (optional add-on)", "Everyday Health Cover"],
+    bestFor: ["People who value a not-for-profit mutual structure", "Visitors and short-term visa holders not eligible for public healthcare", "Parent Boost visa applicants", "Guardians insuring children without insuring themselves"],
+    coverage: ["Hospital & Surgical", "Specialists & Diagnostics", "Non-Pharmac drug cover", "Everyday Health Cover", "Preventative Active Benefits"],
   },
   "partners-life": {
-    tagline: "NZ-Owned with the Most Comprehensive Policy Wordings",
-    description: "Partners Life is a New Zealand-owned insurer known for the most comprehensive and explicit policy wordings in the NZ market. They're particularly valued for how clearly they define what's covered — fewer grey areas means fewer claim disputes. Note: Partners Life was acquired by Dai-ichi Life Insurance (Japan) in 2023, though they continue to operate as a NZ-run entity.",
+    tagline: "Life and health insurer distributing through financial advisers",
+    description: "Partners Life sells Private Medical Cover, which they describe as helping you skip the queue and get access to private medical care. It sits inside their Partners Life Journey Plan alongside Mortgage Cover and Income Cover, and they emphasise that options can be added or removed as your circumstances change. Partners Life distribute through financial advisers rather than selling direct, so a quote generally comes to you via an adviser.",
     pros: [
-      "Most comprehensive policy wordings — fewer grey areas",
-      "Strong adviser relationships and support",
-      "Good claims service reputation",
-      "Lowest premiums among major providers for many profiles",
-      "Explicit coverage of chronic condition specialist consultations",
+      "Private Medical Cover funds access to treatment in the private sector rather than waiting on the public system",
+      "Sits within the Partners Life Journey Plan alongside Mortgage Cover and Income Cover",
+      "Cover options can be added or removed as circumstances change",
+      "Arranged through an adviser, so the quote comes with advice",
     ],
     cons: [
-      "Acquired by Dai-ichi Life Insurance (Japan) in 2023 — no longer fully NZ-owned",
-      "Less digital innovation than AIA",
-      "Smaller company than global insurers",
-      "Less consumer-facing brand presence",
+      "You will generally need to go through an adviser rather than buying online",
+      "What are the stated limits on the plan you are quoted?",
+      "How does the health cover interact with any life or trauma cover you hold?",
+      "How will your own medical history be treated?",
     ],
-    bestFor: ["Those wanting the most comprehensive coverage certainty", "Adviser-supported buyers", "Chronic condition management", "Budget-conscious buyers who want strong policy wordings"],
-    coverage: ["Hospital & Surgical", "Specialists & Diagnostics", "Cancer Care", "Income Protection", "Business Health"],
+    bestFor: ["Buyers who want adviser-arranged cover", "People bundling health with life or trauma cover"],
+    coverage: ["Hospital & Surgical", "Specialists & Diagnostics", "Cancer Care", "Life & Trauma alongside"],
   },
 };
 
@@ -145,18 +166,6 @@ export default function ProviderPage({ params }: { params: { slug: string } }) {
             <span className="text-gray-600">›</span>
             <span className="text-gray-400 text-sm">{provider.name}</span>
           </div>
-          {provider.notRecommended && (
-            <div className="bg-red-900/30 border border-red-700/50 rounded-lg px-5 py-3 mb-6 flex items-start gap-3">
-              <span className="text-red-400 text-lg">⚠️</span>
-              <p className="text-red-300 text-sm">{details.warning}</p>
-            </div>
-          )}
-          {provider.featured && (
-            <div className="bg-emerald-900/30 border border-emerald-600/50 rounded-lg px-5 py-3 mb-6 flex items-start gap-3">
-              <span className="text-emerald-400 text-lg">⭐</span>
-              <p className="text-emerald-300 text-sm font-medium">Highly Rated — Our most recommended insurer for most New Zealanders.</p>
-            </div>
-          )}
           <div className="flex items-center gap-6 mb-6">
             <div className="text-6xl">{provider.icon}</div>
             <div>
@@ -171,18 +180,6 @@ export default function ProviderPage({ params }: { params: { slug: string } }) {
       <section className="bg-gray-800 border-b border-gray-700 py-12 px-4 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="text-3xl font-bold text-emerald-400 mb-2">{provider.rating}/5</div>
-              <p className="text-gray-400 text-sm">Customer Rating</p>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold text-emerald-400 mb-2">{provider.from}</div>
-              <p className="text-gray-400 text-sm">Starting Price</p>
-            </div>
-            <div className="text-center">
-              <div className={`inline-block px-4 py-2 rounded-lg ${provider.badgeColor} text-white font-semibold text-sm mb-2`}>{provider.badge}</div>
-              <p className="text-gray-400 text-sm">Recognition</p>
-            </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-emerald-400 mb-2">NZ Wide</div>
               <p className="text-gray-400 text-sm">Coverage</p>
@@ -202,7 +199,7 @@ export default function ProviderPage({ params }: { params: { slug: string } }) {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
               <div>
-                <h3 className="text-xl font-bold text-emerald-400 mb-4">Strengths</h3>
+                <h3 className="text-xl font-bold text-emerald-400 mb-4">What they publish</h3>
                 <ul className="space-y-2">
                   {details.pros.map((pro, idx) => (
                     <li key={idx} className="flex gap-3 text-gray-300">
@@ -213,7 +210,7 @@ export default function ProviderPage({ params }: { params: { slug: string } }) {
                 </ul>
               </div>
               <div>
-                <h3 className="text-xl font-bold text-amber-400 mb-4">Considerations</h3>
+                <h3 className="text-xl font-bold text-amber-400 mb-4">Questions to ask</h3>
                 <ul className="space-y-2">
                   {details.cons.map((con, idx) => (
                     <li key={idx} className="flex gap-3 text-gray-300">
@@ -226,7 +223,7 @@ export default function ProviderPage({ params }: { params: { slug: string } }) {
             </div>
 
             <div className="bg-gray-800 rounded-lg p-6 border border-gray-700 mb-12">
-              <h3 className="text-lg font-bold text-emerald-400 mb-4">Best For</h3>
+              <h3 className="text-lg font-bold text-emerald-400 mb-4">Commonly Suits</h3>
               <ul className="space-y-2">
                 {details.bestFor.map((item, idx) => (
                   <li key={idx} className="text-gray-300">• {item}</li>
@@ -261,7 +258,7 @@ export default function ProviderPage({ params }: { params: { slug: string } }) {
       <section className="bg-gray-800 border-t border-gray-700 py-16 px-4 lg:px-8">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Compare {provider.name} with Other Providers</h2>
-          <p className="text-gray-400 mb-8">See how {provider.name} stacks up against Southern Cross, nib, AIA, Accuro, and Partners Life.</p>
+          <p className="text-gray-400 mb-8">See what each of the five major New Zealand health insurers publishes about its own cover.</p>
           <Link href="/compare/" className="inline-block bg-emerald-500 hover:bg-emerald-400 text-white font-semibold px-8 py-3 rounded-lg transition-colors">
             View Full Comparison
           </Link>

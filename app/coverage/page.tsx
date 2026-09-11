@@ -26,7 +26,7 @@ export default function CoveragePage() {
                 <h2 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors">{c.title}</h2>
                 <p className="text-gray-400 text-sm leading-relaxed mb-4">{c.shortDesc}</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-emerald-400 font-medium text-sm">From {c.from}/mo</span>
+                  
                   <span className="text-gray-500 group-hover:text-emerald-400 transition-colors text-sm">Learn more →</span>
                 </div>
               </Link>

@@ -29,7 +29,7 @@ export default function ThankYouPage() {
             <div className="space-y-6 text-left mt-8">
               {[
                 { step: "1", title: "We review your enquiry", body: "Our team reviews the details you've provided to understand your health insurance needs." },
-                { step: "2", title: "We compare providers", body: "A licensed NZ insurance adviser will compare Southern Cross, Accuro, Partners Life, AIA, and nib to find the best fit for you." },
+                { step: "2", title: "We compare providers", body: "A licensed NZ insurance adviser will compare Southern Cross, UniMed, Partners Life, AIA, and nib to find the best fit for you." },
                 { step: "3", title: "We contact you", body: "Within 24 hours, A licensed NZ insurance adviser will contact you with personalised quotes and recommendations." },
                 { step: "4", title: "You decide", body: "No pressure — take your time, ask questions, and decide what's right for you." },
               ].map((item) => (
