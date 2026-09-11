@@ -88,7 +88,7 @@ export default function AboutPage() {
                   { title: 'Independence', desc: 'We cover all the major providers — Southern Cross, UniMed, AIA, Partners Life and nib — and we do not rank or rate them.' },
                   { title: 'Transparency', desc: 'Where we state a fact about an insurer, it comes from what that insurer publishes, and we say where and when. Where nobody publishes a figure, we say so rather than guessing.' },
                   { title: 'Passion for Kiwis', desc: 'We care about finding the right cover for each individual — not just the cheapest or most popular option.' },
-                  { title: 'Your Interest First', desc: 'The advisers we connect you with are paid by the insurers, not by you. Our focus is finding the right fit.' },
+                  { title: 'Your Interest First', desc: 'Anyone giving regulated financial advice in New Zealand has a legal duty to give priority to your interests. That is not our promise, it is the law, and your broker must be able to show you how they meet it.' },
                 ].map((v) => (
                   <li key={v.title} className="flex gap-3">
                     <span className="text-emerald-500 font-bold flex-shrink-0 mt-0.5">✓</span>
@@ -203,8 +203,8 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-3 gap-5">
               {[
                 {
-                  title: 'How the Service Is Funded',
-                  body: 'BestHealthInsurance.co.nz is a free comparison and referral service. When you take out a health insurance policy through an adviser we refer you to, the insurer pays a commission to that adviser. You pay nothing — commission is built into the provider\'s standard pricing, the same whether you go direct or through an adviser.',
+                  title: 'Free To Use',
+                  body: 'BestHealthInsurance.co.nz costs you nothing to use, and being referred by us does not increase what you pay for your policy. How the service is funded is set out in full in our Terms.',
                 },
                 {
                   title: 'No Pressure — Ever',

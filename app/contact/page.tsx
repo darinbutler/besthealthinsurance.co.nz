@@ -104,7 +104,7 @@ export default function ContactPage() {
           <h2 className="text-3xl font-bold text-white mb-8 text-center">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {[
-              { q: "Is your service really free?", a: "Yes. We're paid by the insurance providers when you take out a policy. You pay nothing — the insurer covers our commission." },
+              { q: "Is your service really free?", a: "Yes. There is no cost to you at any stage, and being referred by us does not increase what you pay for your policy. How the service is funded is set out in full in our Terms." },
               { q: "How long does it take to get a quote?", a: "Most quotes are provided within 24 hours. Simple quotes may be faster. We'll confirm timing when we contact you." },
               { q: "Do I have to buy insurance?", a: "Absolutely not. We're here to provide information and quotes. You're free to take your time deciding, or not buy at all." },
               { q: "Which providers do you compare?", a: "We look at Southern Cross, nib, AIA, UniMed and Partners Life — all major NZ health insurers. We do not rank them. Which one suits you depends on your age, your health history, the excess you choose and the benefits you actually want, so the adviser works that out with you rather than starting from a favourite." },
@@ -126,7 +126,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { icon: "👤", title: "Specialist Advisers", body: "We connect you with NZ insurance advisers who specialise in health insurance and know the market inside out." },
-              { icon: "⚖️", title: "Independent", body: "We are not owned by an insurer, and no insurer pays us to be described favourably." },
+              { icon: "⚖️", title: "Independent", body: "We are not owned by an insurer, and the information we publish comes from what each insurer publishes about itself." },
               { icon: "🎯", title: "Your Best Interest", body: "We focus on finding you the right cover at the right price for your situation." },
             ].map((item) => (
               <div key={item.title}>

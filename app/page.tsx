@@ -177,7 +177,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-black text-white mb-4">Providers We Cover</h2>
-            <p className="text-gray-400 text-lg">The five main New Zealand health insurers, described from what each publishes about itself. We do not rate or score them, and no insurer pays us to appear here or to be described favourably.</p>
+            <p className="text-gray-400 text-lg">The five main New Zealand health insurers, described from what each publishes about itself. We do not rate or score them. How this service is funded is set out in our Disclaimer.</p>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-5 gap-5">
             {PROVIDERS.map((p) => (
@@ -222,7 +222,7 @@ export default function HomePage() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { icon: "🔒", title: "Regulated Advisers", body: "The advisers we connect you with hold FSP registration with the FMA." },
-              { icon: "⚖️", title: "Independent", body: "Not owned by an insurer. The broker you are referred to is paid by the insurer, never by you." },
+              { icon: "⚖️", title: "Independent", body: "Not owned by an insurer, and free to use. How the service is funded is set out in our Terms." },
               { icon: "🔍", title: "Vetted Specialists", body: "We work with a number of specialist trusted brokers and underwriters, and we check each one's licence, disputes scheme and insurer agencies before referring a single enquiry." },
               { icon: "⚡", title: "Fast Response", body: "Receive personalised quotes within 24 hours of enquiry." },
             ].map((item) => (

@@ -97,9 +97,8 @@ export default function ComparePage() {
             </div>
             <p className="text-gray-400 text-xs mt-3">
               Each description is drawn from what that insurer publishes about itself on its own
-              website. We do not rank or rate insurers. No insurer pays us to appear here, to appear
-              higher, or to be described favourably. If you take out a policy through an adviser we
-              introduce you to, that adviser is paid a commission by the insurer &mdash; never by you.
+              website, and carries the date we retrieved it. We do not rate or score insurers. How
+              this service is funded is set out in our Terms.
             </p>
           </section>
 
@@ -214,8 +213,7 @@ No New Zealand health insurer publishes a full premium schedule, so no site can 
           <section>
             <h2 className="text-2xl font-extrabold text-gray-900 mb-2">Provider Profiles</h2>
             <p className="text-gray-500 text-sm mb-6">
-              In each insurer&apos;s own published words. We do not rate or score insurers, and no
-              insurer pays us to appear here or to be described favourably.
+              In each insurer&apos;s own published words. We do not rate or score insurers.
             </p>
 
             <div className="space-y-5">
